@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "WkPoHSNHRA4=",
+  "success": true,
+  "projectFilePath": "/home/kirilo/RiderProjects/MusicSite/MusicProject/MusicProject.csproj",
+  "expectedPackageFiles": [
+    "/home/kirilo/.nuget/packages/microsoft.aspnetcore.app.ref/9.0.9/microsoft.aspnetcore.app.ref.9.0.9.nupkg.sha512"
+  ],
+  "logs": []
+}

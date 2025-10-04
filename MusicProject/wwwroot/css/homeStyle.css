@@ -1,0 +1,16 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: #2A2A2A;
+}
+.home-inner-containers {
+    width: 100%; 
+    height: 40vh; 
+    border-radius: 30px;
+    text-align: center;
+    border: 2px solid black;
+}
