@@ -1,6 +1,8 @@
 html {
     font-size: 14px;
     height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 @media (min-width: 768px) {
@@ -16,11 +18,14 @@ html {
 html {
   position: relative;
   min-height: 100%;
+    color: #2A2A2A;
 }
 
 body {
-  margin-bottom: 60px;
-    background-color: #FAF3E0;
+    margin-bottom: 60px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
 }
 
 .form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
@@ -30,4 +35,9 @@ body {
 
 .form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
   text-align: start;
+}
+.basic-container {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
 }

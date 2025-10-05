@@ -12,8 +12,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>3ce27o32ji</Fingerprint>
-      <Integrity>EywpFiwHiHMEv6ga7A8RvYPZtRUwbylbD2+oIvFGjvk=</Integrity>
+      <Fingerprint>1an9afe329</Fingerprint>
+      <Integrity>GWTq5/Xvg2lrsK8Vwe7t62gvwKQ01hCeDwJS9oGdJEM=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\homeStyle.css'))</OriginalItemSpec>
@@ -30,8 +30,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>p5h5oaq42o</Fingerprint>
-      <Integrity>HQaYNaDN3aQBzhHXWCxUS/sN8A/wHy/Hy/CTC6nfVB0=</Integrity>
+      <Fingerprint>upz73v5b6j</Fingerprint>
+      <Integrity>boAZ+bus2SX3EcJQJxkjUisTuNVaaHIOiga0rW1M4zg=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</OriginalItemSpec>
@@ -1152,23 +1152,23 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\jquery\LICENSE.txt'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\MusicProject.urw4j7zxfd.bundle.scp.css'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\MusicProject.cs096rndtk.bundle.scp.css'))">
       <SourceType>Package</SourceType>
       <SourceId>MusicProject</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/MusicProject</BasePath>
-      <RelativePath>MusicProject.urw4j7zxfd.bundle.scp.css</RelativePath>
+      <RelativePath>MusicProject.cs096rndtk.bundle.scp.css</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>Reference</AssetMode>
       <AssetRole>Primary</AssetRole>
       <RelatedAsset></RelatedAsset>
       <AssetTraitName>ScopedCss</AssetTraitName>
       <AssetTraitValue>ProjectBundle</AssetTraitValue>
-      <Fingerprint>urw4j7zxfd</Fingerprint>
-      <Integrity>FqJSAzmCuL6M15kL2Sf0liQFKLNCSG5xnYzhfQDDkxs=</Integrity>
+      <Fingerprint>cs096rndtk</Fingerprint>
+      <Integrity>PC5AxujYDpNG+F87e2ZuQgl7g/5zd17IBK7zdJUOOX4=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\MusicProject.urw4j7zxfd.bundle.scp.css'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\MusicProject.cs096rndtk.bundle.scp.css'))</OriginalItemSpec>
     </StaticWebAsset>
   </ItemGroup>
 </Project>

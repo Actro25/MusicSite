@@ -79,8 +79,6 @@
 /home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/2wmdj0bqz7-muycvpuwrr.gz
 /home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/qynv1r1frj-87fc7y1x7t.gz
 /home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/xykeczgipr-jfsiqqwiad.gz
-/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/9yu9apoo12-urw4j7zxfd.gz
-/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/a6uekbjs1f-urw4j7zxfd.gz
 /home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/staticwebassets.build.json
 /home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/staticwebassets.development.json
 /home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/staticwebassets.build.endpoints.json
@@ -95,5 +93,7 @@
 /home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/MusicProject.pdb
 /home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/MusicProject.genruntimeconfig.cache
 /home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/ref/MusicProject.dll
-/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/t3j2i6gjq1-3ce27o32ji.gz
-/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/opu0mkbp30-p5h5oaq42o.gz
+/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/9yu9apoo12-cs096rndtk.gz
+/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/a6uekbjs1f-cs096rndtk.gz
+/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/t3j2i6gjq1-1an9afe329.gz
+/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/opu0mkbp30-upz73v5b6j.gz
