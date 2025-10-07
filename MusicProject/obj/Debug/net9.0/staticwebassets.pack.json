@@ -2,7 +2,7 @@
   "Files": [
     {
       "Id": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/scopedcss/projectbundle/MusicProject.bundle.scp.css",
-      "PackagePath": "staticwebassets/MusicProject.cs096rndtk.bundle.scp.css"
+      "PackagePath": "staticwebassets/MusicProject.jrzzclp0ps.bundle.scp.css"
     },
     {
       "Id": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/css/homeStyle.css",
@@ -17,8 +17,16 @@
       "PackagePath": "staticwebassets/favicon.ico"
     },
     {
+      "Id": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/js/HomeScript.js",
+      "PackagePath": "staticwebassets/js/HomeScript.js"
+    },
+    {
       "Id": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/js/site.js",
       "PackagePath": "staticwebassets/js/site.js"
+    },
+    {
+      "Id": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/json/CircleAnimation.json",
+      "PackagePath": "staticwebassets/json/CircleAnimation.json"
     },
     {
       "Id": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/lib/bootstrap/LICENSE",
@@ -259,6 +267,14 @@
     {
       "Id": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/lib/jquery/dist/jquery.slim.min.map",
       "PackagePath": "staticwebassets/lib/jquery/dist/jquery.slim.min.map"
+    },
+    {
+      "Id": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/video/You look lonely Scene (No song on it, for making edits) HD _ Blade Runner 2049.mp4",
+      "PackagePath": "staticwebassets/video/You look lonely Scene (No song on it, for making edits) HD _ Blade Runner 2049.mp4"
+    },
+    {
+      "Id": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/video/you look LONELY! _ bocchi the rock! × blade runner 2049 × STAN.mp4",
+      "PackagePath": "staticwebassets/video/you look LONELY! _ bocchi the rock! × blade runner 2049 × STAN.mp4"
     },
     {
       "Id": "obj/Debug/net9.0/staticwebassets/msbuild.MusicProject.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",

@@ -6,9 +6,8 @@ a.navbar-brand {
   text-align: center;
   word-break: break-all;
 }
-
 a {
-  color: #0077cc;
+  color: #F2F2F2;
 }
 
 .btn-primary {
@@ -21,9 +20,6 @@ a {
   color: #fff;
   background-color: #1b6ec2;
   border-color: #1861ac;
-}
-nav.navbar {
-    position: fixed;
 }
 .border-top {
   border-top: 1px solid #e5e5e5;

@@ -4,14 +4,23 @@
 @section Styles{
     <link rel="stylesheet" href="css/homeStyle.css"/>
 }
+@section Scripts{
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.13.0/lottie.min.js"></script>
+    <script src="~/js/HomeScript.js" asp-append-version="true"></script>
+}
 <div class="home-container">
     <section class="one">
-        <div class="home-inner-containers" style="background: #ffffff">
-            <h1 class="display-5">Welcome to Music site!</h1>
-        </div> 
+        <div class="video-section">
+            <video autoplay muted loop playsinline id="home-first-page">
+                <source src="video/you%20look%20LONELY!%20_%20bocchi%20the%20rock!%20×%20blade%20runner%202049%20×%20STAN.mp4" type="video/mp4">
+            </video>
+            <button id="sound-button" class="bn30">Button</button>
+            <div id="home-animation-first-page">
+            </div>
+        </div>
     </section>
     <section class="two">
-        <div style="background: #ffffff;" class="home-inner-containers grid-wrapper">
+        <div style="background: #0D0D0D;" class="home-inner-containers grid-wrapper inner-padding">
             <div class="div1"> </div>
             <div class="div2"> </div>
             <div class="div3"> </div>

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "utM/9J6AhtAo+UpEeYl/59JieUvWMHF26v2+WXaTwPs=",
+  "Hash": "MzEtYsy5q5RxjqoRnbaRDpctx1dQW3vfz/NdEffyc0c=",
   "Source": "MusicProject",
   "BasePath": "_content/MusicProject",
   "Mode": "Default",
@@ -332,6 +332,27 @@
       "OriginalItemSpec": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/lib/jquery/dist/jquery.min.map"
     },
     {
+      "Identity": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/7ck516i26i-i457ibwxol.gz",
+      "SourceId": "MusicProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/MusicProject",
+      "RelativePath": "json/CircleAnimation#[.{fingerprint=i457ibwxol}]?.json.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/json/CircleAnimation.json",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "t6bu0s1h4j",
+      "Integrity": "2ytvAmJdKxqo/DaLqaXqptdSE9G2cj38EAvKdxb8jKc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/json/CircleAnimation.json"
+    },
+    {
       "Identity": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/7rj2iwuzm6-r4e9w2rdcm.gz",
       "SourceId": "MusicProject",
       "SourceType": "Discovered",
@@ -479,12 +500,12 @@
       "OriginalItemSpec": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/lib/bootstrap/dist/js/bootstrap.js"
     },
     {
-      "Identity": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/9yu9apoo12-cs096rndtk.gz",
+      "Identity": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/9yu9apoo12-jrzzclp0ps.gz",
       "SourceId": "MusicProject",
       "SourceType": "Computed",
       "ContentRoot": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/MusicProject",
-      "RelativePath": "MusicProject#[.{fingerprint=cs096rndtk}]?.styles.css.gz",
+      "RelativePath": "MusicProject#[.{fingerprint=jrzzclp0ps}]?.styles.css.gz",
       "AssetKind": "All",
       "AssetMode": "CurrentProject",
       "AssetRole": "Alternative",
@@ -493,19 +514,19 @@
       "RelatedAsset": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/scopedcss/bundle/MusicProject.styles.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "8zld06w3ni",
-      "Integrity": "fLeKVL2tUVO0yWKaEpFc10QQdSB8eB45v64EvJz9Id0=",
+      "Fingerprint": "8jopg2f2w8",
+      "Integrity": "dBAA8yqke8wVVeeGQLTQyOBNgaTj6qGuiU+fQEo13vs=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/scopedcss/bundle/MusicProject.styles.css"
     },
     {
-      "Identity": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/a6uekbjs1f-cs096rndtk.gz",
+      "Identity": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/a6uekbjs1f-jrzzclp0ps.gz",
       "SourceId": "MusicProject",
       "SourceType": "Computed",
       "ContentRoot": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/MusicProject",
-      "RelativePath": "MusicProject#[.{fingerprint=cs096rndtk}]!.bundle.scp.css.gz",
+      "RelativePath": "MusicProject#[.{fingerprint=jrzzclp0ps}]!.bundle.scp.css.gz",
       "AssetKind": "All",
       "AssetMode": "Reference",
       "AssetRole": "Alternative",
@@ -514,8 +535,8 @@
       "RelatedAsset": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/scopedcss/projectbundle/MusicProject.bundle.scp.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "8zld06w3ni",
-      "Integrity": "fLeKVL2tUVO0yWKaEpFc10QQdSB8eB45v64EvJz9Id0=",
+      "Fingerprint": "8jopg2f2w8",
+      "Integrity": "dBAA8yqke8wVVeeGQLTQyOBNgaTj6qGuiU+fQEo13vs=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/scopedcss/projectbundle/MusicProject.bundle.scp.css"
@@ -624,6 +645,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map"
+    },
+    {
+      "Identity": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/g5lue61wcw-rxwy1cyhkd.gz",
+      "SourceId": "MusicProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/MusicProject",
+      "RelativePath": "js/HomeScript#[.{fingerprint=rxwy1cyhkd}]?.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/js/HomeScript.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "xgo9bk2kgw",
+      "Integrity": "30DfRkGK+wroRDN27U+aq4tS4eafHrkPMwvJYbiVoW8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/js/HomeScript.js"
     },
     {
       "Identity": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/g5yj5ru3od-47otxtyo56.gz",
@@ -962,12 +1004,12 @@
       "OriginalItemSpec": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/opu0mkbp30-upz73v5b6j.gz",
+      "Identity": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/opu0mkbp30-1h4fzw049r.gz",
       "SourceId": "MusicProject",
       "SourceType": "Discovered",
       "ContentRoot": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/MusicProject",
-      "RelativePath": "css/site#[.{fingerprint=upz73v5b6j}]?.css.gz",
+      "RelativePath": "css/site#[.{fingerprint=1h4fzw049r}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -976,8 +1018,8 @@
       "RelatedAsset": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/css/site.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "i71ggdq1cu",
-      "Integrity": "Hq5pZUlVlasV9RZG/jgnjHBYvXDeSh6i7EJrtseSMBs=",
+      "Fingerprint": "0bsw74v26k",
+      "Integrity": "tEFlB3iGxDyMVE0zBnfSrSTztWwmUTSEuRhND3EkKC8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/css/site.css"
@@ -1172,12 +1214,12 @@
       "OriginalItemSpec": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/t3j2i6gjq1-1an9afe329.gz",
+      "Identity": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/t3j2i6gjq1-bozexg6hxr.gz",
       "SourceId": "MusicProject",
       "SourceType": "Discovered",
       "ContentRoot": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/MusicProject",
-      "RelativePath": "css/homeStyle#[.{fingerprint=1an9afe329}]?.css.gz",
+      "RelativePath": "css/homeStyle#[.{fingerprint=bozexg6hxr}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -1186,8 +1228,8 @@
       "RelatedAsset": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/css/homeStyle.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "vh085div8y",
-      "Integrity": "gw2pebZVEeVlc5imyaM2YyTowSN6MyIBufuCGg36oFU=",
+      "Fingerprint": "ypf7mt3j2q",
+      "Integrity": "VqXjoWBpQTkdxzjbnlJSoKV5zsJn1mZgTeoZDfexf4M=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/css/homeStyle.css"
@@ -1396,8 +1438,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ApplicationBundle",
-      "Fingerprint": "cs096rndtk",
-      "Integrity": "PC5AxujYDpNG+F87e2ZuQgl7g/5zd17IBK7zdJUOOX4=",
+      "Fingerprint": "jrzzclp0ps",
+      "Integrity": "zy++OOXAxJYqwtTUhHuccbbenvYM8F7L+tWU5fGo7Cs=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/scopedcss/bundle/MusicProject.styles.css"
@@ -1417,8 +1459,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ProjectBundle",
-      "Fingerprint": "cs096rndtk",
-      "Integrity": "PC5AxujYDpNG+F87e2ZuQgl7g/5zd17IBK7zdJUOOX4=",
+      "Fingerprint": "jrzzclp0ps",
+      "Integrity": "zy++OOXAxJYqwtTUhHuccbbenvYM8F7L+tWU5fGo7Cs=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/scopedcss/projectbundle/MusicProject.bundle.scp.css"
@@ -1438,8 +1480,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "1an9afe329",
-      "Integrity": "GWTq5/Xvg2lrsK8Vwe7t62gvwKQ01hCeDwJS9oGdJEM=",
+      "Fingerprint": "bozexg6hxr",
+      "Integrity": "G03Mt8OHJTYRtpiwA59tHzaps5X5pQ0RlALoCuBjLBI=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/css/homeStyle.css"
@@ -1459,8 +1501,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "upz73v5b6j",
-      "Integrity": "boAZ+bus2SX3EcJQJxkjUisTuNVaaHIOiga0rW1M4zg=",
+      "Fingerprint": "1h4fzw049r",
+      "Integrity": "m7iB47ho9MuguwV+rsy8ZsX9Q6cIdTAhZIvzcAEdPlQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/css/site.css"
@@ -1487,6 +1529,27 @@
       "OriginalItemSpec": "wwwroot/favicon.ico"
     },
     {
+      "Identity": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/js/HomeScript.js",
+      "SourceId": "MusicProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/",
+      "BasePath": "_content/MusicProject",
+      "RelativePath": "js/HomeScript#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "rxwy1cyhkd",
+      "Integrity": "wXMj+7zcXFnYeev/Oo1QkfKu4nZsmeex69ixSdnvVNU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/js/HomeScript.js"
+    },
+    {
       "Identity": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/js/site.js",
       "SourceId": "MusicProject",
       "SourceType": "Discovered",
@@ -1506,6 +1569,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/js/site.js"
+    },
+    {
+      "Identity": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/json/CircleAnimation.json",
+      "SourceId": "MusicProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/",
+      "BasePath": "_content/MusicProject",
+      "RelativePath": "json/CircleAnimation#[.{fingerprint}]?.json",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "i457ibwxol",
+      "Integrity": "TkwUalgnJRPSuSAeBSHwC3Ogvt4SZmetBwkW22aaX8I=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/json/CircleAnimation.json"
     },
     {
       "Identity": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
@@ -2766,17 +2850,59 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/lib/jquery/LICENSE.txt"
+    },
+    {
+      "Identity": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/video/You look lonely Scene (No song on it, for making edits) HD _ Blade Runner 2049.mp4",
+      "SourceId": "MusicProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/",
+      "BasePath": "_content/MusicProject",
+      "RelativePath": "video/You look lonely Scene (No song on it, for making edits) HD _ Blade Runner 2049#[.{fingerprint}]?.mp4",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "85uzq2obk0",
+      "Integrity": "XGVzMOpnl8YN1US6W91EE2g856hhQhqIChbJkJBU5II=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/video/You look lonely Scene (No song on it, for making edits) HD _ Blade Runner 2049.mp4"
+    },
+    {
+      "Identity": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/video/you look LONELY! _ bocchi the rock! × blade runner 2049 × STAN.mp4",
+      "SourceId": "MusicProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/",
+      "BasePath": "_content/MusicProject",
+      "RelativePath": "video/you look LONELY! _ bocchi the rock! × blade runner 2049 × STAN#[.{fingerprint}]?.mp4",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "vvrmvcz6wy",
+      "Integrity": "qxWHgqdYgNJYYF/zRGEMHMkqNoh1gxEOMfTFTpbp3r8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/video/you look LONELY! _ bocchi the rock! × blade runner 2049 × STAN.mp4"
     }
   ],
   "Endpoints": [
     {
-      "Route": "css/homeStyle.1an9afe329.css",
-      "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/t3j2i6gjq1-1an9afe329.gz",
+      "Route": "css/homeStyle.bozexg6hxr.css",
+      "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/t3j2i6gjq1-bozexg6hxr.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.002079002079"
+          "Quality": "0.001183431953"
         }
       ],
       "ResponseHeaders": [
@@ -2786,15 +2912,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "480"
+          "Value": "844"
         },
         {
           "Name": "ETag",
-          "Value": "\"gw2pebZVEeVlc5imyaM2YyTowSN6MyIBufuCGg36oFU=\""
+          "Value": "\"VqXjoWBpQTkdxzjbnlJSoKV5zsJn1mZgTeoZDfexf4M=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 05 Oct 2025 07:05:34 GMT"
+          "Value": "Tue, 07 Oct 2025 14:34:38 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2814,13 +2940,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"GWTq5/Xvg2lrsK8Vwe7t62gvwKQ01hCeDwJS9oGdJEM=\""
+          "Value": "W/\"G03Mt8OHJTYRtpiwA59tHzaps5X5pQ0RlALoCuBjLBI=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "1an9afe329"
+          "Value": "bozexg6hxr"
         },
         {
           "Name": "label",
@@ -2828,12 +2954,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-GWTq5/Xvg2lrsK8Vwe7t62gvwKQ01hCeDwJS9oGdJEM="
+          "Value": "sha256-G03Mt8OHJTYRtpiwA59tHzaps5X5pQ0RlALoCuBjLBI="
         }
       ]
     },
     {
-      "Route": "css/homeStyle.1an9afe329.css",
+      "Route": "css/homeStyle.bozexg6hxr.css",
       "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/css/homeStyle.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -2843,7 +2969,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1107"
+          "Value": "2372"
         },
         {
           "Name": "Content-Type",
@@ -2851,11 +2977,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"GWTq5/Xvg2lrsK8Vwe7t62gvwKQ01hCeDwJS9oGdJEM=\""
+          "Value": "\"G03Mt8OHJTYRtpiwA59tHzaps5X5pQ0RlALoCuBjLBI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 05 Oct 2025 07:05:34 GMT"
+          "Value": "Tue, 07 Oct 2025 14:34:38 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2865,7 +2991,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "1an9afe329"
+          "Value": "bozexg6hxr"
         },
         {
           "Name": "label",
@@ -2873,13 +2999,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-GWTq5/Xvg2lrsK8Vwe7t62gvwKQ01hCeDwJS9oGdJEM="
+          "Value": "sha256-G03Mt8OHJTYRtpiwA59tHzaps5X5pQ0RlALoCuBjLBI="
         }
       ]
     },
     {
-      "Route": "css/homeStyle.1an9afe329.css.gz",
-      "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/t3j2i6gjq1-1an9afe329.gz",
+      "Route": "css/homeStyle.bozexg6hxr.css.gz",
+      "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/t3j2i6gjq1-bozexg6hxr.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2888,7 +3014,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "480"
+          "Value": "844"
         },
         {
           "Name": "Content-Type",
@@ -2896,11 +3022,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"gw2pebZVEeVlc5imyaM2YyTowSN6MyIBufuCGg36oFU=\""
+          "Value": "\"VqXjoWBpQTkdxzjbnlJSoKV5zsJn1mZgTeoZDfexf4M=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 05 Oct 2025 07:05:34 GMT"
+          "Value": "Tue, 07 Oct 2025 14:34:38 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2918,7 +3044,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "1an9afe329"
+          "Value": "bozexg6hxr"
         },
         {
           "Name": "label",
@@ -2926,18 +3052,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-gw2pebZVEeVlc5imyaM2YyTowSN6MyIBufuCGg36oFU="
+          "Value": "sha256-VqXjoWBpQTkdxzjbnlJSoKV5zsJn1mZgTeoZDfexf4M="
         }
       ]
     },
     {
       "Route": "css/homeStyle.css",
-      "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/t3j2i6gjq1-1an9afe329.gz",
+      "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/t3j2i6gjq1-bozexg6hxr.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.002079002079"
+          "Quality": "0.001183431953"
         }
       ],
       "ResponseHeaders": [
@@ -2947,15 +3073,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "480"
+          "Value": "844"
         },
         {
           "Name": "ETag",
-          "Value": "\"gw2pebZVEeVlc5imyaM2YyTowSN6MyIBufuCGg36oFU=\""
+          "Value": "\"VqXjoWBpQTkdxzjbnlJSoKV5zsJn1mZgTeoZDfexf4M=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 05 Oct 2025 07:05:34 GMT"
+          "Value": "Tue, 07 Oct 2025 14:34:38 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2975,13 +3101,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"GWTq5/Xvg2lrsK8Vwe7t62gvwKQ01hCeDwJS9oGdJEM=\""
+          "Value": "W/\"G03Mt8OHJTYRtpiwA59tHzaps5X5pQ0RlALoCuBjLBI=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-GWTq5/Xvg2lrsK8Vwe7t62gvwKQ01hCeDwJS9oGdJEM="
+          "Value": "sha256-G03Mt8OHJTYRtpiwA59tHzaps5X5pQ0RlALoCuBjLBI="
         }
       ]
     },
@@ -2996,7 +3122,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1107"
+          "Value": "2372"
         },
         {
           "Name": "Content-Type",
@@ -3004,11 +3130,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"GWTq5/Xvg2lrsK8Vwe7t62gvwKQ01hCeDwJS9oGdJEM=\""
+          "Value": "\"G03Mt8OHJTYRtpiwA59tHzaps5X5pQ0RlALoCuBjLBI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 05 Oct 2025 07:05:34 GMT"
+          "Value": "Tue, 07 Oct 2025 14:34:38 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3018,13 +3144,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-GWTq5/Xvg2lrsK8Vwe7t62gvwKQ01hCeDwJS9oGdJEM="
+          "Value": "sha256-G03Mt8OHJTYRtpiwA59tHzaps5X5pQ0RlALoCuBjLBI="
         }
       ]
     },
     {
       "Route": "css/homeStyle.css.gz",
-      "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/t3j2i6gjq1-1an9afe329.gz",
+      "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/t3j2i6gjq1-bozexg6hxr.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3033,7 +3159,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "480"
+          "Value": "844"
         },
         {
           "Name": "Content-Type",
@@ -3041,11 +3167,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"gw2pebZVEeVlc5imyaM2YyTowSN6MyIBufuCGg36oFU=\""
+          "Value": "\"VqXjoWBpQTkdxzjbnlJSoKV5zsJn1mZgTeoZDfexf4M=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 05 Oct 2025 07:05:34 GMT"
+          "Value": "Tue, 07 Oct 2025 14:34:38 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3063,18 +3189,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-gw2pebZVEeVlc5imyaM2YyTowSN6MyIBufuCGg36oFU="
+          "Value": "sha256-VqXjoWBpQTkdxzjbnlJSoKV5zsJn1mZgTeoZDfexf4M="
         }
       ]
     },
     {
-      "Route": "css/site.css",
-      "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/opu0mkbp30-upz73v5b6j.gz",
+      "Route": "css/site.1h4fzw049r.css",
+      "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/opu0mkbp30-1h4fzw049r.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.002570694087"
+          "Quality": "0.001103752759"
         }
       ],
       "ResponseHeaders": [
@@ -3084,19 +3210,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "388"
+          "Value": "905"
         },
         {
           "Name": "ETag",
-          "Value": "\"Hq5pZUlVlasV9RZG/jgnjHBYvXDeSh6i7EJrtseSMBs=\""
+          "Value": "\"tEFlB3iGxDyMVE0zBnfSrSTztWwmUTSEuRhND3EkKC8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 05 Oct 2025 06:51:21 GMT"
+          "Value": "Sun, 05 Oct 2025 15:02:28 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "no-cache"
+          "Value": "max-age=31536000, immutable"
         },
         {
           "Name": "Content-Encoding",
@@ -3112,18 +3238,26 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"boAZ+bus2SX3EcJQJxkjUisTuNVaaHIOiga0rW1M4zg=\""
+          "Value": "W/\"m7iB47ho9MuguwV+rsy8ZsX9Q6cIdTAhZIvzcAEdPlQ=\""
         }
       ],
       "EndpointProperties": [
         {
+          "Name": "fingerprint",
+          "Value": "1h4fzw049r"
+        },
+        {
+          "Name": "label",
+          "Value": "css/site.css"
+        },
+        {
           "Name": "integrity",
-          "Value": "sha256-boAZ+bus2SX3EcJQJxkjUisTuNVaaHIOiga0rW1M4zg="
+          "Value": "sha256-m7iB47ho9MuguwV+rsy8ZsX9Q6cIdTAhZIvzcAEdPlQ="
         }
       ]
     },
     {
-      "Route": "css/site.css",
+      "Route": "css/site.1h4fzw049r.css",
       "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/css/site.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -3133,7 +3267,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "856"
+          "Value": "2240"
         },
         {
           "Name": "Content-Type",
@@ -3141,121 +3275,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"boAZ+bus2SX3EcJQJxkjUisTuNVaaHIOiga0rW1M4zg=\""
+          "Value": "\"m7iB47ho9MuguwV+rsy8ZsX9Q6cIdTAhZIvzcAEdPlQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 05 Oct 2025 06:51:21 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-boAZ+bus2SX3EcJQJxkjUisTuNVaaHIOiga0rW1M4zg="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.css.gz",
-      "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/opu0mkbp30-upz73v5b6j.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "388"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Hq5pZUlVlasV9RZG/jgnjHBYvXDeSh6i7EJrtseSMBs=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 05 Oct 2025 06:51:21 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-Hq5pZUlVlasV9RZG/jgnjHBYvXDeSh6i7EJrtseSMBs="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.upz73v5b6j.css",
-      "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/opu0mkbp30-upz73v5b6j.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.002570694087"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "388"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Hq5pZUlVlasV9RZG/jgnjHBYvXDeSh6i7EJrtseSMBs=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 05 Oct 2025 06:51:21 GMT"
+          "Value": "Sun, 05 Oct 2025 15:02:28 GMT"
         },
         {
           "Name": "Cache-Control",
           "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"boAZ+bus2SX3EcJQJxkjUisTuNVaaHIOiga0rW1M4zg=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "upz73v5b6j"
+          "Value": "1h4fzw049r"
         },
         {
           "Name": "label",
@@ -3263,13 +3297,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-boAZ+bus2SX3EcJQJxkjUisTuNVaaHIOiga0rW1M4zg="
+          "Value": "sha256-m7iB47ho9MuguwV+rsy8ZsX9Q6cIdTAhZIvzcAEdPlQ="
         }
       ]
     },
     {
-      "Route": "css/site.upz73v5b6j.css",
-      "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/css/site.css",
+      "Route": "css/site.1h4fzw049r.css.gz",
+      "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/opu0mkbp30-1h4fzw049r.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3278,7 +3312,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "856"
+          "Value": "905"
         },
         {
           "Name": "Content-Type",
@@ -3286,56 +3320,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"boAZ+bus2SX3EcJQJxkjUisTuNVaaHIOiga0rW1M4zg=\""
+          "Value": "\"tEFlB3iGxDyMVE0zBnfSrSTztWwmUTSEuRhND3EkKC8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 05 Oct 2025 06:51:21 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "upz73v5b6j"
-        },
-        {
-          "Name": "label",
-          "Value": "css/site.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-boAZ+bus2SX3EcJQJxkjUisTuNVaaHIOiga0rW1M4zg="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.upz73v5b6j.css.gz",
-      "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/opu0mkbp30-upz73v5b6j.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "388"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Hq5pZUlVlasV9RZG/jgnjHBYvXDeSh6i7EJrtseSMBs=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 05 Oct 2025 06:51:21 GMT"
+          "Value": "Sun, 05 Oct 2025 15:02:28 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3353,7 +3342,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "upz73v5b6j"
+          "Value": "1h4fzw049r"
         },
         {
           "Name": "label",
@@ -3361,7 +3350,144 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Hq5pZUlVlasV9RZG/jgnjHBYvXDeSh6i7EJrtseSMBs="
+          "Value": "sha256-tEFlB3iGxDyMVE0zBnfSrSTztWwmUTSEuRhND3EkKC8="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.css",
+      "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/opu0mkbp30-1h4fzw049r.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001103752759"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "905"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tEFlB3iGxDyMVE0zBnfSrSTztWwmUTSEuRhND3EkKC8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 05 Oct 2025 15:02:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"m7iB47ho9MuguwV+rsy8ZsX9Q6cIdTAhZIvzcAEdPlQ=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-m7iB47ho9MuguwV+rsy8ZsX9Q6cIdTAhZIvzcAEdPlQ="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.css",
+      "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/css/site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2240"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"m7iB47ho9MuguwV+rsy8ZsX9Q6cIdTAhZIvzcAEdPlQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 05 Oct 2025 15:02:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-m7iB47ho9MuguwV+rsy8ZsX9Q6cIdTAhZIvzcAEdPlQ="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.css.gz",
+      "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/opu0mkbp30-1h4fzw049r.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "905"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tEFlB3iGxDyMVE0zBnfSrSTztWwmUTSEuRhND3EkKC8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 05 Oct 2025 15:02:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-tEFlB3iGxDyMVE0zBnfSrSTztWwmUTSEuRhND3EkKC8="
         }
       ]
     },
@@ -3664,6 +3790,304 @@
       ]
     },
     {
+      "Route": "js/HomeScript.js",
+      "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/g5lue61wcw-rxwy1cyhkd.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001926782274"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "518"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"30DfRkGK+wroRDN27U+aq4tS4eafHrkPMwvJYbiVoW8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 07 Oct 2025 16:05:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"wXMj+7zcXFnYeev/Oo1QkfKu4nZsmeex69ixSdnvVNU=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-wXMj+7zcXFnYeev/Oo1QkfKu4nZsmeex69ixSdnvVNU="
+        }
+      ]
+    },
+    {
+      "Route": "js/HomeScript.js",
+      "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/js/HomeScript.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1079"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"wXMj+7zcXFnYeev/Oo1QkfKu4nZsmeex69ixSdnvVNU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 07 Oct 2025 16:05:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-wXMj+7zcXFnYeev/Oo1QkfKu4nZsmeex69ixSdnvVNU="
+        }
+      ]
+    },
+    {
+      "Route": "js/HomeScript.js.gz",
+      "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/g5lue61wcw-rxwy1cyhkd.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "518"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"30DfRkGK+wroRDN27U+aq4tS4eafHrkPMwvJYbiVoW8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 07 Oct 2025 16:05:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-30DfRkGK+wroRDN27U+aq4tS4eafHrkPMwvJYbiVoW8="
+        }
+      ]
+    },
+    {
+      "Route": "js/HomeScript.rxwy1cyhkd.js",
+      "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/g5lue61wcw-rxwy1cyhkd.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001926782274"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "518"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"30DfRkGK+wroRDN27U+aq4tS4eafHrkPMwvJYbiVoW8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 07 Oct 2025 16:05:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"wXMj+7zcXFnYeev/Oo1QkfKu4nZsmeex69ixSdnvVNU=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "rxwy1cyhkd"
+        },
+        {
+          "Name": "label",
+          "Value": "js/HomeScript.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-wXMj+7zcXFnYeev/Oo1QkfKu4nZsmeex69ixSdnvVNU="
+        }
+      ]
+    },
+    {
+      "Route": "js/HomeScript.rxwy1cyhkd.js",
+      "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/js/HomeScript.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1079"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"wXMj+7zcXFnYeev/Oo1QkfKu4nZsmeex69ixSdnvVNU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 07 Oct 2025 16:05:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "rxwy1cyhkd"
+        },
+        {
+          "Name": "label",
+          "Value": "js/HomeScript.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-wXMj+7zcXFnYeev/Oo1QkfKu4nZsmeex69ixSdnvVNU="
+        }
+      ]
+    },
+    {
+      "Route": "js/HomeScript.rxwy1cyhkd.js.gz",
+      "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/g5lue61wcw-rxwy1cyhkd.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "518"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"30DfRkGK+wroRDN27U+aq4tS4eafHrkPMwvJYbiVoW8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 07 Oct 2025 16:05:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "rxwy1cyhkd"
+        },
+        {
+          "Name": "label",
+          "Value": "js/HomeScript.js.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-30DfRkGK+wroRDN27U+aq4tS4eafHrkPMwvJYbiVoW8="
+        }
+      ]
+    },
+    {
       "Route": "js/site.fr7q2aak1r.js",
       "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/vksf9zyl4d-fr7q2aak1r.gz",
       "Selectors": [
@@ -3958,6 +4382,304 @@
         {
           "Name": "integrity",
           "Value": "sha256-BQhBAKoXoW17dhLG0X94gHeT/Q3IS9PmOA4Fhs5cEDw="
+        }
+      ]
+    },
+    {
+      "Route": "json/CircleAnimation.i457ibwxol.json",
+      "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/7ck516i26i-i457ibwxol.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000468603561"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2133"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2ytvAmJdKxqo/DaLqaXqptdSE9G2cj38EAvKdxb8jKc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 07 Oct 2025 15:33:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"TkwUalgnJRPSuSAeBSHwC3Ogvt4SZmetBwkW22aaX8I=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "i457ibwxol"
+        },
+        {
+          "Name": "label",
+          "Value": "json/CircleAnimation.json"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-TkwUalgnJRPSuSAeBSHwC3Ogvt4SZmetBwkW22aaX8I="
+        }
+      ]
+    },
+    {
+      "Route": "json/CircleAnimation.i457ibwxol.json",
+      "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/json/CircleAnimation.json",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "31829"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TkwUalgnJRPSuSAeBSHwC3Ogvt4SZmetBwkW22aaX8I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 07 Oct 2025 15:33:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "i457ibwxol"
+        },
+        {
+          "Name": "label",
+          "Value": "json/CircleAnimation.json"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-TkwUalgnJRPSuSAeBSHwC3Ogvt4SZmetBwkW22aaX8I="
+        }
+      ]
+    },
+    {
+      "Route": "json/CircleAnimation.i457ibwxol.json.gz",
+      "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/7ck516i26i-i457ibwxol.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2133"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2ytvAmJdKxqo/DaLqaXqptdSE9G2cj38EAvKdxb8jKc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 07 Oct 2025 15:33:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "i457ibwxol"
+        },
+        {
+          "Name": "label",
+          "Value": "json/CircleAnimation.json.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-2ytvAmJdKxqo/DaLqaXqptdSE9G2cj38EAvKdxb8jKc="
+        }
+      ]
+    },
+    {
+      "Route": "json/CircleAnimation.json",
+      "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/7ck516i26i-i457ibwxol.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000468603561"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2133"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2ytvAmJdKxqo/DaLqaXqptdSE9G2cj38EAvKdxb8jKc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 07 Oct 2025 15:33:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"TkwUalgnJRPSuSAeBSHwC3Ogvt4SZmetBwkW22aaX8I=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-TkwUalgnJRPSuSAeBSHwC3Ogvt4SZmetBwkW22aaX8I="
+        }
+      ]
+    },
+    {
+      "Route": "json/CircleAnimation.json",
+      "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/json/CircleAnimation.json",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "31829"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TkwUalgnJRPSuSAeBSHwC3Ogvt4SZmetBwkW22aaX8I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 07 Oct 2025 15:33:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-TkwUalgnJRPSuSAeBSHwC3Ogvt4SZmetBwkW22aaX8I="
+        }
+      ]
+    },
+    {
+      "Route": "json/CircleAnimation.json.gz",
+      "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/7ck516i26i-i457ibwxol.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2133"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2ytvAmJdKxqo/DaLqaXqptdSE9G2cj38EAvKdxb8jKc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 07 Oct 2025 15:33:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-2ytvAmJdKxqo/DaLqaXqptdSE9G2cj38EAvKdxb8jKc="
         }
       ]
     },
@@ -21627,12 +22349,12 @@
     },
     {
       "Route": "MusicProject.bundle.scp.css",
-      "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/a6uekbjs1f-cs096rndtk.gz",
+      "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/a6uekbjs1f-jrzzclp0ps.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001886792453"
+          "Quality": "0.001890359168"
         }
       ],
       "ResponseHeaders": [
@@ -21642,15 +22364,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "529"
+          "Value": "528"
         },
         {
           "Name": "ETag",
-          "Value": "\"fLeKVL2tUVO0yWKaEpFc10QQdSB8eB45v64EvJz9Id0=\""
+          "Value": "\"dBAA8yqke8wVVeeGQLTQyOBNgaTj6qGuiU+fQEo13vs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 05 Oct 2025 05:27:18 GMT"
+          "Value": "Tue, 07 Oct 2025 14:23:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -21670,13 +22392,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"PC5AxujYDpNG+F87e2ZuQgl7g/5zd17IBK7zdJUOOX4=\""
+          "Value": "W/\"zy++OOXAxJYqwtTUhHuccbbenvYM8F7L+tWU5fGo7Cs=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-PC5AxujYDpNG+F87e2ZuQgl7g/5zd17IBK7zdJUOOX4="
+          "Value": "sha256-zy++OOXAxJYqwtTUhHuccbbenvYM8F7L+tWU5fGo7Cs="
         }
       ]
     },
@@ -21691,7 +22413,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1066"
+          "Value": "1064"
         },
         {
           "Name": "Content-Type",
@@ -21699,11 +22421,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"PC5AxujYDpNG+F87e2ZuQgl7g/5zd17IBK7zdJUOOX4=\""
+          "Value": "\"zy++OOXAxJYqwtTUhHuccbbenvYM8F7L+tWU5fGo7Cs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 05 Oct 2025 05:27:18 GMT"
+          "Value": "Tue, 07 Oct 2025 14:23:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -21713,13 +22435,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-PC5AxujYDpNG+F87e2ZuQgl7g/5zd17IBK7zdJUOOX4="
+          "Value": "sha256-zy++OOXAxJYqwtTUhHuccbbenvYM8F7L+tWU5fGo7Cs="
         }
       ]
     },
     {
       "Route": "MusicProject.bundle.scp.css.gz",
-      "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/a6uekbjs1f-cs096rndtk.gz",
+      "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/a6uekbjs1f-jrzzclp0ps.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -21728,7 +22450,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "529"
+          "Value": "528"
         },
         {
           "Name": "Content-Type",
@@ -21736,11 +22458,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"fLeKVL2tUVO0yWKaEpFc10QQdSB8eB45v64EvJz9Id0=\""
+          "Value": "\"dBAA8yqke8wVVeeGQLTQyOBNgaTj6qGuiU+fQEo13vs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 05 Oct 2025 05:27:18 GMT"
+          "Value": "Tue, 07 Oct 2025 14:23:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -21758,18 +22480,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-fLeKVL2tUVO0yWKaEpFc10QQdSB8eB45v64EvJz9Id0="
+          "Value": "sha256-dBAA8yqke8wVVeeGQLTQyOBNgaTj6qGuiU+fQEo13vs="
         }
       ]
     },
     {
-      "Route": "MusicProject.cs096rndtk.bundle.scp.css",
-      "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/a6uekbjs1f-cs096rndtk.gz",
+      "Route": "MusicProject.jrzzclp0ps.bundle.scp.css",
+      "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/a6uekbjs1f-jrzzclp0ps.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001886792453"
+          "Quality": "0.001890359168"
         }
       ],
       "ResponseHeaders": [
@@ -21779,15 +22501,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "529"
+          "Value": "528"
         },
         {
           "Name": "ETag",
-          "Value": "\"fLeKVL2tUVO0yWKaEpFc10QQdSB8eB45v64EvJz9Id0=\""
+          "Value": "\"dBAA8yqke8wVVeeGQLTQyOBNgaTj6qGuiU+fQEo13vs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 05 Oct 2025 05:27:18 GMT"
+          "Value": "Tue, 07 Oct 2025 14:23:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -21807,13 +22529,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"PC5AxujYDpNG+F87e2ZuQgl7g/5zd17IBK7zdJUOOX4=\""
+          "Value": "W/\"zy++OOXAxJYqwtTUhHuccbbenvYM8F7L+tWU5fGo7Cs=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "cs096rndtk"
+          "Value": "jrzzclp0ps"
         },
         {
           "Name": "label",
@@ -21821,12 +22543,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-PC5AxujYDpNG+F87e2ZuQgl7g/5zd17IBK7zdJUOOX4="
+          "Value": "sha256-zy++OOXAxJYqwtTUhHuccbbenvYM8F7L+tWU5fGo7Cs="
         }
       ]
     },
     {
-      "Route": "MusicProject.cs096rndtk.bundle.scp.css",
+      "Route": "MusicProject.jrzzclp0ps.bundle.scp.css",
       "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/scopedcss/projectbundle/MusicProject.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -21836,7 +22558,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1066"
+          "Value": "1064"
         },
         {
           "Name": "Content-Type",
@@ -21844,11 +22566,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"PC5AxujYDpNG+F87e2ZuQgl7g/5zd17IBK7zdJUOOX4=\""
+          "Value": "\"zy++OOXAxJYqwtTUhHuccbbenvYM8F7L+tWU5fGo7Cs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 05 Oct 2025 05:27:18 GMT"
+          "Value": "Tue, 07 Oct 2025 14:23:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -21858,7 +22580,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "cs096rndtk"
+          "Value": "jrzzclp0ps"
         },
         {
           "Name": "label",
@@ -21866,13 +22588,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-PC5AxujYDpNG+F87e2ZuQgl7g/5zd17IBK7zdJUOOX4="
+          "Value": "sha256-zy++OOXAxJYqwtTUhHuccbbenvYM8F7L+tWU5fGo7Cs="
         }
       ]
     },
     {
-      "Route": "MusicProject.cs096rndtk.bundle.scp.css.gz",
-      "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/a6uekbjs1f-cs096rndtk.gz",
+      "Route": "MusicProject.jrzzclp0ps.bundle.scp.css.gz",
+      "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/a6uekbjs1f-jrzzclp0ps.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -21881,7 +22603,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "529"
+          "Value": "528"
         },
         {
           "Name": "Content-Type",
@@ -21889,11 +22611,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"fLeKVL2tUVO0yWKaEpFc10QQdSB8eB45v64EvJz9Id0=\""
+          "Value": "\"dBAA8yqke8wVVeeGQLTQyOBNgaTj6qGuiU+fQEo13vs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 05 Oct 2025 05:27:18 GMT"
+          "Value": "Tue, 07 Oct 2025 14:23:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -21911,7 +22633,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "cs096rndtk"
+          "Value": "jrzzclp0ps"
         },
         {
           "Name": "label",
@@ -21919,18 +22641,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-fLeKVL2tUVO0yWKaEpFc10QQdSB8eB45v64EvJz9Id0="
+          "Value": "sha256-dBAA8yqke8wVVeeGQLTQyOBNgaTj6qGuiU+fQEo13vs="
         }
       ]
     },
     {
-      "Route": "MusicProject.cs096rndtk.styles.css",
-      "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/9yu9apoo12-cs096rndtk.gz",
+      "Route": "MusicProject.jrzzclp0ps.styles.css",
+      "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/9yu9apoo12-jrzzclp0ps.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001886792453"
+          "Quality": "0.001890359168"
         }
       ],
       "ResponseHeaders": [
@@ -21940,15 +22662,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "529"
+          "Value": "528"
         },
         {
           "Name": "ETag",
-          "Value": "\"fLeKVL2tUVO0yWKaEpFc10QQdSB8eB45v64EvJz9Id0=\""
+          "Value": "\"dBAA8yqke8wVVeeGQLTQyOBNgaTj6qGuiU+fQEo13vs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 05 Oct 2025 05:27:18 GMT"
+          "Value": "Tue, 07 Oct 2025 14:23:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -21968,13 +22690,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"PC5AxujYDpNG+F87e2ZuQgl7g/5zd17IBK7zdJUOOX4=\""
+          "Value": "W/\"zy++OOXAxJYqwtTUhHuccbbenvYM8F7L+tWU5fGo7Cs=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "cs096rndtk"
+          "Value": "jrzzclp0ps"
         },
         {
           "Name": "label",
@@ -21982,12 +22704,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-PC5AxujYDpNG+F87e2ZuQgl7g/5zd17IBK7zdJUOOX4="
+          "Value": "sha256-zy++OOXAxJYqwtTUhHuccbbenvYM8F7L+tWU5fGo7Cs="
         }
       ]
     },
     {
-      "Route": "MusicProject.cs096rndtk.styles.css",
+      "Route": "MusicProject.jrzzclp0ps.styles.css",
       "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/scopedcss/bundle/MusicProject.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -21997,7 +22719,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1066"
+          "Value": "1064"
         },
         {
           "Name": "Content-Type",
@@ -22005,11 +22727,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"PC5AxujYDpNG+F87e2ZuQgl7g/5zd17IBK7zdJUOOX4=\""
+          "Value": "\"zy++OOXAxJYqwtTUhHuccbbenvYM8F7L+tWU5fGo7Cs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 05 Oct 2025 05:27:18 GMT"
+          "Value": "Tue, 07 Oct 2025 14:23:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22019,7 +22741,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "cs096rndtk"
+          "Value": "jrzzclp0ps"
         },
         {
           "Name": "label",
@@ -22027,13 +22749,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-PC5AxujYDpNG+F87e2ZuQgl7g/5zd17IBK7zdJUOOX4="
+          "Value": "sha256-zy++OOXAxJYqwtTUhHuccbbenvYM8F7L+tWU5fGo7Cs="
         }
       ]
     },
     {
-      "Route": "MusicProject.cs096rndtk.styles.css.gz",
-      "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/9yu9apoo12-cs096rndtk.gz",
+      "Route": "MusicProject.jrzzclp0ps.styles.css.gz",
+      "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/9yu9apoo12-jrzzclp0ps.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -22042,7 +22764,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "529"
+          "Value": "528"
         },
         {
           "Name": "Content-Type",
@@ -22050,11 +22772,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"fLeKVL2tUVO0yWKaEpFc10QQdSB8eB45v64EvJz9Id0=\""
+          "Value": "\"dBAA8yqke8wVVeeGQLTQyOBNgaTj6qGuiU+fQEo13vs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 05 Oct 2025 05:27:18 GMT"
+          "Value": "Tue, 07 Oct 2025 14:23:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22072,7 +22794,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "cs096rndtk"
+          "Value": "jrzzclp0ps"
         },
         {
           "Name": "label",
@@ -22080,18 +22802,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-fLeKVL2tUVO0yWKaEpFc10QQdSB8eB45v64EvJz9Id0="
+          "Value": "sha256-dBAA8yqke8wVVeeGQLTQyOBNgaTj6qGuiU+fQEo13vs="
         }
       ]
     },
     {
       "Route": "MusicProject.styles.css",
-      "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/9yu9apoo12-cs096rndtk.gz",
+      "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/9yu9apoo12-jrzzclp0ps.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001886792453"
+          "Quality": "0.001890359168"
         }
       ],
       "ResponseHeaders": [
@@ -22101,15 +22823,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "529"
+          "Value": "528"
         },
         {
           "Name": "ETag",
-          "Value": "\"fLeKVL2tUVO0yWKaEpFc10QQdSB8eB45v64EvJz9Id0=\""
+          "Value": "\"dBAA8yqke8wVVeeGQLTQyOBNgaTj6qGuiU+fQEo13vs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 05 Oct 2025 05:27:18 GMT"
+          "Value": "Tue, 07 Oct 2025 14:23:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22129,13 +22851,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"PC5AxujYDpNG+F87e2ZuQgl7g/5zd17IBK7zdJUOOX4=\""
+          "Value": "W/\"zy++OOXAxJYqwtTUhHuccbbenvYM8F7L+tWU5fGo7Cs=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-PC5AxujYDpNG+F87e2ZuQgl7g/5zd17IBK7zdJUOOX4="
+          "Value": "sha256-zy++OOXAxJYqwtTUhHuccbbenvYM8F7L+tWU5fGo7Cs="
         }
       ]
     },
@@ -22150,7 +22872,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1066"
+          "Value": "1064"
         },
         {
           "Name": "Content-Type",
@@ -22158,11 +22880,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"PC5AxujYDpNG+F87e2ZuQgl7g/5zd17IBK7zdJUOOX4=\""
+          "Value": "\"zy++OOXAxJYqwtTUhHuccbbenvYM8F7L+tWU5fGo7Cs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 05 Oct 2025 05:27:18 GMT"
+          "Value": "Tue, 07 Oct 2025 14:23:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22172,13 +22894,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-PC5AxujYDpNG+F87e2ZuQgl7g/5zd17IBK7zdJUOOX4="
+          "Value": "sha256-zy++OOXAxJYqwtTUhHuccbbenvYM8F7L+tWU5fGo7Cs="
         }
       ]
     },
     {
       "Route": "MusicProject.styles.css.gz",
-      "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/9yu9apoo12-cs096rndtk.gz",
+      "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/9yu9apoo12-jrzzclp0ps.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -22187,7 +22909,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "529"
+          "Value": "528"
         },
         {
           "Name": "Content-Type",
@@ -22195,11 +22917,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"fLeKVL2tUVO0yWKaEpFc10QQdSB8eB45v64EvJz9Id0=\""
+          "Value": "\"dBAA8yqke8wVVeeGQLTQyOBNgaTj6qGuiU+fQEo13vs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 05 Oct 2025 05:27:18 GMT"
+          "Value": "Tue, 07 Oct 2025 14:23:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22217,7 +22939,171 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-fLeKVL2tUVO0yWKaEpFc10QQdSB8eB45v64EvJz9Id0="
+          "Value": "sha256-dBAA8yqke8wVVeeGQLTQyOBNgaTj6qGuiU+fQEo13vs="
+        }
+      ]
+    },
+    {
+      "Route": "video/You look lonely Scene (No song on it, for making edits) HD _ Blade Runner 2049.85uzq2obk0.mp4",
+      "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/video/You look lonely Scene (No song on it, for making edits) HD _ Blade Runner 2049.mp4",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3279947"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "video/mp4"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XGVzMOpnl8YN1US6W91EE2g856hhQhqIChbJkJBU5II=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 05 Oct 2025 14:08:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "85uzq2obk0"
+        },
+        {
+          "Name": "label",
+          "Value": "video/You look lonely Scene (No song on it, for making edits) HD _ Blade Runner 2049.mp4"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-XGVzMOpnl8YN1US6W91EE2g856hhQhqIChbJkJBU5II="
+        }
+      ]
+    },
+    {
+      "Route": "video/You look lonely Scene (No song on it, for making edits) HD _ Blade Runner 2049.mp4",
+      "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/video/You look lonely Scene (No song on it, for making edits) HD _ Blade Runner 2049.mp4",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3279947"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "video/mp4"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XGVzMOpnl8YN1US6W91EE2g856hhQhqIChbJkJBU5II=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 05 Oct 2025 14:08:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-XGVzMOpnl8YN1US6W91EE2g856hhQhqIChbJkJBU5II="
+        }
+      ]
+    },
+    {
+      "Route": "video/you look LONELY! _ bocchi the rock! × blade runner 2049 × STAN.mp4",
+      "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/video/you look LONELY! _ bocchi the rock! × blade runner 2049 × STAN.mp4",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7447448"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "video/mp4"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qxWHgqdYgNJYYF/zRGEMHMkqNoh1gxEOMfTFTpbp3r8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 05 Oct 2025 14:10:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-qxWHgqdYgNJYYF/zRGEMHMkqNoh1gxEOMfTFTpbp3r8="
+        }
+      ]
+    },
+    {
+      "Route": "video/you look LONELY! _ bocchi the rock! × blade runner 2049 × STAN.vvrmvcz6wy.mp4",
+      "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/video/you look LONELY! _ bocchi the rock! × blade runner 2049 × STAN.mp4",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7447448"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "video/mp4"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qxWHgqdYgNJYYF/zRGEMHMkqNoh1gxEOMfTFTpbp3r8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 05 Oct 2025 14:10:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vvrmvcz6wy"
+        },
+        {
+          "Name": "label",
+          "Value": "video/you look LONELY! _ bocchi the rock! × blade runner 2049 × STAN.mp4"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-qxWHgqdYgNJYYF/zRGEMHMkqNoh1gxEOMfTFTpbp3r8="
         }
       ]
     }
