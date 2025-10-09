@@ -9,30 +9,32 @@
     <script src="~/js/HomeScript.js" asp-append-version="true"></script>
 }
 <div class="home-container">
-    <section class="one">
+    <section id="home" class="one">
         <div class="video-section">
             <video autoplay muted loop playsinline id="home-first-page">
                 <source src="video/you%20look%20LONELY!%20_%20bocchi%20the%20rock!%20×%20blade%20runner%202049%20×%20STAN.mp4" type="video/mp4">
             </video>
-            <button id="sound-button" class="bn30">Button</button>
-            <div id="home-animation-first-page">
+            <button id="sound-button" class="bn30">
+                <div id="home-animation-first-page-music" class="music-div"></div>
+            </button>
+            <div class="inner-circle-div">
+                <div class="music-info">
+                    <h2>Listen with us</h2>
+                    <p>Immerse yourself in the rhythm and atmosphere.</p>
+                    <button class="music-button">🎧 Listen to music</button>
+                </div>
             </div>
+            <div id="home-animation-first-page" class="home-animation-circle"></div>
         </div>
     </section>
-    <section class="two">
-        <div style="background: #0D0D0D;" class="home-inner-containers grid-wrapper inner-padding">
+    <section id="news">
+        <div class="home-inner-containers inner-padding two">
+            <div class="wave"></div>
             <div class="div1"> </div>
             <div class="div2"> </div>
-            <div class="div3"> </div>
-            <div class="div4"> </div>
-            <div class="div5"> </div>
-            <div class="div6"> </div>
         </div>     
     </section>
-    <section class="three">
+    <section id="aboutUs" class="three">
         <div class="home-inner-containers">Three Page</div>
-    </section>
-    <section class="four">
-        <div class="home-inner-containers">Four Page</div>
     </section>
 </div>

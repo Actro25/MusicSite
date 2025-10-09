@@ -25,8 +25,28 @@
       "PackagePath": "staticwebassets/js/site.js"
     },
     {
+      "Id": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/json/AIMarketingTools.json",
+      "PackagePath": "staticwebassets/json/AIMarketingTools.json"
+    },
+    {
       "Id": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/json/CircleAnimation.json",
       "PackagePath": "staticwebassets/json/CircleAnimation.json"
+    },
+    {
+      "Id": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/json/Recording.json",
+      "PackagePath": "staticwebassets/json/Recording.json"
+    },
+    {
+      "Id": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/json/SoundOff.json",
+      "PackagePath": "staticwebassets/json/SoundOff.json"
+    },
+    {
+      "Id": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/json/Speaker.json",
+      "PackagePath": "staticwebassets/json/Speaker.json"
+    },
+    {
+      "Id": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/json/soundWave.json",
+      "PackagePath": "staticwebassets/json/soundWave.json"
     },
     {
       "Id": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/lib/bootstrap/LICENSE",

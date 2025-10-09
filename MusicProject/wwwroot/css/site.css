@@ -31,9 +31,6 @@ body {
     flex-direction: column;
     color: #F2F2F2;
 }
-.navbar-brand{
-    color: #FFFFFF !important;
-}
 .text-color{
     color: #FFFFFF !important;
 }
@@ -61,11 +58,11 @@ body {
     min-width: 300px;
     padding: 8px 25px;
     border-radius: 25px;
-
-    background: rgba(40, 0, 60, 0.35); /* напівпрозорий фіолетово-чорний фон */
-    backdrop-filter: blur(10px); /* ефект скла */
+/*
+    background: rgba(40, 0, 60, 0.35); 
+    backdrop-filter: blur(10px); 
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-
+*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -73,11 +70,11 @@ body {
 
     transition: background 0.3s ease, transform 0.3s ease;
 }
-
+/*
 .custom-navbar:hover {
     background: rgba(70, 0, 100, 0.45);
 }
-
+*/
 .navbar-inner {
     display: flex;
     align-items: center;
@@ -85,7 +82,7 @@ body {
 }
 
 .navbar-brand {
-    color: #FF8BF0; /* рожево-фіолетовий */
+    color: #FF8BF0;
     font-weight: bold;
     font-size: 1.2rem;
     text-decoration: none;
