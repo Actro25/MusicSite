@@ -30,6 +30,7 @@ body {
     display: flex;
     flex-direction: column;
     color: #F2F2F2;
+    overscroll-behavior-y: none;
 }
 .text-color{
     color: #FFFFFF !important;

@@ -33,3 +33,23 @@ function ChangePngOnSoundButton() {
         homeFirstPageMusicPlay.play();
     }
 }
+const scrollYPerView = parent.clientHeight;
+parent.addEventListener('wheel', function (event) {
+    event.preventDefault();
+    if (event.deltaY > 0) {
+        scrollDown();
+    } else {
+        scrollUp();
+    }
+});
+
+function scrollUp() {
+    let currentScrollY = parent.scrollTop;
+    parent.scroll({top: currentScrollY - scrollYPerView, left: 0, behavior: 'smooth'});
+}
+
+function scrollDown() {
+    let currentScrollY = parent.scrollTop;
+    parent.scroll({top: currentScrollY + scrollYPerView, left: 0, behavior: 'smooth'});
+}
+
