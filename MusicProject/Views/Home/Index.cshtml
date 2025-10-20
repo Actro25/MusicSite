@@ -21,35 +21,49 @@
                 <div class="music-info">
                     <h2>Listen with us</h2>
                     <p>Immerse yourself in the rhythm and atmosphere.</p>
-                    <button class="music-button">🎧 Listen to music</button>
+                    <form asp-controller="HomeMusic" asp-action="Index">
+                        <button class="music-button">
+                            🎧 Listen to music
+                        </button>
+                    </form>
                 </div>
             </div>
             <div id="home-animation-first-page" class="home-animation-circle"></div>
         </div>
     </section>
-    <section id="news" class="two">
-        <div class="home-inner-containers inner-padding">
-            <div class="news-container">
-                <h2 class="section-title">Latest News</h2>
-                <div class="news-grid">
-                    <div class="news-card">
-                        <h3>New Track Release</h3>
-                        <p>Our latest single <b>“Electric Hearts”</b> is out now — feel the pulse of future beats.</p>
-                        <button class="music-button small">Listen Now</button>
-                    </div>
-                    <div class="news-card">
-                        <h3>Live Event</h3>
-                        <p>Join us at <b>Tokyo SoundWave 2025</b> — where music meets neon dreams.</p>
-                        <button class="music-button small">Get Tickets</button>
-                    </div>
-                    <div class="news-card">
-                        <h3>Behind the Scenes</h3>
-                        <p>Watch our short film about how we create melodies that light up the night.</p>
-                        <button class="music-button small">Watch Video</button>
-                    </div>
+    <section id="news" class="news glassy-section">
+        <div class="news-container">
+            <div class="title-div-timeline">
+                <h2 class="section-title ">LATEST NEWS</h2>
+            </div>
+            <div class="news-wrapper">
+                <div class="timeline-content news-content-addition glass div1">
+                    <h3>🚀 Launch of BochiMusic</h3>
+                    <p>Our site is officially live! Start your journey into rhythm and atmosphere today.</p>
+                    <button class="music-button small">Explore</button>
+                </div>
+                <div class="timeline-content news-content-addition glass div2">
+                    <h3>🎧 Sound Upgrade</h3>
+                    <p>New immersive audio experience — hear the future in every beat.</p>
+                    <button class="music-button small">Listen</button>
+                </div>
+                <div class="timeline-content news-content-addition glass div3">
+                    <h3>🌐 Interface Redesign</h3>
+                    <p>We’ve revamped our visuals with new effects, layouts, and smoother animations.</p>
+                    <button class="music-button small">View Update</button>
+                </div>
+                <div class="timeline-content news-content-addition glass div4">
+                    <h3>🤝 Team Expansion</h3>
+                    <p>Meet new developers who joined to bring more creative power to BochiMusic.</p>
+                    <button class="music-button small">Meet Team</button>
+                </div>
+                <div class="timeline-content news-content-addition glass div5">
+                    <h3>💡 Future Features</h3>
+                    <p>Stay tuned for upcoming playlists, user profiles, and friend syncing!</p>
+                    <button class="music-button small">Read More</button>
                 </div>
             </div>
-        </div>     
+        </div>
     </section>
     <section class="timeline" id="timeline">
         <div class="title-div-timeline">

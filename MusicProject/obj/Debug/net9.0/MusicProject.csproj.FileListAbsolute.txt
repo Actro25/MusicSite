@@ -103,4 +103,4 @@
 /home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/5bcyw1mlk4-mbek8nrieh.gz
 /home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/t3j2i6gjq1-h3f484tywi.gz
 /home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/opu0mkbp30-1h3eiinpjv.gz
-/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/g5lue61wcw-xofmcsoh20.gz
+/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/g5lue61wcw-uq9p32w6ty.gz

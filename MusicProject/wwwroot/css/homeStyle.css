@@ -123,15 +123,17 @@ section{
     left: 30%;
     top: 60vh;
     z-index: 1;
-    border-radius: 15px;
-    background: rgba(60, 0, 90, 0.35);
-    backdrop-filter: blur(12px);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
     color: #f3d9ff;
     text-align: center;
     flex-direction: column;
     padding: 1.5rem;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    transition: all 0.4s ease;
+    background: rgba(224, 163, 255, 0.08);
+    backdrop-filter: blur(25px);
+    border: 1px solid rgba(224, 163, 255, 0.15);
+    border-radius: 25px;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.1);
 }
 
 .inner-circle-div:hover {
@@ -436,7 +438,7 @@ section{
 }
 .submit-btn:hover {
     transform: translateY(-3px);
-    box-shadow: 0 10px 30px rgba(0, 255, 255, 0.4);
+    box-shadow: 0 10px 30px rgba(247, 0, 255, 0.48);
 }
 .contact-info h3 {
     font-size: 2.5rem;
@@ -484,4 +486,33 @@ section{
 .social-links a:hover {
     transform: translateY(-5px) scale(1.1);
     box-shadow: 0 10px 25px rgba(255, 105, 180, 0.3);
+}
+.news-wrapper {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 20px;
+}
+.div1 {
+    grid-row: span 4 / span 4;
+}
+
+.div2 {
+    grid-row: span 7 / span 7;
+}
+
+.div3 {
+    grid-row: span 6 / span 6;
+}
+
+.div4 {
+    grid-row: span 4 / span 4;
+}
+
+.div5 {
+    grid-row: span 5 / span 5;
+}
+.news-content-addition{
+    max-width: 250px;
+    transform: perspective(150px) rotateY(-5deg);
 }

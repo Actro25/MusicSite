@@ -66,8 +66,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>xofmcsoh20</Fingerprint>
-      <Integrity>8TTbla/WpNUBtJfYFTM0yslzcZso3aU2Yc/xzDunjqs=</Integrity>
+      <Fingerprint>uq9p32w6ty</Fingerprint>
+      <Integrity>lqgAKJthk2h76KcBXLD5Uq9XVeMc0vSMA3JVQZrJ+cQ=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\HomeScript.js'))</OriginalItemSpec>
