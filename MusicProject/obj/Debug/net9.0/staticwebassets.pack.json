@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets/css/homeStyle.css"
     },
     {
+      "Id": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/css/musicHomeStyle.css",
+      "PackagePath": "staticwebassets/css/musicHomeStyle.css"
+    },
+    {
       "Id": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/css/site.css",
       "PackagePath": "staticwebassets/css/site.css"
     },
