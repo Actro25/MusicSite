@@ -1,0 +1,10 @@
+@{
+    Layout = "_LayoutMusicHome";
+}
+@await Html.PartialAsync("_LayoutMusicUpperSidePanel")
+<main>
+    @await Html.PartialAsync("_LayoutMusicLeftSidePanel")
+    @RenderBody()
+    @await Html.PartialAsync("_LayoutMusicRightSidePanel")
+</main>
+@await Html.PartialAsync("_LayoutMusicBottomSidePanel");

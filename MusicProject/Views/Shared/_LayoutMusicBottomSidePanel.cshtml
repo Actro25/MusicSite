@@ -1,0 +1,34 @@
+@{
+    Layout = "_LayoutMusicHome";
+}
+@section Styles{
+    <link rel="stylesheet" href="~/css/bottomPanelStyle.css" asp-append-version="true"/>
+}
+<footer class="music-player">
+    <div class="music-info">
+        <img src="/images/song-cover.jpg" alt="Cover" class="song-cover">
+        <div>
+            <h4 class="song-title">Blinding Lights</h4>
+            <p class="song-artist">The Weeknd</p>
+        </div>
+    </div>
+
+    <div class="music-center">
+        <div class="music-controls">
+            <button class="prev-btn">⏮️</button>
+            <button class="play-btn">▶️</button>
+            <button class="next-btn">⏭️</button>
+        </div>
+
+        <div class="music-progress">
+            <span class="time current">0:42</span>
+            <input type="range" min="0" max="100" value="20" class="progress-bar">
+            <span class="time total">3:50</span>
+        </div>
+    </div>
+
+    <div class="music-volume">
+        🔊
+        <input type="range" min="0" max="100" value="70" class="volume-bar">
+    </div>
+</footer>

@@ -36,8 +36,28 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[/home/kirilo/RiderProjects/MusicSite/MusicProject/Views/Shared/_FullLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19GdWxsTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/kirilo/RiderProjects/MusicSite/MusicProject/Views/Shared/_LayoutMusicBottomSidePanel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXRNdXNpY0JvdHRvbVNpZGVQYW5lbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/home/kirilo/RiderProjects/MusicSite/MusicProject/Views/Shared/_LayoutMusicHome.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXRNdXNpY0hvbWUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/kirilo/RiderProjects/MusicSite/MusicProject/Views/Shared/_LayoutMusicLeftSidePanel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXRNdXNpY0xlZnRTaWRlUGFuZWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/kirilo/RiderProjects/MusicSite/MusicProject/Views/Shared/_LayoutMusicRightSidePanel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXRNdXNpY1JpZ2h0U2lkZVBhbmVsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/kirilo/RiderProjects/MusicSite/MusicProject/Views/Shared/_LayoutMusicUpperSidePanel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXRNdXNpY1VwcGVyU2lkZVBhbmVsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/home/kirilo/RiderProjects/MusicSite/MusicProject/Views/Shared/_ValidationScriptsPartial.cshtml]
