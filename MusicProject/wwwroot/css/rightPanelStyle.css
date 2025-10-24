@@ -1,9 +1,16 @@
-.playlist-div{
-    width: 100%;
-    min-width: 100px;
-    max-width: 300px;
-    margin: 10px;
+.right-panel-container {
+    display: flex;
     height: 100%;
+    position: relative;
+    justify-content: flex-end; /* Важливо: вирівнюємо праворуч */
+}
+
+.music-signer-div {
+    width: 100%;
+    min-width: 300px; 
+    max-width: 400px; 
+    height: 100%;
+    margin: 10px;
     position: relative;
     transition: background 0.4s ease, box-shadow 0.4s ease;
 
@@ -15,23 +22,16 @@
     resize: none;
 }
 
-.resize-handle-left {
+.resize-handle-right {
     position: absolute;
     top: 0;
-    right: -1px; 
     margin-top: 10px;
+    left: 0;
     width: 10px;
     height: 100%;
-    cursor: e-resize;
-    background: rgba(255, 255, 255, 0.2);
-    transition: background 0.3s, opacity 0.3s;
-    border-radius: 15px;
-    opacity: 0;
+    cursor: w-resize;
+    transition: all 0.3s ease;
+    border-radius: 6px;
+    opacity: 0; 
     z-index: 10;
-}
-
-.container {
-    position: relative;
-    display: flex;
-    height: 100%;
 }

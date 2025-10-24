@@ -5,6 +5,15 @@
 {
     <link rel="stylesheet" href="~/css/leftPanelStyle.css" asp-append-version="true"/>
 }
-<div class="playlist-div">
-    Your Library
+
+<div class="container">
+    <div class="playlist-div" id="resizable-left">
+        Your Library
+    </div>
+    <div class="resize-handle-left" id="resize-line-left"></div>
 </div>
+
+@section Scripts
+{
+    <script src="~/js/LeftSideScript.js"></script>
+}

@@ -1,3 +1,18 @@
 @{
     Layout = "_LayoutMusicHome";
 }
+@section Styles
+{
+    <link rel="stylesheet" href="~/css/rightPanelStyle.css" asp-append-version="true"/>
+}
+
+<div class="right-panel-container">
+    <div class="resize-handle-right" id="resize-line-right"></div>
+    <div class="music-signer-div" id="resizable-right">
+        About Signer and music
+    </div>
+</div>
+
+@section Scripts{
+    <script src="~/js/RightSideScript.js"></script>
+}

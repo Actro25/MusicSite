@@ -1,6 +1,12 @@
 @{
     Layout = "_LayoutMusicHome";
 }
+
+@section Styles
+{
+    @await RenderSectionAsync("Styles", required: false)
+}
+
 @await Html.PartialAsync("_LayoutMusicUpperSidePanel")
 <main>
     @await Html.PartialAsync("_LayoutMusicLeftSidePanel")
@@ -8,3 +14,8 @@
     @await Html.PartialAsync("_LayoutMusicRightSidePanel")
 </main>
 @await Html.PartialAsync("_LayoutMusicBottomSidePanel");
+
+@section Scripts
+{
+    @await RenderSectionAsync("Scripts", required: false)
+}

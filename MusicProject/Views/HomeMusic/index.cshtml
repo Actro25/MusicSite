@@ -3,11 +3,12 @@
 @{
     Layout = "_FullLayout";
 }
-
-<!DOCTYPE html>
-
+@section Styles
+{
+    <link rel="stylesheet" href="~/css/mainStyle.css" asp-append-version="true"/>
+}
 <body>
-    <div>
+    <div class="main-div">
         <a asp-controller="Home" asp-action="Index">Go Home</a>
     </div>
 </body>

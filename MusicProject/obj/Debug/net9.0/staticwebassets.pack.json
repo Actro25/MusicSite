@@ -5,16 +5,32 @@
       "PackagePath": "staticwebassets/MusicProject.jrzzclp0ps.bundle.scp.css"
     },
     {
+      "Id": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/css/bottomPanelStyle.css",
+      "PackagePath": "staticwebassets/css/bottomPanelStyle.css"
+    },
+    {
       "Id": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/css/homeStyle.css",
       "PackagePath": "staticwebassets/css/homeStyle.css"
     },
     {
-      "Id": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/css/musicHomeStyle.css",
-      "PackagePath": "staticwebassets/css/musicHomeStyle.css"
+      "Id": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/css/leftPanelStyle.css",
+      "PackagePath": "staticwebassets/css/leftPanelStyle.css"
+    },
+    {
+      "Id": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/css/mainStyle.css",
+      "PackagePath": "staticwebassets/css/mainStyle.css"
+    },
+    {
+      "Id": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/css/rightPanelStyle.css",
+      "PackagePath": "staticwebassets/css/rightPanelStyle.css"
     },
     {
       "Id": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/css/site.css",
       "PackagePath": "staticwebassets/css/site.css"
+    },
+    {
+      "Id": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/css/upperPanelStyle.css",
+      "PackagePath": "staticwebassets/css/upperPanelStyle.css"
     },
     {
       "Id": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/favicon.ico",
@@ -23,6 +39,14 @@
     {
       "Id": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/js/HomeScript.js",
       "PackagePath": "staticwebassets/js/HomeScript.js"
+    },
+    {
+      "Id": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/js/LeftSideScript.js",
+      "PackagePath": "staticwebassets/js/LeftSideScript.js"
+    },
+    {
+      "Id": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/js/RightSideScript.js",
+      "PackagePath": "staticwebassets/js/RightSideScript.js"
     },
     {
       "Id": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/js/site.js",
