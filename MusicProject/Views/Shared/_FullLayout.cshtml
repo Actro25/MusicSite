@@ -4,13 +4,16 @@
 
 @section Styles
 {
+    <link rel="stylesheet" href="~/css/fullLayoutStyle.css" asp-append-version="true"/>
     @await RenderSectionAsync("Styles", required: false)
 }
 
 @await Html.PartialAsync("_LayoutMusicUpperSidePanel")
 <main>
     @await Html.PartialAsync("_LayoutMusicLeftSidePanel")
-    @RenderBody()
+    <div class="main-div">
+        @RenderBody()
+    </div>
     @await Html.PartialAsync("_LayoutMusicRightSidePanel")
 </main>
 @await Html.PartialAsync("_LayoutMusicBottomSidePanel");

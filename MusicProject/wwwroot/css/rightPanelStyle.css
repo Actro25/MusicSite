@@ -10,15 +10,14 @@
     min-width: 300px; 
     max-width: 400px; 
     height: 100%;
-    margin: 10px;
+    margin: 9px;
     position: relative;
     transition: background 0.4s ease, box-shadow 0.4s ease;
 
-    background: rgba(224, 163, 255, 0.08);
+    background: rgba(243, 243, 243, 0.08);
     backdrop-filter: blur(25px);
-    border: 1px solid rgba(224, 163, 255, 0.15);
+    border: 1px solid rgba(117, 104, 124, 0.15);
     border-radius: 10px;
-    box-shadow: 0 12px 100px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.1);
     resize: none;
 }
 

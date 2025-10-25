@@ -36,11 +36,10 @@ main {
     z-index: 1000;
     height: 10vh;
 
-    transition: all 0.4s ease;
-    background: rgba(224, 163, 255, 0.08);
+    background: rgba(243, 243, 243, 0.08);
     backdrop-filter: blur(25px);
-    border: 1px solid rgba(224, 163, 255, 0.15);
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(117, 104, 124, 0.15);
+    border-radius: 10px;
 }
 
 .music-info {

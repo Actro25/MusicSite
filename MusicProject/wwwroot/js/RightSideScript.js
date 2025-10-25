@@ -16,10 +16,8 @@ rightHandle.addEventListener("mousedown", (e) => {
 });
 
 document.addEventListener("mousemove", (e) => {
-    console.log(resizingRight);
     if (!resizingRight) return;
 
-    // Виправлена логіка розрахунку
     const deltaX = startXright - e.clientX;
     const newWidth = startWidthright + deltaX;
 
