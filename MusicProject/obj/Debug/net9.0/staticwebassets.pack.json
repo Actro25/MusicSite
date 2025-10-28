@@ -41,8 +41,8 @@
       "PackagePath": "staticwebassets/favicon.ico"
     },
     {
-      "Id": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/img/soundcloud-logo-png.jpg",
-      "PackagePath": "staticwebassets/img/soundcloud-logo-png.jpg"
+      "Id": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/img/soundcloud-logo-png.png",
+      "PackagePath": "staticwebassets/img/soundcloud-logo-png.png"
     },
     {
       "Id": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/img/spotify-logo-png.png",

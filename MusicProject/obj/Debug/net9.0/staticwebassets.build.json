@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "VYc6KlypPmndOAkgRpGC9nQwdWbHUlwbneECQlnhJDA=",
+  "Hash": "oOAIZvhIrTByp63yz1QKVVmLNNKfvFPZO2Sxj8JJmD0=",
   "Source": "MusicProject",
   "BasePath": "_content/MusicProject",
   "Mode": "Default",
@@ -1928,12 +1928,12 @@
       "OriginalItemSpec": "wwwroot/favicon.ico"
     },
     {
-      "Identity": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/img/soundcloud-logo-png.jpg",
+      "Identity": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/img/soundcloud-logo-png.png",
       "SourceId": "MusicProject",
       "SourceType": "Discovered",
       "ContentRoot": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/",
       "BasePath": "_content/MusicProject",
-      "RelativePath": "img/soundcloud-logo-png#[.{fingerprint}]?.jpg",
+      "RelativePath": "img/soundcloud-logo-png#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1942,11 +1942,11 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "piv02vcwde",
-      "Integrity": "b4IAAcbAII7T+Px3i2JAGmkeqWUqpaZWD4osg3KgjY8=",
+      "Fingerprint": "00lx5qoo6i",
+      "Integrity": "kDU6bd0uo6FuhnxluFHyxH0aa549eZHUCvi8oj5eCi8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/img/soundcloud-logo-png.jpg"
+      "OriginalItemSpec": "wwwroot/img/soundcloud-logo-png.png"
     },
     {
       "Identity": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/img/spotify-logo-png.png",
@@ -1963,8 +1963,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "1y5fiz5feb",
-      "Integrity": "2Zln1z/TsN9rECSmNFryjjzgBK/BsMWRXh+hgDGQ1E8=",
+      "Fingerprint": "3ieelcyjs5",
+      "Integrity": "6wWjjijHwypBhBHQEuGqYnX/G/0k/3XEbH91aEbPX14=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/img/spotify-logo-png.png"
@@ -6166,8 +6166,8 @@
       ]
     },
     {
-      "Route": "img/soundcloud-logo-png.jpg",
-      "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/img/soundcloud-logo-png.jpg",
+      "Route": "img/soundcloud-logo-png.00lx5qoo6i.png",
+      "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/img/soundcloud-logo-png.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6176,19 +6176,64 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "44511"
+          "Value": "53364"
         },
         {
           "Name": "Content-Type",
-          "Value": "image/jpeg"
+          "Value": "image/png"
         },
         {
           "Name": "ETag",
-          "Value": "\"b4IAAcbAII7T+Px3i2JAGmkeqWUqpaZWD4osg3KgjY8=\""
+          "Value": "\"kDU6bd0uo6FuhnxluFHyxH0aa549eZHUCvi8oj5eCi8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 28 Oct 2025 14:47:59 GMT"
+          "Value": "Tue, 28 Oct 2025 15:13:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "00lx5qoo6i"
+        },
+        {
+          "Name": "label",
+          "Value": "img/soundcloud-logo-png.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-kDU6bd0uo6FuhnxluFHyxH0aa549eZHUCvi8oj5eCi8="
+        }
+      ]
+    },
+    {
+      "Route": "img/soundcloud-logo-png.png",
+      "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/img/soundcloud-logo-png.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "53364"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kDU6bd0uo6FuhnxluFHyxH0aa549eZHUCvi8oj5eCi8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 28 Oct 2025 15:13:41 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6198,57 +6243,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-b4IAAcbAII7T+Px3i2JAGmkeqWUqpaZWD4osg3KgjY8="
+          "Value": "sha256-kDU6bd0uo6FuhnxluFHyxH0aa549eZHUCvi8oj5eCi8="
         }
       ]
     },
     {
-      "Route": "img/soundcloud-logo-png.piv02vcwde.jpg",
-      "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/img/soundcloud-logo-png.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "44511"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"b4IAAcbAII7T+Px3i2JAGmkeqWUqpaZWD4osg3KgjY8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 28 Oct 2025 14:47:59 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "piv02vcwde"
-        },
-        {
-          "Name": "label",
-          "Value": "img/soundcloud-logo-png.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-b4IAAcbAII7T+Px3i2JAGmkeqWUqpaZWD4osg3KgjY8="
-        }
-      ]
-    },
-    {
-      "Route": "img/spotify-logo-png.1y5fiz5feb.png",
+      "Route": "img/spotify-logo-png.3ieelcyjs5.png",
       "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/img/spotify-logo-png.png",
       "Selectors": [],
       "ResponseHeaders": [
@@ -6258,7 +6258,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "9802"
+          "Value": "111156"
         },
         {
           "Name": "Content-Type",
@@ -6266,11 +6266,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"2Zln1z/TsN9rECSmNFryjjzgBK/BsMWRXh+hgDGQ1E8=\""
+          "Value": "\"6wWjjijHwypBhBHQEuGqYnX/G/0k/3XEbH91aEbPX14=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 28 Oct 2025 14:47:34 GMT"
+          "Value": "Tue, 28 Oct 2025 14:54:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6280,7 +6280,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "1y5fiz5feb"
+          "Value": "3ieelcyjs5"
         },
         {
           "Name": "label",
@@ -6288,7 +6288,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-2Zln1z/TsN9rECSmNFryjjzgBK/BsMWRXh+hgDGQ1E8="
+          "Value": "sha256-6wWjjijHwypBhBHQEuGqYnX/G/0k/3XEbH91aEbPX14="
         }
       ]
     },
@@ -6303,7 +6303,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "9802"
+          "Value": "111156"
         },
         {
           "Name": "Content-Type",
@@ -6311,11 +6311,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"2Zln1z/TsN9rECSmNFryjjzgBK/BsMWRXh+hgDGQ1E8=\""
+          "Value": "\"6wWjjijHwypBhBHQEuGqYnX/G/0k/3XEbH91aEbPX14=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 28 Oct 2025 14:47:34 GMT"
+          "Value": "Tue, 28 Oct 2025 14:54:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6325,7 +6325,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-2Zln1z/TsN9rECSmNFryjjzgBK/BsMWRXh+hgDGQ1E8="
+          "Value": "sha256-6wWjjijHwypBhBHQEuGqYnX/G/0k/3XEbH91aEbPX14="
         }
       ]
     },

@@ -162,23 +162,23 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\favicon.ico'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\soundcloud-logo-png.jpg'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\soundcloud-logo-png.png'))">
       <SourceType>Package</SourceType>
       <SourceId>MusicProject</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/MusicProject</BasePath>
-      <RelativePath>img/soundcloud-logo-png.jpg</RelativePath>
+      <RelativePath>img/soundcloud-logo-png.png</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>piv02vcwde</Fingerprint>
-      <Integrity>b4IAAcbAII7T+Px3i2JAGmkeqWUqpaZWD4osg3KgjY8=</Integrity>
+      <Fingerprint>00lx5qoo6i</Fingerprint>
+      <Integrity>kDU6bd0uo6FuhnxluFHyxH0aa549eZHUCvi8oj5eCi8=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\soundcloud-logo-png.jpg'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\soundcloud-logo-png.png'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\spotify-logo-png.png'))">
       <SourceType>Package</SourceType>
@@ -192,8 +192,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>1y5fiz5feb</Fingerprint>
-      <Integrity>2Zln1z/TsN9rECSmNFryjjzgBK/BsMWRXh+hgDGQ1E8=</Integrity>
+      <Fingerprint>3ieelcyjs5</Fingerprint>
+      <Integrity>6wWjjijHwypBhBHQEuGqYnX/G/0k/3XEbH91aEbPX14=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\spotify-logo-png.png'))</OriginalItemSpec>
