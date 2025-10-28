@@ -12,8 +12,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>y3unwndiu3</Fingerprint>
-      <Integrity>0tsHGa4+acSUTU5SZWxDqYiY6Gs6GKxWW3xdFfFzO04=</Integrity>
+      <Fingerprint>mkyt3pv6oh</Fingerprint>
+      <Integrity>RqtQyTtKqPhzarFtk9EHgMSbZlA3Cr7slInBdhLcHt4=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\bottomPanelStyle.css'))</OriginalItemSpec>
@@ -30,8 +30,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>t3jbr0ixo9</Fingerprint>
-      <Integrity>h2/iWQqIRnC4aVSaSSPujxS3ZiBilZ/KRjgCuhCxucI=</Integrity>
+      <Fingerprint>thc8qq5j5q</Fingerprint>
+      <Integrity>QQMMkaPwHuVspmAkcfwlBWkLOYATwJ7clOzS2qtH7lY=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\fullLayoutStyle.css'))</OriginalItemSpec>
@@ -66,8 +66,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>fgtxsegt0d</Fingerprint>
-      <Integrity>X+d8TstbkJJhKmdCx0TlceshspdIP5rBMI//YWcaH8g=</Integrity>
+      <Fingerprint>eb0wjsz5fu</Fingerprint>
+      <Integrity>mhxFTBV13ccUH2VH7SGj91LmrPylNlft5OSC/iUzCAw=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\leftPanelStyle.css'))</OriginalItemSpec>
@@ -102,8 +102,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>cvxh4l28wq</Fingerprint>
-      <Integrity>uN3KzpbDlMdYxB0mumF8iiZ2S/tF3eGhLL3+BXfnhog=</Integrity>
+      <Fingerprint>x0m9qqpdh5</Fingerprint>
+      <Integrity>wal8aGqeqlRErhKbLexNRvPEaPupRkl6+Ky05NicuMA=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\rightPanelStyle.css'))</OriginalItemSpec>
@@ -138,8 +138,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>vf44rks1ya</Fingerprint>
-      <Integrity>e7qJ4lZvXlcBi1a/UdyUu4CqBM72/4Ac2t2RsNIrWSU=</Integrity>
+      <Fingerprint>i419ttt1t1</Fingerprint>
+      <Integrity>8k4WhLGLb4cm/I7OWaTB+a0Kv/0rA7MrWcpKlfdjCjk=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\upperPanelStyle.css'))</OriginalItemSpec>
@@ -161,6 +161,42 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\favicon.ico'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\soundcloud-logo-png.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>MusicProject</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/MusicProject</BasePath>
+      <RelativePath>img/soundcloud-logo-png.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>piv02vcwde</Fingerprint>
+      <Integrity>b4IAAcbAII7T+Px3i2JAGmkeqWUqpaZWD4osg3KgjY8=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\soundcloud-logo-png.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\spotify-logo-png.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>MusicProject</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/MusicProject</BasePath>
+      <RelativePath>img/spotify-logo-png.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>1y5fiz5feb</Fingerprint>
+      <Integrity>2Zln1z/TsN9rECSmNFryjjzgBK/BsMWRXh+hgDGQ1E8=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\spotify-logo-png.png'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\HomeScript.js'))">
       <SourceType>Package</SourceType>

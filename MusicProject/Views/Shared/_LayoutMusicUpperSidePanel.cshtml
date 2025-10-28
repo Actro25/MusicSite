@@ -7,10 +7,84 @@
 }
 <header>
     <div class="search-input">
-        <input type="text" placeholder="Search for songs, artists, or albums..." />
+        <input id="search" type="text" placeholder="Search for songs, artists, or albums..."/>
+        <ul id="suggestions" class="hidden"></ul>
         <svg xmlns="http://www.w3.org/2000/svg" class="search-icon" viewBox="0 0 24 24" fill="none">
             <path d="M21 21l-4.35-4.35m1.85-5.15a7 7 0 11-14 0 7 7 0 0114 0z"
                   stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
         </svg>
     </div>
 </header>
+
+<script>
+    const input = document.getElementById('search');
+    const list = document.getElementById('suggestions');
+
+    const spotifySearch = ['SpotifyMusic1','SpotifyMusic2','SpotifyMusic3','SpotifyMusic4'];
+    const soundCloudSearch = ['SoundCloudMusic1','SoundCloudMusic2','SoundCloudMusic3'];
+    const options = [...spotifySearch,...soundCloudSearch];
+    input.addEventListener('input', () => {
+        const value = input.value.toLowerCase();
+        list.innerHTML = '';
+
+        if (!value) {
+            list.classList.add('hidden');
+            return;
+        }
+
+        let refImg = '';
+        let searchValue = value;
+        let hasPrefix = false;
+        let filtered = '';
+        if (value.startsWith('spotify:')) {
+            refImg = '/img/spotify-logo-png.png';
+            searchValue = value.replace('spotify:', '').trim();
+            hasPrefix = true;
+            filtered = spotifySearch.filter(opt => {
+                const optLower = opt.toLowerCase();
+                return hasPrefix ? optLower.includes(searchValue) : optLower.includes(value);
+            });
+        }
+        else if (value.startsWith('soundcloud:')) {
+            refImg = '/img/soundcloud-logo-png.png';
+            searchValue = value.replace('soundcloud:', '').trim();
+            hasPrefix = true;
+            filtered = soundCloudSearch.filter(opt => {
+                const optLower = opt.toLowerCase();
+                return hasPrefix ? optLower.includes(searchValue) : optLower.includes(value);
+            });
+        }
+        else{
+            filtered = options.filter(opt => {
+                const optLower = opt.toLowerCase();
+                return hasPrefix ? optLower.includes(searchValue) : optLower.includes(value);
+            });
+        }
+
+        filtered.forEach(opt => {
+            const li = document.createElement('li');
+
+            if (hasPrefix && refImg) {
+                const img = document.createElement('img');
+                img.src = refImg;
+                img.height = 20; 
+                img.width = 20;
+                img.style.verticalAlign = 'middle';
+                img.style.marginRight = '8px';
+                li.appendChild(img);
+            }
+
+            const text = document.createTextNode(opt);
+            li.appendChild(text);
+
+            li.onclick = () => {
+                input.value = opt;
+                list.classList.add('hidden');
+            };
+
+            list.appendChild(li);
+        });
+
+        list.classList.toggle('hidden', filtered.length === 0);
+    });
+</script>

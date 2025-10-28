@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "LaZs8QZ2WymzHHPCZO8tEyFIgo17uHUkGiGfyVMByII=",
+  "Hash": "VYc6KlypPmndOAkgRpGC9nQwdWbHUlwbneECQlnhJDA=",
   "Source": "MusicProject",
   "BasePath": "_content/MusicProject",
   "Mode": "Default",
@@ -143,12 +143,12 @@
       "OriginalItemSpec": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/lib/jquery/dist/jquery.min.js"
     },
     {
-      "Identity": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/21to5wq120-cvxh4l28wq.gz",
+      "Identity": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/21to5wq120-x0m9qqpdh5.gz",
       "SourceId": "MusicProject",
       "SourceType": "Discovered",
       "ContentRoot": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/MusicProject",
-      "RelativePath": "css/rightPanelStyle#[.{fingerprint=cvxh4l28wq}]?.css.gz",
+      "RelativePath": "css/rightPanelStyle#[.{fingerprint=x0m9qqpdh5}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -157,8 +157,8 @@
       "RelatedAsset": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/css/rightPanelStyle.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "em4hjkpnpk",
-      "Integrity": "WrseG6lOoE2T6wONG1G7RKShQSjK/MvO9VMr0nD5+0Q=",
+      "Fingerprint": "q8lh3eielb",
+      "Integrity": "ygCmit5f3MIKeEgGXofqymQSusFKoL6b2IFBurBQ7oA=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/css/rightPanelStyle.css"
@@ -1004,12 +1004,12 @@
       "OriginalItemSpec": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/css/mainStyle.css"
     },
     {
-      "Identity": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/ksf7871dsz-t3jbr0ixo9.gz",
+      "Identity": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/ksf7871dsz-thc8qq5j5q.gz",
       "SourceId": "MusicProject",
       "SourceType": "Discovered",
       "ContentRoot": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/MusicProject",
-      "RelativePath": "css/fullLayoutStyle#[.{fingerprint=t3jbr0ixo9}]?.css.gz",
+      "RelativePath": "css/fullLayoutStyle#[.{fingerprint=thc8qq5j5q}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -1018,8 +1018,8 @@
       "RelatedAsset": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/css/fullLayoutStyle.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "59ioevg4kw",
-      "Integrity": "aRzQZpVfaplqrR5IxDmzTKXoXl8VWGW/hLvMN2rNyGA=",
+      "Fingerprint": "d0xww46eng",
+      "Integrity": "Hf8uSYlGyHwV/GLu2YZEBxJ+TlMQtddzjlmi33AIRvo=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/css/fullLayoutStyle.css"
@@ -1382,12 +1382,12 @@
       "OriginalItemSpec": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/stxkn1klen-y3unwndiu3.gz",
+      "Identity": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/stxkn1klen-mkyt3pv6oh.gz",
       "SourceId": "MusicProject",
       "SourceType": "Discovered",
       "ContentRoot": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/MusicProject",
-      "RelativePath": "css/bottomPanelStyle#[.{fingerprint=y3unwndiu3}]?.css.gz",
+      "RelativePath": "css/bottomPanelStyle#[.{fingerprint=mkyt3pv6oh}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -1396,8 +1396,8 @@
       "RelatedAsset": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/css/bottomPanelStyle.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "t6sivdxv9a",
-      "Integrity": "NQLu9OJ9+ENZarlLwduQJQxGEu1WC5tRiy9DBZ6xnVk=",
+      "Fingerprint": "2663yxhy6a",
+      "Integrity": "BqjEPXaTj7iD2j6pPcrcN/Xs4zI0reP1+tLp9fgmxPI=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/css/bottomPanelStyle.css"
@@ -1592,12 +1592,12 @@
       "OriginalItemSpec": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/y4cqae6wtq-vf44rks1ya.gz",
+      "Identity": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/y4cqae6wtq-i419ttt1t1.gz",
       "SourceId": "MusicProject",
       "SourceType": "Discovered",
       "ContentRoot": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/MusicProject",
-      "RelativePath": "css/upperPanelStyle#[.{fingerprint=vf44rks1ya}]?.css.gz",
+      "RelativePath": "css/upperPanelStyle#[.{fingerprint=i419ttt1t1}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -1606,8 +1606,8 @@
       "RelatedAsset": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/css/upperPanelStyle.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "9qn3af57t7",
-      "Integrity": "4ZCKAEtKyN5EH587+j9NNc3aLB/uGIplCd9vc9L8Lx0=",
+      "Fingerprint": "ur1uztxc9b",
+      "Integrity": "egtMC6TzAgoAzGQHdjH4y9sMBwTz1ZkzlxYc6vV/T/A=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/css/upperPanelStyle.css"
@@ -1655,12 +1655,12 @@
       "OriginalItemSpec": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css"
     },
     {
-      "Identity": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/yrxzadl4cd-fgtxsegt0d.gz",
+      "Identity": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/yrxzadl4cd-eb0wjsz5fu.gz",
       "SourceId": "MusicProject",
       "SourceType": "Discovered",
       "ContentRoot": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/MusicProject",
-      "RelativePath": "css/leftPanelStyle#[.{fingerprint=fgtxsegt0d}]?.css.gz",
+      "RelativePath": "css/leftPanelStyle#[.{fingerprint=eb0wjsz5fu}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -1669,8 +1669,8 @@
       "RelatedAsset": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/css/leftPanelStyle.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "ge3344twzs",
-      "Integrity": "+BejhGiqINsIY29tc2V5iiwBIQJ7uhG6WsmnTiBLSvs=",
+      "Fingerprint": "7p99qc6oqg",
+      "Integrity": "WwMLts00jr8V9dPAu00lrV6efKzcmcIqnmVmYj7Rthg=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/css/leftPanelStyle.css"
@@ -1753,8 +1753,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "y3unwndiu3",
-      "Integrity": "0tsHGa4+acSUTU5SZWxDqYiY6Gs6GKxWW3xdFfFzO04=",
+      "Fingerprint": "mkyt3pv6oh",
+      "Integrity": "RqtQyTtKqPhzarFtk9EHgMSbZlA3Cr7slInBdhLcHt4=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/css/bottomPanelStyle.css"
@@ -1774,8 +1774,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "t3jbr0ixo9",
-      "Integrity": "h2/iWQqIRnC4aVSaSSPujxS3ZiBilZ/KRjgCuhCxucI=",
+      "Fingerprint": "thc8qq5j5q",
+      "Integrity": "QQMMkaPwHuVspmAkcfwlBWkLOYATwJ7clOzS2qtH7lY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/css/fullLayoutStyle.css"
@@ -1816,8 +1816,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "fgtxsegt0d",
-      "Integrity": "X+d8TstbkJJhKmdCx0TlceshspdIP5rBMI//YWcaH8g=",
+      "Fingerprint": "eb0wjsz5fu",
+      "Integrity": "mhxFTBV13ccUH2VH7SGj91LmrPylNlft5OSC/iUzCAw=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/css/leftPanelStyle.css"
@@ -1858,8 +1858,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "cvxh4l28wq",
-      "Integrity": "uN3KzpbDlMdYxB0mumF8iiZ2S/tF3eGhLL3+BXfnhog=",
+      "Fingerprint": "x0m9qqpdh5",
+      "Integrity": "wal8aGqeqlRErhKbLexNRvPEaPupRkl6+Ky05NicuMA=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/css/rightPanelStyle.css"
@@ -1900,8 +1900,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "vf44rks1ya",
-      "Integrity": "e7qJ4lZvXlcBi1a/UdyUu4CqBM72/4Ac2t2RsNIrWSU=",
+      "Fingerprint": "i419ttt1t1",
+      "Integrity": "8k4WhLGLb4cm/I7OWaTB+a0Kv/0rA7MrWcpKlfdjCjk=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/css/upperPanelStyle.css"
@@ -1926,6 +1926,48 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/favicon.ico"
+    },
+    {
+      "Identity": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/img/soundcloud-logo-png.jpg",
+      "SourceId": "MusicProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/",
+      "BasePath": "_content/MusicProject",
+      "RelativePath": "img/soundcloud-logo-png#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "piv02vcwde",
+      "Integrity": "b4IAAcbAII7T+Px3i2JAGmkeqWUqpaZWD4osg3KgjY8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/img/soundcloud-logo-png.jpg"
+    },
+    {
+      "Identity": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/img/spotify-logo-png.png",
+      "SourceId": "MusicProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/",
+      "BasePath": "_content/MusicProject",
+      "RelativePath": "img/spotify-logo-png#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "1y5fiz5feb",
+      "Integrity": "2Zln1z/TsN9rECSmNFryjjzgBK/BsMWRXh+hgDGQ1E8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/img/spotify-logo-png.png"
     },
     {
       "Identity": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/js/HomeScript.js",
@@ -3443,12 +3485,12 @@
   "Endpoints": [
     {
       "Route": "css/bottomPanelStyle.css",
-      "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/stxkn1klen-y3unwndiu3.gz",
+      "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/stxkn1klen-mkyt3pv6oh.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001538461538"
+          "Quality": "0.001663893511"
         }
       ],
       "ResponseHeaders": [
@@ -3458,15 +3500,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "649"
+          "Value": "600"
         },
         {
           "Name": "ETag",
-          "Value": "\"NQLu9OJ9+ENZarlLwduQJQxGEu1WC5tRiy9DBZ6xnVk=\""
+          "Value": "\"BqjEPXaTj7iD2j6pPcrcN/Xs4zI0reP1+tLp9fgmxPI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 22 Oct 2025 07:24:12 GMT"
+          "Value": "Sat, 25 Oct 2025 11:50:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3486,13 +3528,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"0tsHGa4+acSUTU5SZWxDqYiY6Gs6GKxWW3xdFfFzO04=\""
+          "Value": "W/\"RqtQyTtKqPhzarFtk9EHgMSbZlA3Cr7slInBdhLcHt4=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-0tsHGa4+acSUTU5SZWxDqYiY6Gs6GKxWW3xdFfFzO04="
+          "Value": "sha256-RqtQyTtKqPhzarFtk9EHgMSbZlA3Cr7slInBdhLcHt4="
         }
       ]
     },
@@ -3507,7 +3549,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1852"
+          "Value": "1758"
         },
         {
           "Name": "Content-Type",
@@ -3515,11 +3557,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"0tsHGa4+acSUTU5SZWxDqYiY6Gs6GKxWW3xdFfFzO04=\""
+          "Value": "\"RqtQyTtKqPhzarFtk9EHgMSbZlA3Cr7slInBdhLcHt4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 22 Oct 2025 07:24:12 GMT"
+          "Value": "Sat, 25 Oct 2025 11:50:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3529,13 +3571,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-0tsHGa4+acSUTU5SZWxDqYiY6Gs6GKxWW3xdFfFzO04="
+          "Value": "sha256-RqtQyTtKqPhzarFtk9EHgMSbZlA3Cr7slInBdhLcHt4="
         }
       ]
     },
     {
       "Route": "css/bottomPanelStyle.css.gz",
-      "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/stxkn1klen-y3unwndiu3.gz",
+      "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/stxkn1klen-mkyt3pv6oh.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3544,7 +3586,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "649"
+          "Value": "600"
         },
         {
           "Name": "Content-Type",
@@ -3552,11 +3594,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"NQLu9OJ9+ENZarlLwduQJQxGEu1WC5tRiy9DBZ6xnVk=\""
+          "Value": "\"BqjEPXaTj7iD2j6pPcrcN/Xs4zI0reP1+tLp9fgmxPI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 22 Oct 2025 07:24:12 GMT"
+          "Value": "Sat, 25 Oct 2025 11:50:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3574,18 +3616,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-NQLu9OJ9+ENZarlLwduQJQxGEu1WC5tRiy9DBZ6xnVk="
+          "Value": "sha256-BqjEPXaTj7iD2j6pPcrcN/Xs4zI0reP1+tLp9fgmxPI="
         }
       ]
     },
     {
-      "Route": "css/bottomPanelStyle.y3unwndiu3.css",
-      "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/stxkn1klen-y3unwndiu3.gz",
+      "Route": "css/bottomPanelStyle.mkyt3pv6oh.css",
+      "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/stxkn1klen-mkyt3pv6oh.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001538461538"
+          "Quality": "0.001663893511"
         }
       ],
       "ResponseHeaders": [
@@ -3595,15 +3637,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "649"
+          "Value": "600"
         },
         {
           "Name": "ETag",
-          "Value": "\"NQLu9OJ9+ENZarlLwduQJQxGEu1WC5tRiy9DBZ6xnVk=\""
+          "Value": "\"BqjEPXaTj7iD2j6pPcrcN/Xs4zI0reP1+tLp9fgmxPI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 22 Oct 2025 07:24:12 GMT"
+          "Value": "Sat, 25 Oct 2025 11:50:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3623,13 +3665,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"0tsHGa4+acSUTU5SZWxDqYiY6Gs6GKxWW3xdFfFzO04=\""
+          "Value": "W/\"RqtQyTtKqPhzarFtk9EHgMSbZlA3Cr7slInBdhLcHt4=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "y3unwndiu3"
+          "Value": "mkyt3pv6oh"
         },
         {
           "Name": "label",
@@ -3637,12 +3679,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-0tsHGa4+acSUTU5SZWxDqYiY6Gs6GKxWW3xdFfFzO04="
+          "Value": "sha256-RqtQyTtKqPhzarFtk9EHgMSbZlA3Cr7slInBdhLcHt4="
         }
       ]
     },
     {
-      "Route": "css/bottomPanelStyle.y3unwndiu3.css",
+      "Route": "css/bottomPanelStyle.mkyt3pv6oh.css",
       "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/css/bottomPanelStyle.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -3652,7 +3694,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1852"
+          "Value": "1758"
         },
         {
           "Name": "Content-Type",
@@ -3660,11 +3702,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"0tsHGa4+acSUTU5SZWxDqYiY6Gs6GKxWW3xdFfFzO04=\""
+          "Value": "\"RqtQyTtKqPhzarFtk9EHgMSbZlA3Cr7slInBdhLcHt4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 22 Oct 2025 07:24:12 GMT"
+          "Value": "Sat, 25 Oct 2025 11:50:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3674,7 +3716,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "y3unwndiu3"
+          "Value": "mkyt3pv6oh"
         },
         {
           "Name": "label",
@@ -3682,13 +3724,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-0tsHGa4+acSUTU5SZWxDqYiY6Gs6GKxWW3xdFfFzO04="
+          "Value": "sha256-RqtQyTtKqPhzarFtk9EHgMSbZlA3Cr7slInBdhLcHt4="
         }
       ]
     },
     {
-      "Route": "css/bottomPanelStyle.y3unwndiu3.css.gz",
-      "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/stxkn1klen-y3unwndiu3.gz",
+      "Route": "css/bottomPanelStyle.mkyt3pv6oh.css.gz",
+      "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/stxkn1klen-mkyt3pv6oh.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3697,7 +3739,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "649"
+          "Value": "600"
         },
         {
           "Name": "Content-Type",
@@ -3705,11 +3747,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"NQLu9OJ9+ENZarlLwduQJQxGEu1WC5tRiy9DBZ6xnVk=\""
+          "Value": "\"BqjEPXaTj7iD2j6pPcrcN/Xs4zI0reP1+tLp9fgmxPI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 22 Oct 2025 07:24:12 GMT"
+          "Value": "Sat, 25 Oct 2025 11:50:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3727,7 +3769,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "y3unwndiu3"
+          "Value": "mkyt3pv6oh"
         },
         {
           "Name": "label",
@@ -3735,18 +3777,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-NQLu9OJ9+ENZarlLwduQJQxGEu1WC5tRiy9DBZ6xnVk="
+          "Value": "sha256-BqjEPXaTj7iD2j6pPcrcN/Xs4zI0reP1+tLp9fgmxPI="
         }
       ]
     },
     {
       "Route": "css/fullLayoutStyle.css",
-      "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/ksf7871dsz-t3jbr0ixo9.gz",
+      "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/ksf7871dsz-thc8qq5j5q.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.004385964912"
+          "Quality": "0.004807692308"
         }
       ],
       "ResponseHeaders": [
@@ -3756,15 +3798,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "227"
+          "Value": "207"
         },
         {
           "Name": "ETag",
-          "Value": "\"aRzQZpVfaplqrR5IxDmzTKXoXl8VWGW/hLvMN2rNyGA=\""
+          "Value": "\"Hf8uSYlGyHwV/GLu2YZEBxJ+TlMQtddzjlmi33AIRvo=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 25 Oct 2025 11:45:01 GMT"
+          "Value": "Sat, 25 Oct 2025 11:48:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3784,13 +3826,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"h2/iWQqIRnC4aVSaSSPujxS3ZiBilZ/KRjgCuhCxucI=\""
+          "Value": "W/\"QQMMkaPwHuVspmAkcfwlBWkLOYATwJ7clOzS2qtH7lY=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-h2/iWQqIRnC4aVSaSSPujxS3ZiBilZ/KRjgCuhCxucI="
+          "Value": "sha256-QQMMkaPwHuVspmAkcfwlBWkLOYATwJ7clOzS2qtH7lY="
         }
       ]
     },
@@ -3805,7 +3847,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "343"
+          "Value": "303"
         },
         {
           "Name": "Content-Type",
@@ -3813,11 +3855,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"h2/iWQqIRnC4aVSaSSPujxS3ZiBilZ/KRjgCuhCxucI=\""
+          "Value": "\"QQMMkaPwHuVspmAkcfwlBWkLOYATwJ7clOzS2qtH7lY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 25 Oct 2025 11:45:01 GMT"
+          "Value": "Sat, 25 Oct 2025 11:48:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3827,13 +3869,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-h2/iWQqIRnC4aVSaSSPujxS3ZiBilZ/KRjgCuhCxucI="
+          "Value": "sha256-QQMMkaPwHuVspmAkcfwlBWkLOYATwJ7clOzS2qtH7lY="
         }
       ]
     },
     {
       "Route": "css/fullLayoutStyle.css.gz",
-      "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/ksf7871dsz-t3jbr0ixo9.gz",
+      "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/ksf7871dsz-thc8qq5j5q.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3842,7 +3884,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "227"
+          "Value": "207"
         },
         {
           "Name": "Content-Type",
@@ -3850,11 +3892,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"aRzQZpVfaplqrR5IxDmzTKXoXl8VWGW/hLvMN2rNyGA=\""
+          "Value": "\"Hf8uSYlGyHwV/GLu2YZEBxJ+TlMQtddzjlmi33AIRvo=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 25 Oct 2025 11:45:01 GMT"
+          "Value": "Sat, 25 Oct 2025 11:48:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3872,18 +3914,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-aRzQZpVfaplqrR5IxDmzTKXoXl8VWGW/hLvMN2rNyGA="
+          "Value": "sha256-Hf8uSYlGyHwV/GLu2YZEBxJ+TlMQtddzjlmi33AIRvo="
         }
       ]
     },
     {
-      "Route": "css/fullLayoutStyle.t3jbr0ixo9.css",
-      "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/ksf7871dsz-t3jbr0ixo9.gz",
+      "Route": "css/fullLayoutStyle.thc8qq5j5q.css",
+      "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/ksf7871dsz-thc8qq5j5q.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.004385964912"
+          "Quality": "0.004807692308"
         }
       ],
       "ResponseHeaders": [
@@ -3893,15 +3935,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "227"
+          "Value": "207"
         },
         {
           "Name": "ETag",
-          "Value": "\"aRzQZpVfaplqrR5IxDmzTKXoXl8VWGW/hLvMN2rNyGA=\""
+          "Value": "\"Hf8uSYlGyHwV/GLu2YZEBxJ+TlMQtddzjlmi33AIRvo=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 25 Oct 2025 11:45:01 GMT"
+          "Value": "Sat, 25 Oct 2025 11:48:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3921,13 +3963,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"h2/iWQqIRnC4aVSaSSPujxS3ZiBilZ/KRjgCuhCxucI=\""
+          "Value": "W/\"QQMMkaPwHuVspmAkcfwlBWkLOYATwJ7clOzS2qtH7lY=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "t3jbr0ixo9"
+          "Value": "thc8qq5j5q"
         },
         {
           "Name": "label",
@@ -3935,12 +3977,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-h2/iWQqIRnC4aVSaSSPujxS3ZiBilZ/KRjgCuhCxucI="
+          "Value": "sha256-QQMMkaPwHuVspmAkcfwlBWkLOYATwJ7clOzS2qtH7lY="
         }
       ]
     },
     {
-      "Route": "css/fullLayoutStyle.t3jbr0ixo9.css",
+      "Route": "css/fullLayoutStyle.thc8qq5j5q.css",
       "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/css/fullLayoutStyle.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -3950,7 +3992,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "343"
+          "Value": "303"
         },
         {
           "Name": "Content-Type",
@@ -3958,11 +4000,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"h2/iWQqIRnC4aVSaSSPujxS3ZiBilZ/KRjgCuhCxucI=\""
+          "Value": "\"QQMMkaPwHuVspmAkcfwlBWkLOYATwJ7clOzS2qtH7lY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 25 Oct 2025 11:45:01 GMT"
+          "Value": "Sat, 25 Oct 2025 11:48:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3972,7 +4014,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "t3jbr0ixo9"
+          "Value": "thc8qq5j5q"
         },
         {
           "Name": "label",
@@ -3980,13 +4022,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-h2/iWQqIRnC4aVSaSSPujxS3ZiBilZ/KRjgCuhCxucI="
+          "Value": "sha256-QQMMkaPwHuVspmAkcfwlBWkLOYATwJ7clOzS2qtH7lY="
         }
       ]
     },
     {
-      "Route": "css/fullLayoutStyle.t3jbr0ixo9.css.gz",
-      "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/ksf7871dsz-t3jbr0ixo9.gz",
+      "Route": "css/fullLayoutStyle.thc8qq5j5q.css.gz",
+      "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/ksf7871dsz-thc8qq5j5q.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3995,7 +4037,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "227"
+          "Value": "207"
         },
         {
           "Name": "Content-Type",
@@ -4003,11 +4045,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"aRzQZpVfaplqrR5IxDmzTKXoXl8VWGW/hLvMN2rNyGA=\""
+          "Value": "\"Hf8uSYlGyHwV/GLu2YZEBxJ+TlMQtddzjlmi33AIRvo=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 25 Oct 2025 11:45:01 GMT"
+          "Value": "Sat, 25 Oct 2025 11:48:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4025,7 +4067,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "t3jbr0ixo9"
+          "Value": "thc8qq5j5q"
         },
         {
           "Name": "label",
@@ -4033,7 +4075,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-aRzQZpVfaplqrR5IxDmzTKXoXl8VWGW/hLvMN2rNyGA="
+          "Value": "sha256-Hf8uSYlGyHwV/GLu2YZEBxJ+TlMQtddzjlmi33AIRvo="
         }
       ]
     },
@@ -4337,12 +4379,12 @@
     },
     {
       "Route": "css/leftPanelStyle.css",
-      "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/yrxzadl4cd-fgtxsegt0d.gz",
+      "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/yrxzadl4cd-eb0wjsz5fu.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.002673796791"
+          "Quality": "0.002898550725"
         }
       ],
       "ResponseHeaders": [
@@ -4352,15 +4394,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "373"
+          "Value": "344"
         },
         {
           "Name": "ETag",
-          "Value": "\"+BejhGiqINsIY29tc2V5iiwBIQJ7uhG6WsmnTiBLSvs=\""
+          "Value": "\"WwMLts00jr8V9dPAu00lrV6efKzcmcIqnmVmYj7Rthg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 25 Oct 2025 11:43:13 GMT"
+          "Value": "Sat, 25 Oct 2025 11:49:01 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4380,13 +4422,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"X+d8TstbkJJhKmdCx0TlceshspdIP5rBMI//YWcaH8g=\""
+          "Value": "W/\"mhxFTBV13ccUH2VH7SGj91LmrPylNlft5OSC/iUzCAw=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-X+d8TstbkJJhKmdCx0TlceshspdIP5rBMI//YWcaH8g="
+          "Value": "sha256-mhxFTBV13ccUH2VH7SGj91LmrPylNlft5OSC/iUzCAw="
         }
       ]
     },
@@ -4401,7 +4443,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "836"
+          "Value": "748"
         },
         {
           "Name": "Content-Type",
@@ -4409,11 +4451,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"X+d8TstbkJJhKmdCx0TlceshspdIP5rBMI//YWcaH8g=\""
+          "Value": "\"mhxFTBV13ccUH2VH7SGj91LmrPylNlft5OSC/iUzCAw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 25 Oct 2025 11:43:13 GMT"
+          "Value": "Sat, 25 Oct 2025 11:49:01 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4423,13 +4465,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-X+d8TstbkJJhKmdCx0TlceshspdIP5rBMI//YWcaH8g="
+          "Value": "sha256-mhxFTBV13ccUH2VH7SGj91LmrPylNlft5OSC/iUzCAw="
         }
       ]
     },
     {
       "Route": "css/leftPanelStyle.css.gz",
-      "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/yrxzadl4cd-fgtxsegt0d.gz",
+      "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/yrxzadl4cd-eb0wjsz5fu.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4438,7 +4480,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "373"
+          "Value": "344"
         },
         {
           "Name": "Content-Type",
@@ -4446,11 +4488,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"+BejhGiqINsIY29tc2V5iiwBIQJ7uhG6WsmnTiBLSvs=\""
+          "Value": "\"WwMLts00jr8V9dPAu00lrV6efKzcmcIqnmVmYj7Rthg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 25 Oct 2025 11:43:13 GMT"
+          "Value": "Sat, 25 Oct 2025 11:49:01 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4468,18 +4510,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-+BejhGiqINsIY29tc2V5iiwBIQJ7uhG6WsmnTiBLSvs="
+          "Value": "sha256-WwMLts00jr8V9dPAu00lrV6efKzcmcIqnmVmYj7Rthg="
         }
       ]
     },
     {
-      "Route": "css/leftPanelStyle.fgtxsegt0d.css",
-      "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/yrxzadl4cd-fgtxsegt0d.gz",
+      "Route": "css/leftPanelStyle.eb0wjsz5fu.css",
+      "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/yrxzadl4cd-eb0wjsz5fu.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.002673796791"
+          "Quality": "0.002898550725"
         }
       ],
       "ResponseHeaders": [
@@ -4489,15 +4531,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "373"
+          "Value": "344"
         },
         {
           "Name": "ETag",
-          "Value": "\"+BejhGiqINsIY29tc2V5iiwBIQJ7uhG6WsmnTiBLSvs=\""
+          "Value": "\"WwMLts00jr8V9dPAu00lrV6efKzcmcIqnmVmYj7Rthg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 25 Oct 2025 11:43:13 GMT"
+          "Value": "Sat, 25 Oct 2025 11:49:01 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4517,13 +4559,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"X+d8TstbkJJhKmdCx0TlceshspdIP5rBMI//YWcaH8g=\""
+          "Value": "W/\"mhxFTBV13ccUH2VH7SGj91LmrPylNlft5OSC/iUzCAw=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "fgtxsegt0d"
+          "Value": "eb0wjsz5fu"
         },
         {
           "Name": "label",
@@ -4531,12 +4573,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-X+d8TstbkJJhKmdCx0TlceshspdIP5rBMI//YWcaH8g="
+          "Value": "sha256-mhxFTBV13ccUH2VH7SGj91LmrPylNlft5OSC/iUzCAw="
         }
       ]
     },
     {
-      "Route": "css/leftPanelStyle.fgtxsegt0d.css",
+      "Route": "css/leftPanelStyle.eb0wjsz5fu.css",
       "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/css/leftPanelStyle.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -4546,7 +4588,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "836"
+          "Value": "748"
         },
         {
           "Name": "Content-Type",
@@ -4554,11 +4596,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"X+d8TstbkJJhKmdCx0TlceshspdIP5rBMI//YWcaH8g=\""
+          "Value": "\"mhxFTBV13ccUH2VH7SGj91LmrPylNlft5OSC/iUzCAw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 25 Oct 2025 11:43:13 GMT"
+          "Value": "Sat, 25 Oct 2025 11:49:01 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4568,7 +4610,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "fgtxsegt0d"
+          "Value": "eb0wjsz5fu"
         },
         {
           "Name": "label",
@@ -4576,13 +4618,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-X+d8TstbkJJhKmdCx0TlceshspdIP5rBMI//YWcaH8g="
+          "Value": "sha256-mhxFTBV13ccUH2VH7SGj91LmrPylNlft5OSC/iUzCAw="
         }
       ]
     },
     {
-      "Route": "css/leftPanelStyle.fgtxsegt0d.css.gz",
-      "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/yrxzadl4cd-fgtxsegt0d.gz",
+      "Route": "css/leftPanelStyle.eb0wjsz5fu.css.gz",
+      "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/yrxzadl4cd-eb0wjsz5fu.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4591,7 +4633,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "373"
+          "Value": "344"
         },
         {
           "Name": "Content-Type",
@@ -4599,11 +4641,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"+BejhGiqINsIY29tc2V5iiwBIQJ7uhG6WsmnTiBLSvs=\""
+          "Value": "\"WwMLts00jr8V9dPAu00lrV6efKzcmcIqnmVmYj7Rthg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 25 Oct 2025 11:43:13 GMT"
+          "Value": "Sat, 25 Oct 2025 11:49:01 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4621,7 +4663,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "fgtxsegt0d"
+          "Value": "eb0wjsz5fu"
         },
         {
           "Name": "label",
@@ -4629,7 +4671,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-+BejhGiqINsIY29tc2V5iiwBIQJ7uhG6WsmnTiBLSvs="
+          "Value": "sha256-WwMLts00jr8V9dPAu00lrV6efKzcmcIqnmVmYj7Rthg="
         }
       ]
     },
@@ -4933,12 +4975,12 @@
     },
     {
       "Route": "css/rightPanelStyle.css",
-      "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/21to5wq120-cvxh4l28wq.gz",
+      "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/21to5wq120-x0m9qqpdh5.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.002123142251"
+          "Quality": "0.002272727273"
         }
       ],
       "ResponseHeaders": [
@@ -4948,15 +4990,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "470"
+          "Value": "439"
         },
         {
           "Name": "ETag",
-          "Value": "\"WrseG6lOoE2T6wONG1G7RKShQSjK/MvO9VMr0nD5+0Q=\""
+          "Value": "\"ygCmit5f3MIKeEgGXofqymQSusFKoL6b2IFBurBQ7oA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 25 Oct 2025 11:43:18 GMT"
+          "Value": "Sat, 25 Oct 2025 11:49:01 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4976,13 +5018,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"uN3KzpbDlMdYxB0mumF8iiZ2S/tF3eGhLL3+BXfnhog=\""
+          "Value": "W/\"wal8aGqeqlRErhKbLexNRvPEaPupRkl6+Ky05NicuMA=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-uN3KzpbDlMdYxB0mumF8iiZ2S/tF3eGhLL3+BXfnhog="
+          "Value": "sha256-wal8aGqeqlRErhKbLexNRvPEaPupRkl6+Ky05NicuMA="
         }
       ]
     },
@@ -4997,7 +5039,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "884"
+          "Value": "795"
         },
         {
           "Name": "Content-Type",
@@ -5005,11 +5047,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"uN3KzpbDlMdYxB0mumF8iiZ2S/tF3eGhLL3+BXfnhog=\""
+          "Value": "\"wal8aGqeqlRErhKbLexNRvPEaPupRkl6+Ky05NicuMA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 25 Oct 2025 11:43:18 GMT"
+          "Value": "Sat, 25 Oct 2025 11:49:01 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5019,13 +5061,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-uN3KzpbDlMdYxB0mumF8iiZ2S/tF3eGhLL3+BXfnhog="
+          "Value": "sha256-wal8aGqeqlRErhKbLexNRvPEaPupRkl6+Ky05NicuMA="
         }
       ]
     },
     {
       "Route": "css/rightPanelStyle.css.gz",
-      "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/21to5wq120-cvxh4l28wq.gz",
+      "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/21to5wq120-x0m9qqpdh5.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5034,7 +5076,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "470"
+          "Value": "439"
         },
         {
           "Name": "Content-Type",
@@ -5042,11 +5084,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"WrseG6lOoE2T6wONG1G7RKShQSjK/MvO9VMr0nD5+0Q=\""
+          "Value": "\"ygCmit5f3MIKeEgGXofqymQSusFKoL6b2IFBurBQ7oA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 25 Oct 2025 11:43:18 GMT"
+          "Value": "Sat, 25 Oct 2025 11:49:01 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5064,18 +5106,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-WrseG6lOoE2T6wONG1G7RKShQSjK/MvO9VMr0nD5+0Q="
+          "Value": "sha256-ygCmit5f3MIKeEgGXofqymQSusFKoL6b2IFBurBQ7oA="
         }
       ]
     },
     {
-      "Route": "css/rightPanelStyle.cvxh4l28wq.css",
-      "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/21to5wq120-cvxh4l28wq.gz",
+      "Route": "css/rightPanelStyle.x0m9qqpdh5.css",
+      "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/21to5wq120-x0m9qqpdh5.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.002123142251"
+          "Quality": "0.002272727273"
         }
       ],
       "ResponseHeaders": [
@@ -5085,15 +5127,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "470"
+          "Value": "439"
         },
         {
           "Name": "ETag",
-          "Value": "\"WrseG6lOoE2T6wONG1G7RKShQSjK/MvO9VMr0nD5+0Q=\""
+          "Value": "\"ygCmit5f3MIKeEgGXofqymQSusFKoL6b2IFBurBQ7oA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 25 Oct 2025 11:43:18 GMT"
+          "Value": "Sat, 25 Oct 2025 11:49:01 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5113,13 +5155,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"uN3KzpbDlMdYxB0mumF8iiZ2S/tF3eGhLL3+BXfnhog=\""
+          "Value": "W/\"wal8aGqeqlRErhKbLexNRvPEaPupRkl6+Ky05NicuMA=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "cvxh4l28wq"
+          "Value": "x0m9qqpdh5"
         },
         {
           "Name": "label",
@@ -5127,12 +5169,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-uN3KzpbDlMdYxB0mumF8iiZ2S/tF3eGhLL3+BXfnhog="
+          "Value": "sha256-wal8aGqeqlRErhKbLexNRvPEaPupRkl6+Ky05NicuMA="
         }
       ]
     },
     {
-      "Route": "css/rightPanelStyle.cvxh4l28wq.css",
+      "Route": "css/rightPanelStyle.x0m9qqpdh5.css",
       "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/css/rightPanelStyle.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -5142,7 +5184,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "884"
+          "Value": "795"
         },
         {
           "Name": "Content-Type",
@@ -5150,11 +5192,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"uN3KzpbDlMdYxB0mumF8iiZ2S/tF3eGhLL3+BXfnhog=\""
+          "Value": "\"wal8aGqeqlRErhKbLexNRvPEaPupRkl6+Ky05NicuMA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 25 Oct 2025 11:43:18 GMT"
+          "Value": "Sat, 25 Oct 2025 11:49:01 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5164,7 +5206,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "cvxh4l28wq"
+          "Value": "x0m9qqpdh5"
         },
         {
           "Name": "label",
@@ -5172,13 +5214,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-uN3KzpbDlMdYxB0mumF8iiZ2S/tF3eGhLL3+BXfnhog="
+          "Value": "sha256-wal8aGqeqlRErhKbLexNRvPEaPupRkl6+Ky05NicuMA="
         }
       ]
     },
     {
-      "Route": "css/rightPanelStyle.cvxh4l28wq.css.gz",
-      "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/21to5wq120-cvxh4l28wq.gz",
+      "Route": "css/rightPanelStyle.x0m9qqpdh5.css.gz",
+      "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/21to5wq120-x0m9qqpdh5.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5187,7 +5229,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "470"
+          "Value": "439"
         },
         {
           "Name": "Content-Type",
@@ -5195,11 +5237,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"WrseG6lOoE2T6wONG1G7RKShQSjK/MvO9VMr0nD5+0Q=\""
+          "Value": "\"ygCmit5f3MIKeEgGXofqymQSusFKoL6b2IFBurBQ7oA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 25 Oct 2025 11:43:18 GMT"
+          "Value": "Sat, 25 Oct 2025 11:49:01 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5217,7 +5259,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "cvxh4l28wq"
+          "Value": "x0m9qqpdh5"
         },
         {
           "Name": "label",
@@ -5225,7 +5267,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-WrseG6lOoE2T6wONG1G7RKShQSjK/MvO9VMr0nD5+0Q="
+          "Value": "sha256-ygCmit5f3MIKeEgGXofqymQSusFKoL6b2IFBurBQ7oA="
         }
       ]
     },
@@ -5529,12 +5571,12 @@
     },
     {
       "Route": "css/upperPanelStyle.css",
-      "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/y4cqae6wtq-vf44rks1ya.gz",
+      "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/y4cqae6wtq-i419ttt1t1.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001838235294"
+          "Quality": "0.001577287066"
         }
       ],
       "ResponseHeaders": [
@@ -5544,15 +5586,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "543"
+          "Value": "633"
         },
         {
           "Name": "ETag",
-          "Value": "\"4ZCKAEtKyN5EH587+j9NNc3aLB/uGIplCd9vc9L8Lx0=\""
+          "Value": "\"egtMC6TzAgoAzGQHdjH4y9sMBwTz1ZkzlxYc6vV/T/A=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 22 Oct 2025 07:06:40 GMT"
+          "Value": "Tue, 28 Oct 2025 14:39:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5572,13 +5614,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"e7qJ4lZvXlcBi1a/UdyUu4CqBM72/4Ac2t2RsNIrWSU=\""
+          "Value": "W/\"8k4WhLGLb4cm/I7OWaTB+a0Kv/0rA7MrWcpKlfdjCjk=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-e7qJ4lZvXlcBi1a/UdyUu4CqBM72/4Ac2t2RsNIrWSU="
+          "Value": "sha256-8k4WhLGLb4cm/I7OWaTB+a0Kv/0rA7MrWcpKlfdjCjk="
         }
       ]
     },
@@ -5593,7 +5635,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1267"
+          "Value": "1620"
         },
         {
           "Name": "Content-Type",
@@ -5601,11 +5643,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"e7qJ4lZvXlcBi1a/UdyUu4CqBM72/4Ac2t2RsNIrWSU=\""
+          "Value": "\"8k4WhLGLb4cm/I7OWaTB+a0Kv/0rA7MrWcpKlfdjCjk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 22 Oct 2025 07:06:40 GMT"
+          "Value": "Tue, 28 Oct 2025 14:39:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5615,13 +5657,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-e7qJ4lZvXlcBi1a/UdyUu4CqBM72/4Ac2t2RsNIrWSU="
+          "Value": "sha256-8k4WhLGLb4cm/I7OWaTB+a0Kv/0rA7MrWcpKlfdjCjk="
         }
       ]
     },
     {
       "Route": "css/upperPanelStyle.css.gz",
-      "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/y4cqae6wtq-vf44rks1ya.gz",
+      "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/y4cqae6wtq-i419ttt1t1.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5630,7 +5672,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "543"
+          "Value": "633"
         },
         {
           "Name": "Content-Type",
@@ -5638,11 +5680,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"4ZCKAEtKyN5EH587+j9NNc3aLB/uGIplCd9vc9L8Lx0=\""
+          "Value": "\"egtMC6TzAgoAzGQHdjH4y9sMBwTz1ZkzlxYc6vV/T/A=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 22 Oct 2025 07:06:40 GMT"
+          "Value": "Tue, 28 Oct 2025 14:39:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5660,18 +5702,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-4ZCKAEtKyN5EH587+j9NNc3aLB/uGIplCd9vc9L8Lx0="
+          "Value": "sha256-egtMC6TzAgoAzGQHdjH4y9sMBwTz1ZkzlxYc6vV/T/A="
         }
       ]
     },
     {
-      "Route": "css/upperPanelStyle.vf44rks1ya.css",
-      "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/y4cqae6wtq-vf44rks1ya.gz",
+      "Route": "css/upperPanelStyle.i419ttt1t1.css",
+      "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/y4cqae6wtq-i419ttt1t1.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001838235294"
+          "Quality": "0.001577287066"
         }
       ],
       "ResponseHeaders": [
@@ -5681,15 +5723,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "543"
+          "Value": "633"
         },
         {
           "Name": "ETag",
-          "Value": "\"4ZCKAEtKyN5EH587+j9NNc3aLB/uGIplCd9vc9L8Lx0=\""
+          "Value": "\"egtMC6TzAgoAzGQHdjH4y9sMBwTz1ZkzlxYc6vV/T/A=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 22 Oct 2025 07:06:40 GMT"
+          "Value": "Tue, 28 Oct 2025 14:39:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5709,13 +5751,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"e7qJ4lZvXlcBi1a/UdyUu4CqBM72/4Ac2t2RsNIrWSU=\""
+          "Value": "W/\"8k4WhLGLb4cm/I7OWaTB+a0Kv/0rA7MrWcpKlfdjCjk=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "vf44rks1ya"
+          "Value": "i419ttt1t1"
         },
         {
           "Name": "label",
@@ -5723,12 +5765,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-e7qJ4lZvXlcBi1a/UdyUu4CqBM72/4Ac2t2RsNIrWSU="
+          "Value": "sha256-8k4WhLGLb4cm/I7OWaTB+a0Kv/0rA7MrWcpKlfdjCjk="
         }
       ]
     },
     {
-      "Route": "css/upperPanelStyle.vf44rks1ya.css",
+      "Route": "css/upperPanelStyle.i419ttt1t1.css",
       "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/css/upperPanelStyle.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -5738,7 +5780,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1267"
+          "Value": "1620"
         },
         {
           "Name": "Content-Type",
@@ -5746,11 +5788,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"e7qJ4lZvXlcBi1a/UdyUu4CqBM72/4Ac2t2RsNIrWSU=\""
+          "Value": "\"8k4WhLGLb4cm/I7OWaTB+a0Kv/0rA7MrWcpKlfdjCjk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 22 Oct 2025 07:06:40 GMT"
+          "Value": "Tue, 28 Oct 2025 14:39:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5760,7 +5802,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "vf44rks1ya"
+          "Value": "i419ttt1t1"
         },
         {
           "Name": "label",
@@ -5768,13 +5810,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-e7qJ4lZvXlcBi1a/UdyUu4CqBM72/4Ac2t2RsNIrWSU="
+          "Value": "sha256-8k4WhLGLb4cm/I7OWaTB+a0Kv/0rA7MrWcpKlfdjCjk="
         }
       ]
     },
     {
-      "Route": "css/upperPanelStyle.vf44rks1ya.css.gz",
-      "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/y4cqae6wtq-vf44rks1ya.gz",
+      "Route": "css/upperPanelStyle.i419ttt1t1.css.gz",
+      "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/obj/Debug/net9.0/compressed/y4cqae6wtq-i419ttt1t1.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5783,7 +5825,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "543"
+          "Value": "633"
         },
         {
           "Name": "Content-Type",
@@ -5791,11 +5833,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"4ZCKAEtKyN5EH587+j9NNc3aLB/uGIplCd9vc9L8Lx0=\""
+          "Value": "\"egtMC6TzAgoAzGQHdjH4y9sMBwTz1ZkzlxYc6vV/T/A=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 22 Oct 2025 07:06:40 GMT"
+          "Value": "Tue, 28 Oct 2025 14:39:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5813,7 +5855,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "vf44rks1ya"
+          "Value": "i419ttt1t1"
         },
         {
           "Name": "label",
@@ -5821,7 +5863,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-4ZCKAEtKyN5EH587+j9NNc3aLB/uGIplCd9vc9L8Lx0="
+          "Value": "sha256-egtMC6TzAgoAzGQHdjH4y9sMBwTz1ZkzlxYc6vV/T/A="
         }
       ]
     },
@@ -6120,6 +6162,170 @@
         {
           "Name": "integrity",
           "Value": "sha256-tOy5kS1PTkjkEg7bjV8bJa0VpoEZJUHnbqYmm1YyhMg="
+        }
+      ]
+    },
+    {
+      "Route": "img/soundcloud-logo-png.jpg",
+      "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/img/soundcloud-logo-png.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "44511"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"b4IAAcbAII7T+Px3i2JAGmkeqWUqpaZWD4osg3KgjY8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 28 Oct 2025 14:47:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-b4IAAcbAII7T+Px3i2JAGmkeqWUqpaZWD4osg3KgjY8="
+        }
+      ]
+    },
+    {
+      "Route": "img/soundcloud-logo-png.piv02vcwde.jpg",
+      "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/img/soundcloud-logo-png.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "44511"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"b4IAAcbAII7T+Px3i2JAGmkeqWUqpaZWD4osg3KgjY8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 28 Oct 2025 14:47:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "piv02vcwde"
+        },
+        {
+          "Name": "label",
+          "Value": "img/soundcloud-logo-png.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-b4IAAcbAII7T+Px3i2JAGmkeqWUqpaZWD4osg3KgjY8="
+        }
+      ]
+    },
+    {
+      "Route": "img/spotify-logo-png.1y5fiz5feb.png",
+      "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/img/spotify-logo-png.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9802"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2Zln1z/TsN9rECSmNFryjjzgBK/BsMWRXh+hgDGQ1E8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 28 Oct 2025 14:47:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1y5fiz5feb"
+        },
+        {
+          "Name": "label",
+          "Value": "img/spotify-logo-png.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-2Zln1z/TsN9rECSmNFryjjzgBK/BsMWRXh+hgDGQ1E8="
+        }
+      ]
+    },
+    {
+      "Route": "img/spotify-logo-png.png",
+      "AssetFile": "/home/kirilo/RiderProjects/MusicSite/MusicProject/wwwroot/img/spotify-logo-png.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9802"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2Zln1z/TsN9rECSmNFryjjzgBK/BsMWRXh+hgDGQ1E8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 28 Oct 2025 14:47:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-2Zln1z/TsN9rECSmNFryjjzgBK/BsMWRXh+hgDGQ1E8="
         }
       ]
     },
