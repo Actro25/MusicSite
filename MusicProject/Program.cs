@@ -1,9 +1,15 @@
+using MusicProject.Hubs;
+using MusicProject.Servers;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
+builder.Services.AddSignalR();
 var app = builder.Build();
+
+SpotifyService.Initialize(app.Configuration);
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
@@ -21,6 +27,6 @@ app.UseAuthorization();
 app.MapStaticAssets();
 
 app.MapControllerRoute(name: "default", pattern: "{controller=Home}/{action=Index}/{id?}").WithStaticAssets();
-
+app.MapHub<MusicHub>("/musicHub");
 
 app.Run();
