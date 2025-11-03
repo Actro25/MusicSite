@@ -7,7 +7,7 @@ namespace MusicProject.Hubs;
 
 public class MusicHub : Hub
 {
-    public async Task SendMusic(string nameMusic)
+    public async Task SendSpotifyMusic(string nameMusic)
     {
         try
         {
@@ -32,17 +32,50 @@ public class MusicHub : Hub
                     .Select(track => $"{track.Name} - {string.Join(", ", track.Artists)}")
                     .ToArray();
 
-                await Clients.Caller.SendAsync("ReceiveMusic", tracks);
+                await Clients.Caller.SendAsync("ReceiveSpotifyMusic", tracks);
             }
             else
             {
-                await Clients.Caller.SendAsync("ReceiveMusic", Array.Empty<string>());
+                await Clients.Caller.SendAsync("ReceiveSpotifyMusic", Array.Empty<string>());
             }
         }
         catch (Exception ex)
         {
             Console.WriteLine($"Помилка в MusicHub: {ex.Message}");
-            await Clients.Caller.SendAsync("ReceiveMusic", Array.Empty<string>());
+            await Clients.Caller.SendAsync("ReceiveSpotifyMusic", Array.Empty<string>());
+        }
+    }
+
+    public async Task SendSoundCloudMusic(string nameMusic)
+    {
+        try
+        {
+            var dataMusic = await SoundCloudService.SearchTrack(nameMusic);
+
+            if (!string.IsNullOrEmpty(dataMusic))
+            {
+                var jsonDocument = JsonDocument.Parse(dataMusic);
+                var tracks = jsonDocument.RootElement
+                    .EnumerateArray()
+                    .Select(title => new
+                    {
+                        Name = title.GetProperty("title").GetString(),
+                        Artist = title.GetProperty("user").GetProperty("username").GetString(),
+                    })
+                    .Select(title =>  $"{title.Name} - {string.Join(", ", title.Artist)}")
+                    .ToArray();
+                
+                await Clients.Caller.SendAsync("ReceiveSoundCloudMusic", tracks);
+            }
+            else
+            {
+               await Clients.Caller.SendAsync("ReceiveSoundCloudMusic", Array.Empty<string>()); 
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Помилка в MusicHub: {ex.Message}");
+            await Clients.Caller.SendAsync("ReceiveSoundCloudMusic", Array.Empty<string>());
         }
     }
 }

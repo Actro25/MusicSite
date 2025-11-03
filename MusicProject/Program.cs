@@ -1,4 +1,5 @@
 using MusicProject.Hubs;
+using MusicProject.Models;
 using MusicProject.Servers;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -9,7 +10,9 @@ builder.Services.AddRazorPages();
 builder.Services.AddSignalR();
 var app = builder.Build();
 
+//Add API services
 SpotifyService.Initialize(app.Configuration);
+SoundCloudService.Initialize(app.Configuration);
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())

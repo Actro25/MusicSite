@@ -39,7 +39,7 @@ input.addEventListener('input', async () => {
 
         timeoutId = setTimeout(() => {
             if (searchValue.trim()) {
-                connection.invoke("SendMusic", searchValue);
+                connection.invoke("SendSpotifyMusic", searchValue);
             }
         }, 300);
     }
@@ -48,10 +48,13 @@ input.addEventListener('input', async () => {
         searchValue = value.replace('soundcloud:', '').trim();
         hasPrefix = true;
 
-        const filtered = soundCloudSearch.filter(opt =>
-            opt.toLowerCase().includes(searchValue)
-        );
-        displayRegularResults(filtered, refImg);
+        clearTimeout(timeoutId);
+        
+        timeoutId = setTimeout(() => {
+            if (searchValue.trim()) {
+                connection.invoke("SendSoundCloudMusic", searchValue)
+            }
+        })
     }
     else {
         const filtered = options.filter(opt =>
@@ -60,13 +63,17 @@ input.addEventListener('input', async () => {
         displayRegularResults(filtered, '');
     }
 });
-connection.on("ReceiveMusic", (message) => {
+connection.on("ReceiveSpotifyMusic", (message) => {
  
     if (message && Array.isArray(message)) {
-        displaySpotifyResults(message);
+        displayPlatformResults(message, 'Spotify');
     }
 });
-
+connection.on("ReceiveSoundCloudMusic", (message) => {
+    if (message && Array.isArray(message)) {
+        displayPlatformResults(message, 'SoundCloud');
+    }
+})
 /*function updateSuggestions(tracks) {
 
     list.innerHTML = '';
@@ -94,26 +101,28 @@ connection.on("ReceiveMusic", (message) => {
     console.log('👁️ Показуємо список');
     list.classList.remove('hidden');
 }*/
-function displaySpotifyResults(tracks) {
+function displayPlatformResults(tracks,platform) {
     tracks.forEach(track => {
         const li = document.createElement('li');
-
-/*        if (icon) {
-            const img = document.createElement('img');
-            img.src = icon;
-            img.height = 20;
-            img.width = 20;
-            img.style.verticalAlign = 'middle';
-            img.style.marginRight = '8px';
-            li.appendChild(img);
-        }*/
-
+        const img = document.createElement('img');
+        if (platform === 'Spotify') {
+            img.src = '/img/spotify-logo-png.png';
+        }
+        else if (platform === 'SoundCloud') {
+            img.src = '/img/soundcloud-logo-png.png';
+        }
+        img.height = 20;
+        img.width = 20;
+        img.style.verticalAlign = 'middle';
+        img.style.marginRight = '8px';
+        img.alt = `${platform} logo`; // Додайте alt для доступності
         
         const text = document.createTextNode(track);
         li.appendChild(text);
-
+        li.appendChild(img);
+        
         li.onclick = () => {
-            input.value = `spotify:${track.name}`;
+            input.value = `${platform}:${track}`;
             list.classList.add('hidden');
         };
 

@@ -64,9 +64,7 @@ public class SpotifyService
         
         _spotifyToken = tokenResponse.access_token;
         _tokenExpiryTime = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds() + (tokenResponse.expires_in * 1000);
-        Console.WriteLine($"Отримано новий токен Spotify: {_spotifyToken}");
-        Console.WriteLine($"Токен дійсний до: {DateTimeOffset.FromUnixTimeMilliseconds(_tokenExpiryTime)}");
-    }
+   }
 
     public static async Task<string> SearchTrack(string query)
     {
@@ -84,14 +82,10 @@ public class SpotifyService
             var encodedQuery = Uri.EscapeDataString(query);
             var url = $"https://api.spotify.com/v1/search?q={encodedQuery}&type=track&limit=10";
         
-            Console.WriteLine($"🔍 Виконуємо пошук: {url}");
-            Console.WriteLine($"🔑 Використовуємо токен: {token?.Substring(0, Math.Min(20, token?.Length ?? 0))}...");
-
+   
             var response = await httpClient.GetAsync(url);
             var responseContent = await response.Content.ReadAsStringAsync();
-
-            Console.WriteLine($"📡 Статус відповіді: {response.StatusCode}");
-
+            
             if (!response.IsSuccessStatusCode)
             {
                 var errorMessage = $"Spotify search error: {response.StatusCode}. URL: {url}";

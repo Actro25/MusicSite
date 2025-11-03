@@ -8,12 +8,12 @@ public class SoundCloudService
     private static string client_id;
     private static string client_secret;
     
-    private static string _souncCloundToken;
+    private static string _souncCloudToken;
     private static string _refreshToken;
     private static long _tokenExpiryTime;
     private static bool _isInitialized = false;
 
-    public static void Initialize(IConfiguration configuration)
+    public static async void Initialize(IConfiguration configuration)
     {
         if (_isInitialized) return;
         
@@ -21,6 +21,7 @@ public class SoundCloudService
         client_secret = configuration["SoundCloud:Tokens:SOUNDCLOUD_CLIENT_SECRET"];
 
         _isInitialized = true;
+        GetSoundCloudToken();
         Console.WriteLine("✅ SoundCloudService initialized");
     }
 
@@ -46,15 +47,18 @@ public class SoundCloudService
         
     }
 
-    private async Task<string> GetValidToken()
+    private static async Task<string> GetValidToken()
     {
-        if (!string.IsNullOrWhiteSpace(_souncCloundToken) && DateTimeOffset.UtcNow.ToUnixTimeMilliseconds() < _tokenExpiryTime - 300000)
+        if (!string.IsNullOrWhiteSpace(_souncCloudToken) && DateTimeOffset.UtcNow.ToUnixTimeMilliseconds() < _tokenExpiryTime - 300000)
         {
-            return _souncCloundToken;
+            return _souncCloudToken;
         }
+
+        if (string.IsNullOrWhiteSpace(_souncCloudToken))
+            await GetSoundCloudToken();
         
         await RefreshToken();
-        return _souncCloundToken;
+        return _souncCloudToken;
     }
     private static async Task RefreshToken()
     {
@@ -64,8 +68,8 @@ public class SoundCloudService
         var RequestBody = new List<KeyValuePair<string, string>>
         {
             new("grant_type", "refresh_token"),
-            new("client_id", "mmYVKGDNj8JpxnLXvrdvxSFY4ElZrFEU"),
-            new("client_secret", "Cgj6tgqpqxboTgaPalW2enKBPzpRTTr4"),
+            new("client_id", client_id),
+            new("client_secret", client_secret),
             new("refresh_token", $"{_refreshToken}"),
         };
         
@@ -79,13 +83,46 @@ public class SoundCloudService
         var responseContent = response.Result.Content.ReadAsStringAsync();
         var tokenResponse = JsonSerializer.Deserialize<SoundCloudResponseModel>(responseContent.Result);
         
-        _souncCloundToken =  tokenResponse.AccessToken;
+        _souncCloudToken =  tokenResponse.AccessToken;
         _refreshToken = tokenResponse.RefreshToken;
         _tokenExpiryTime = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds() + (tokenResponse.ExpiresIn * 1000);
     }
 
     public static async Task<string> SearchTrack(string query)
     {
+        if (!_isInitialized)
+        {
+            throw new InvalidOperationException("SoundCloudService not initialized");
+        }
+
+        try
+        {
+            var token = await GetValidToken();
+            HttpClient client = new HttpClient();
+            client.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
+            client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("OAuth", token);
+            var url = $"https://api.soundcloud.com/tracks?q={query}&limit=5";
+            var response = await client.GetAsync(url);
+            var responseContent = await response.Content.ReadAsStringAsync();
+            if (!response.IsSuccessStatusCode)
+            {
+                var errorMessage = $"SoundCloud search error: {response.StatusCode}. URL {url}";
+            
+                if (!string.IsNullOrEmpty(responseContent))
+                {
+                    errorMessage += $". Response: {responseContent}";
+                }
+            
+                throw new HttpRequestException(errorMessage);
+            }
+            return responseContent;
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"❌ Помилка пошуку: {ex.Message}");
+            Console.WriteLine($"🔍 Stack trace: {ex.StackTrace}");
+            return null;
+        }
         return "";
     }
 
