@@ -15,7 +15,6 @@ public class MusicHub : Hub
             
             if (!string.IsNullOrEmpty(dataMusic))
             {
-                // Парсимо JSON і витягуємо масив треків
                 var jsonDocument = JsonDocument.Parse(dataMusic);
                 var tracks = jsonDocument.RootElement
                     .GetProperty("tracks")
@@ -27,10 +26,10 @@ public class MusicHub : Hub
                         Artists = track.GetProperty("artists")
                             .EnumerateArray()
                             .Select(artist => artist.GetProperty("name").GetString())
-                            .ToArray()
+                            .ToArray(),
+                        Id = track.GetProperty("id").GetString(),
                     })
-                    .Select(track => $"{track.Name} - {string.Join(", ", track.Artists)}")
-                    .ToArray();
+                    .ToList();
 
                 await Clients.Caller.SendAsync("ReceiveSpotifyMusic", tracks);
             }
@@ -61,9 +60,9 @@ public class MusicHub : Hub
                     {
                         Name = title.GetProperty("title").GetString(),
                         Artist = title.GetProperty("user").GetProperty("username").GetString(),
+                        Id = title.GetProperty("id").GetRawText(),
                     })
-                    .Select(title =>  $"{title.Name} - {string.Join(", ", title.Artist)}")
-                    .ToArray();
+                    .ToList();
                 
                 await Clients.Caller.SendAsync("ReceiveSoundCloudMusic", tracks);
             }

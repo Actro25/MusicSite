@@ -9,5 +9,10 @@
 }
 <body>
 <a asp-controller="Home" asp-action="Index">Go Home</a>
-<h1>Home Page</h1>
+<h2>Songs</h2>
+<ul id="suggestions" class="hidden"></ul>
 </body>
+@section Scripts
+{
+    <script src="~/js/MainIndexScript.js"></script>
+}

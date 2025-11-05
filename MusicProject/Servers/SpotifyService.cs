@@ -80,7 +80,7 @@ public class SpotifyService
             httpClient.DefaultRequestHeaders.Add("Authorization", $"Bearer {token}");
 
             var encodedQuery = Uri.EscapeDataString(query);
-            var url = $"https://api.spotify.com/v1/search?q={encodedQuery}&type=track&limit=10";
+            var url = $"https://api.spotify.com/v1/search?q={encodedQuery}&type=track&limit=5&market=US&offset=0";
         
    
             var response = await httpClient.GetAsync(url);
@@ -97,7 +97,48 @@ public class SpotifyService
             
                 throw new HttpRequestException(errorMessage);
             }
+            return responseContent;
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"❌ Помилка пошуку: {ex.Message}");
+            Console.WriteLine($"🔍 Stack trace: {ex.StackTrace}");
+            return null;
+        }
+    }
 
+    public static async Task<string> FindOneTrack(string idTrack)
+    {
+        if (!_isInitialized)
+        {
+            throw new InvalidOperationException("SpotifyService is not initialized. Call Initialize() first.");
+        }
+    
+        try
+        {
+            var token = await GetValidToken();
+            using var httpClient = new HttpClient();
+            httpClient.DefaultRequestHeaders.Add("Authorization", $"Bearer {token}");
+
+            var encodedQuery = Uri.EscapeDataString(idTrack);
+            var url = $"https://api.spotify.com/v1/tracks/{encodedQuery}";
+        
+   
+            var response = await httpClient.GetAsync(url);
+            var responseContent = await response.Content.ReadAsStringAsync();
+            
+            if (!response.IsSuccessStatusCode)
+            {
+                var errorMessage = $"Spotify search error: {response.StatusCode}. URL: {url}";
+            
+                if (!string.IsNullOrEmpty(responseContent))
+                {
+                    errorMessage += $". Response: {responseContent}";
+                }
+            
+                throw new HttpRequestException(errorMessage);
+            }
+            Console.WriteLine(responseContent);
             return responseContent;
         }
         catch (Exception ex)

@@ -101,7 +101,7 @@ public class SoundCloudService
             HttpClient client = new HttpClient();
             client.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
             client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("OAuth", token);
-            var url = $"https://api.soundcloud.com/tracks?q={query}&limit=5";
+            var url = $"https://api.soundcloud.com/tracks?q={query}&limit=5&offset=0";
             var response = await client.GetAsync(url);
             var responseContent = await response.Content.ReadAsStringAsync();
             if (!response.IsSuccessStatusCode)

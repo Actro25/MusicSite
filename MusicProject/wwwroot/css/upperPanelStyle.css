@@ -57,27 +57,3 @@ header{
 .search-input input:focus + .search-icon {
     stroke: #787878;
 }
-
-#suggestions {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background: rgba(30, 30, 30, 0.95);
-    color: #fff;
-    list-style: none;
-    border-radius: 0 0 10px 10px;
-    border: 1px solid rgba(255,255,255,0.1);
-    padding: 0;
-    max-height: 200px;
-    overflow-y: auto;
-}
-
-#suggestions li {
-    padding: 8px 12px;
-    cursor: pointer;
-}
-
-#suggestions li:hover {
-    background: rgba(255,255,255,0.1);
-}
