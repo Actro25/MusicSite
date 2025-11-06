@@ -2,7 +2,10 @@ namespace MusicProject.Models;
 
 public class TrackInfo
 {
-    public string Title { get; set; }
-    public string[] Artist { get; set; }
-    public string Id  { get; set; }
+    public string? Img640 { get; set; }
+    public string? Img300 { get; set; }
+    public string? Img64 { get; set; }
+    public string? TrackName { get; set; }
+    public List<ArtistModel>? ArtistsNames { get; set; }
+    public string? TrackId { get; set; }
 }

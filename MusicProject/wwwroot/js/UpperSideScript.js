@@ -10,11 +10,11 @@ const connection = new signalR.HubConnectionBuilder()
     .build();
 
 connection.start()
-    .then(() => {
-        console.log("✅ SignalR connected!");
-    })
+    .then(() => {})
     .catch(err => console.error("❌ SignalR connection error:", err));
-
+window.addEventListener('InfoAboutTrackSend', (e) => {
+    connection.invoke("GetOneTrack", e.detail.idTrack, e.detail.platformTrack);
+});
 input.addEventListener('input', async () => {
     const value = input.value.toLowerCase();
     list.innerHTML = '';
@@ -66,5 +66,11 @@ connection.on("ReceiveSoundCloudMusic", (message) => {
     if (message) {
         displayPlatformResults(message, 'SoundCloud');
         window.dispatchEvent(new CustomEvent('MainTrackReceived', {tracks : message, platformTracks: 'SoundCloud'}));
+    }
+})
+connection.on("ReceiveOneTrack", (message) => {
+    if (message){
+        console.log(message);
+        //window.dispatchEvent(new CustomEvent('RightSidePanelReceive', {detail: {}}));
     }
 })

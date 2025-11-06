@@ -138,7 +138,6 @@ public class SpotifyService
             
                 throw new HttpRequestException(errorMessage);
             }
-            Console.WriteLine(responseContent);
             return responseContent;
         }
         catch (Exception ex)
