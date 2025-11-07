@@ -34,3 +34,11 @@
     opacity: 0; 
     z-index: 10;
 }
+.music-signer-div img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+.music-signer-div p{
+    padding-left: 10px;
+}

@@ -69,8 +69,28 @@ connection.on("ReceiveSoundCloudMusic", (message) => {
     }
 })
 connection.on("ReceiveOneTrack", (message) => {
-    if (message){
-        console.log(message);
-        //window.dispatchEvent(new CustomEvent('RightSidePanelReceive', {detail: {}}));
+    if (Array.isArray(message) && message.length > 0) {
+        console.log(message)
+        const track = message[0];
+
+        const img640 = track.img640;
+        const img300 = track.img300;
+        const img64 = track.img64;
+        const trackId = track.trackId;
+        const trackName = track.trackName;
+        const artists = track.artistsNames;
+        
+        window.dispatchEvent(new CustomEvent('RightSidePanelReceive', {detail: 
+                {
+                    image640: img640,
+                    image300: img300,
+                    trackName: trackName,
+                    artists: artists
+                }}));
+        window.dispatchEvent(new CustomEvent('BottomSidePanelReceive', {detail: 
+                {
+                    image: img64,
+                    trackName: trackName,
+                }}))
     }
 })

@@ -28,7 +28,17 @@ document.addEventListener("mousemove", (e) => {
         rightPanel.style.width = newWidth + "px";
     }
 });
-
+window.addEventListener("RightSidePanelReceive", (e) => {
+    const img = document.getElementById("track-image-right-panel");
+    img.src = e.detail.image300;
+    
+    const h2Text = document.getElementById("track-name-right-panel");
+    h2Text.innerText = e.detail.trackName;
+    
+    const h4Text = document.getElementById("track-artists-right-panel");
+    h4Text.innerText = e.detail.artists[0].nameArtist
+    //h4Text.innerText = e.detail.artists.map(a => a.nameArtist).join(", ");
+})
 document.addEventListener("mouseup", () => {
     if (!resizingRight) return;
 
