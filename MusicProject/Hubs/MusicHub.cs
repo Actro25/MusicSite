@@ -82,46 +82,61 @@ public class MusicHub : Hub
         if (platform == "Spotify")
         {
             var dataTrack = await SpotifyService.FindOneTrack(idTrack);
-            if (!string.IsNullOrEmpty(dataTrack))
+            var jsonDocument = JsonDocument.Parse(dataTrack);
+            var root = jsonDocument.RootElement;
+            var track = new TrackInfo
             {
-                var jsonDocument = JsonDocument.Parse(dataTrack);
-                var root = jsonDocument.RootElement;
-                var track = new List<TrackInfo>
-                {
-                    new TrackInfo
-                    {
-                        Img640 = root.GetProperty("album").GetProperty("images").EnumerateArray()
-                            .FirstOrDefault(img => img.GetProperty("width").GetInt32() == 640)
-                            .GetProperty("url").GetString(),
-                        Img300 = root.GetProperty("album").GetProperty("images").EnumerateArray()
-                            .FirstOrDefault(img => img.GetProperty("width").GetInt32() == 300)
-                            .GetProperty("url").GetString(),
-                        Img64 = root.GetProperty("album").GetProperty("images").EnumerateArray()
-                            .FirstOrDefault(img => img.GetProperty("width").GetInt32() == 64)
-                            .GetProperty("url").GetString(),
-                        TrackName = root.GetProperty("name").GetString(),
-                        ArtistsNames = root.GetProperty("artists")
-                            .EnumerateArray()
-                            .Select(artist => new ArtistModel
-                            {
-                                NameArtist = artist.GetProperty("name").GetString(),
-                                IdArtist = artist.GetProperty("id").GetString(),
-                                TypeArtist = artist.GetProperty("type").GetString()
-                            }).ToList(),
-                        TrackId = root.GetProperty("id").GetString()
-                    }
-                };
-                await Clients.Caller.SendAsync("ReceiveOneTrack", track);
-            }
-            else
-            {
-                
-            }
+                Img = root.GetProperty("album").GetProperty("images").EnumerateArray()
+                        .FirstOrDefault(img => img.GetProperty("width").GetInt32() == 640)
+                        .GetProperty("url").GetString(),
+                TrackName = root.GetProperty("name").GetString(),
+                ArtistsNames = root.GetProperty("artists")
+                        .EnumerateArray()
+                        .Select(artist => new ArtistModel
+                        {
+                            NameArtist = artist.GetProperty("name").GetString(),
+                            IdArtist = artist.GetProperty("id").GetString(),
+                            TypeArtist = artist.GetProperty("type").GetString()
+                        }).ToList(),
+                TrackId = root.GetProperty("id").GetString()
+            };
+            await Clients.Caller.SendAsync("ReceiveOneTrack", track);
         }
         else if (platform == "SoundCloud")
         {
-            
+            var dataAudio = await SoundCloudService.GetStreamableTrack(idTrack);
+            var jsonDocument = JsonDocument.Parse(dataAudio);
+            var audios = new StreamableTrackModel
+            {
+                HttpMp3128Url = (jsonDocument.RootElement.TryGetProperty("http_mp3_128_url", out var poop1))?poop1.GetString():null,
+                HlsMp3160Url = (jsonDocument.RootElement.TryGetProperty("hls_mp3_128_url", out var poop2)) ? poop2.GetString() : null,
+                HlsAcc160Url = (jsonDocument.RootElement.TryGetProperty("hls_aac_160_url", out var poop3)) ? poop3.GetString() : null,
+                HlsOpus64Url = (jsonDocument.RootElement.TryGetProperty("hls_opus_64_url", out var poop4)) ? poop4.GetString() : null,
+                PreviewMp3128Url = (jsonDocument.RootElement.TryGetProperty("preview_mp3_128_url", out var poop5)) ? poop5.GetString() : null,
+            };
+
+            var dataTrack = await SoundCloudService.GetOneTrack(idTrack);
+            var jsonDocument2 = JsonDocument.Parse(dataTrack);
+            var track = new TrackInfo
+            {
+                Img = jsonDocument2.RootElement.GetProperty("artwork_url").GetString(),
+                TrackName = jsonDocument2.RootElement.GetProperty("title").GetString(),
+                TrackId = jsonDocument2.RootElement.GetProperty("id").GetRawText(),
+                ArtistsNames = new List<ArtistModel>
+                {
+                    new ArtistModel
+                    {
+                        NameArtist = jsonDocument2.RootElement.GetProperty("user").GetProperty("full_name").GetString(),
+                        IdArtist = jsonDocument2.RootElement.GetProperty("user").GetProperty("id").GetRawText(),
+                        TypeArtist = jsonDocument2.RootElement.GetProperty("user").GetProperty("kind").GetString()
+                    }
+                }
+            };
+            track.Img = track.Img.Replace("large", "t500x500");
+            await Clients.Caller.SendAsync("ReceiveOneTrack", track);
         }
-        await Clients.Caller.SendAsync("ReceiveOneTrack", idTrack, platform);
+        else {
+            await Clients.Caller.SendAsync("ReceiveOneTrack", null);
+        }
     }
 }

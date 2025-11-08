@@ -30,13 +30,13 @@ document.addEventListener("mousemove", (e) => {
 });
 window.addEventListener("RightSidePanelReceive", (e) => {
     const img = document.getElementById("track-image-right-panel");
-    img.src = e.detail.image300;
+    img.src = e.detail.image;
     
     const h2Text = document.getElementById("track-name-right-panel");
     h2Text.innerText = e.detail.trackName;
     
-    const h4Text = document.getElementById("track-artists-right-panel");
-    h4Text.innerText = e.detail.artists[0].nameArtist
+    const pText = document.getElementById("track-artists-right-panel");
+    pText.innerText = e.detail.artists[0].nameArtist;
     //h4Text.innerText = e.detail.artists.map(a => a.nameArtist).join(", ");
 })
 document.addEventListener("mouseup", () => {

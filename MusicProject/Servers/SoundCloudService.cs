@@ -123,8 +123,51 @@ public class SoundCloudService
             Console.WriteLine($"🔍 Stack trace: {ex.StackTrace}");
             return null;
         }
-        return "";
     }
-
+    public static async Task<string> GetStreamableTrack(string query)
+    {
+        if (!_isInitialized)
+        {
+            throw new InvalidOperationException("SoundCloudService not initialized");
+        }
+        try {
+            var token = await GetValidToken();
+            HttpClient client = new HttpClient();
+            client.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
+            client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("OAuth", token);
+            var url = $"https://api.soundcloud.com/tracks/{query}/streams";
+            var response = await client.GetAsync(url);
+            var responseContent = await response.Content.ReadAsStringAsync();
+            return responseContent;
+        } 
+        catch (Exception ex) {
+            Console.WriteLine($"❌ Помилка пошуку: {ex.Message}");
+            Console.WriteLine($"🔍 Stack trace: {ex.StackTrace}");
+            return null;
+        }
+    }
+    public static async Task<string> GetOneTrack(string query) {
+        if (!_isInitialized) 
+        {
+            throw new InvalidOperationException("SoundCloudService not initialized");
+        }
+        try 
+        {
+            var token = await GetValidToken();
+            HttpClient client = new HttpClient();
+            client.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
+            client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("OAuth", token);
+            var url = $"https://api.soundcloud.com/tracks/{query}";
+            var response = await client.GetAsync(url);
+            var responseContent = await response.Content.ReadAsStringAsync();
+            return responseContent;
+        } 
+        catch(Exception ex) 
+        {
+            Console.WriteLine($"❌ Помилка пошуку: {ex.Message}");
+            Console.WriteLine($"🔍 Stack trace: {ex.StackTrace}");
+            return null;
+        }
+    }
     public static bool IsInitialized() => _isInitialized;
 }
