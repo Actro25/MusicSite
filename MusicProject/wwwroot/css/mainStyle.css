@@ -5,16 +5,17 @@
     color: #fff;
     list-style: none;
     border-radius: 0 0 10px 10px;
-    border: 1px solid rgba(255,255,255,0.1);
     padding: 0;
     height: auto;
     overflow-y: auto;
 }
 
-#suggestions li {
-    padding: 8px 12px;
-    cursor: pointer;
-}
+    #suggestions li {
+        padding: 12px 10px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+    }
 
 #suggestions li:hover {
     background: rgba(255,255,255,0.1);

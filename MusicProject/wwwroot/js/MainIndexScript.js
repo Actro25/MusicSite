@@ -17,8 +17,17 @@ function displayPlatformResults(tracks, platform) {
         }
 
         const li = document.createElement('li');
+        const previewTrackImage = document.createElement('img');
         const img = document.createElement('img');
         let text;
+
+        previewTrackImage.src = track.image;
+        previewTrackImage.width = 50;
+        previewTrackImage.height = 50;
+        previewTrackImage.alt = `Track icon`;
+        previewTrackImage.style.borderRadius = "15px"
+        previewTrackImage.style.verticalAlign = 'middle';
+        previewTrackImage.style.marginRight = '10px';
 
         if (platform === 'Spotify') {
             img.src = '/img/spotify-logo-png.png';
@@ -36,12 +45,13 @@ function displayPlatformResults(tracks, platform) {
             text = document.createTextNode(track.name || 'Unknown Track');
         }
 
+
         img.height = 20;
         img.width = 20;
         img.style.verticalAlign = 'middle';
-        img.style.marginRight = '8px';
         img.alt = `${platform} logo`;
 
+        li.appendChild(previewTrackImage);
         li.appendChild(text);
         li.appendChild(img);
         li.onclick = () => {

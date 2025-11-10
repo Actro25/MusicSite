@@ -1,16 +1,17 @@
-.playlist-div{
+.playlist-div {
     width: 100%;
     min-width: 100px;
     max-width: 300px;
-    margin: 10px;
     height: 100%;
     position: relative;
     transition: background 0.4s ease, box-shadow 0.4s ease;
-
     background: rgba(243, 243, 243, 0.08);
     backdrop-filter: blur(25px);
-    border: 1px solid rgba(117, 104, 124, 0.15);
-    border-radius: 10px;
+/*    border: 1px solid rgba(117, 104, 124, 0.15);*/
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-right:9px;
+
     resize: none;
 }
 

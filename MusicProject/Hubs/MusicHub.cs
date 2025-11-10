@@ -28,6 +28,10 @@ public class MusicHub : Hub
                             .Select(artist => artist.GetProperty("name").GetString())
                             .ToArray(),
                         Id = track.GetProperty("id").GetString(),
+                        Image = track.GetProperty("album").GetProperty("images").EnumerateArray()
+                        .FirstOrDefault(img => img.GetProperty("width").GetInt32() == 640)
+                        .GetProperty("url").GetString()
+
                     })
                     .ToList();
                 await Clients.Caller.SendAsync("ReceiveSpotifyMusic", tracks);
@@ -60,6 +64,7 @@ public class MusicHub : Hub
                         Name = title.GetProperty("title").GetString(),
                         Artist = title.GetProperty("user").GetProperty("username").GetString(),
                         Id = title.GetProperty("id").GetRawText(),
+                        Image = (!string.IsNullOrEmpty(title.GetProperty("artwork_url").GetString())) ? title.GetProperty("artwork_url").GetString() : title.GetProperty("user").GetProperty("avatar_url").GetString()
                     })
                     .ToList();
                 
@@ -126,13 +131,16 @@ public class MusicHub : Hub
                 {
                     new ArtistModel
                     {
-                        NameArtist = jsonDocument2.RootElement.GetProperty("user").GetProperty("full_name").GetString(),
+                        NameArtist = jsonDocument2.RootElement.GetProperty("user").GetProperty("username").GetString(),
                         IdArtist = jsonDocument2.RootElement.GetProperty("user").GetProperty("id").GetRawText(),
-                        TypeArtist = jsonDocument2.RootElement.GetProperty("user").GetProperty("kind").GetString()
+                        TypeArtist = jsonDocument2.RootElement.GetProperty("user").GetProperty("kind").GetString(),
+                        AvatarArtist = jsonDocument2.RootElement.GetProperty("user").GetProperty("avatar_url").GetString()
                     }
                 }
             };
-            track.Img = track.Img.Replace("large", "t500x500");
+            track.Img = (!string.IsNullOrEmpty(track.Img)) ? 
+                track.Img.Replace("large", "t500x500") : 
+                track.ArtistsNames[0].AvatarArtist.Replace("large", "t500x500");
             await Clients.Caller.SendAsync("ReceiveOneTrack", track);
         }
         else {
