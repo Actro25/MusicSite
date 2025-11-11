@@ -86,6 +86,8 @@ public class MusicHub : Hub
     {
         if (platform == "Spotify")
         {
+            var audios = new StreamableTrackModel();
+
             var dataTrack = await SpotifyService.FindOneTrack(idTrack);
             var jsonDocument = JsonDocument.Parse(dataTrack);
             var root = jsonDocument.RootElement;
@@ -105,7 +107,7 @@ public class MusicHub : Hub
                         }).ToList(),
                 TrackId = root.GetProperty("id").GetString()
             };
-            await Clients.Caller.SendAsync("ReceiveOneTrack", track);
+            await Clients.Caller.SendAsync("ReceiveOneTrack", new { track, audios });
         }
         else if (platform == "SoundCloud")
         {
@@ -141,7 +143,7 @@ public class MusicHub : Hub
             track.Img = (!string.IsNullOrEmpty(track.Img)) ? 
                 track.Img.Replace("large", "t500x500") : 
                 track.ArtistsNames[0].AvatarArtist.Replace("large", "t500x500");
-            await Clients.Caller.SendAsync("ReceiveOneTrack", track);
+            await Clients.Caller.SendAsync("ReceiveOneTrack", new { track, audios });
         }
         else {
             await Clients.Caller.SendAsync("ReceiveOneTrack", null);

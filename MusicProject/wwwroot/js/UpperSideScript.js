@@ -70,8 +70,9 @@ connection.on("ReceiveSoundCloudMusic", (message) => {
 })
 connection.on("ReceiveOneTrack", (message) => {
     if (message) {
-        console.log(message)
-        const track = message;
+        const audio = message.audios;
+
+        const track = message.track;
 
         const img = track.img;
         const trackId = track.trackId;
@@ -87,7 +88,8 @@ connection.on("ReceiveOneTrack", (message) => {
                 {
                     image: img,
                     trackName: trackName,
-                    artists: artists
+                    artists: artists,
+                    audios: audio
                 }}))
     }
 })
