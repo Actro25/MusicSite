@@ -8,7 +8,7 @@ function displayPlatformResults(tracks, platform) {
         list.classList.add('hidden');
         return;
     }
-
+    console.log(tracks);
     list.innerHTML = '';
 
     Object.values(tracks).forEach(track => {
@@ -58,7 +58,9 @@ function displayPlatformResults(tracks, platform) {
             window.dispatchEvent(new CustomEvent('InfoAboutTrackSend', {
                 detail: {
                     idTrack: track.id,
-                    platformTrack: platform
+                    platformTrack: platform,
+                    nameTrack: track.name,
+                    artistTrack: track.artist
                 }
             }));
         };

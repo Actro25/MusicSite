@@ -82,11 +82,11 @@ public class MusicHub : Hub
         }
     }
 
-    public async Task GetOneTrack(string idTrack, string platform)
+    public async Task GetOneTrack(string idTrack, string platform, string name, string artist)
     {
         if (platform == "Spotify")
         {
-            var audios = new StreamableTrackModel();
+            var audios = JamedoMusicService.GetJamedoMusicTrack(name,artist);
 
             var dataTrack = await SpotifyService.FindOneTrack(idTrack);
             var jsonDocument = JsonDocument.Parse(dataTrack);

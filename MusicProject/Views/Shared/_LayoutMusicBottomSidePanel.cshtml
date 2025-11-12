@@ -15,22 +15,22 @@
 
     <div class="music-center">
         <div class="music-controls">
-            <button class="prev-btn"><img class="image-control-media" src="/img/mediaControlImages/icons8-rewind-50.png"></button>
-            <button class="play-btn" id="play-track-button"><img class="image-control-media" src="/img/mediaControlImages/icons8-play-50.png"></button>
-            <button class="next-btn"><img class="image-control-media" src="/img/mediaControlImages/icons8-fast-forward-50.png"></button>
+            <button class="prev-btn" id="play-previous-track-button"><img src="/img/mediaControlImages/icons8-rewind-50.png"></button>
+            <button class="play-btn" id="play-track-button"><img src="/img/mediaControlImages/icons8-play-50.png"></button>
+            <button class="next-btn" id="play-next-track-button"><img src="/img/mediaControlImages/icons8-fast-forward-50.png"></button>
         </div>
 
         <div class="music-progress">
-            <span class="time current">0:42</span>
-            <input id="play-track-input" type="range" min="0" max="100" value="20" class="progress-bar">
-            <span id="end-lenght-track" class="time total">3:50</span>
-            <audio id="track-player"></audio>
+            <span id="progress-lenght-track" class="time current">0:00</span>
+            <input id="play-track-input" type="range" min="0" max="100" value="0" class="progress-bar">
+            <span id="end-lenght-track" class="time total">0:00</span>
+            <audio id="track-player" preload="metadata"></audio>
         </div>
     </div>
 
     <div class="music-volume">
         <img class="image-control-media" src="/img/mediaControlImages/icons8-audio-50.png">
-        <input id="volume-track-input" type="range" min="0" max="100" value="70" class="volume-bar">
+        <input id="volume-track-input" type="range" min="0" max="100" value="5" class="volume-bar">
     </div>
 </div>
 @section Scripts

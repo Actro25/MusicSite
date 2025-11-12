@@ -64,17 +64,31 @@ main {
 .music-controls {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 20px;
     margin-bottom: 4px;
 }
 
 .music-controls button {
-    background: none;
+    display: flex;  
+    align-items: center;
+    justify-content: center;  
+    width: 35px;
+    height: 35px;
     border: none;
+    border-radius: 15%;
+    background: black;
     color: #ff8cf7;
     font-size: 22px;
     cursor: pointer;
     transition: transform 0.2s;
+}
+
+
+.music-controls button img {
+    width: 30px;
+    height: 30px;
+    display: block;
 }
 
 .music-controls button:hover {
@@ -104,8 +118,4 @@ main {
 .volume-bar {
     width: 80px;
     accent-color: #ff8cf7;
-}
-.image-control-media {
-    width: 30px;
-    height: 30px;
 }

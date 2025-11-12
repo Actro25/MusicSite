@@ -13,7 +13,7 @@ connection.start()
     .then(() => {})
     .catch(err => console.error("❌ SignalR connection error:", err));
 window.addEventListener('InfoAboutTrackSend', (e) => {
-    connection.invoke("GetOneTrack", e.detail.idTrack, e.detail.platformTrack);
+    connection.invoke("GetOneTrack", e.detail.idTrack, e.detail.platformTrack, e.detail.nameTrack, e.detail.artistTrack);
 });
 input.addEventListener('input', async () => {
     const value = input.value.toLowerCase();

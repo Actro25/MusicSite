@@ -80,8 +80,8 @@ public class SoundCloudService
 
     private static async Task DeserializeToken(System.Threading.Tasks.Task<System.Net.Http.HttpResponseMessage> response)
     {
-        var responseContent = response.Result.Content.ReadAsStringAsync();
-        var tokenResponse = JsonSerializer.Deserialize<SoundCloudResponseModel>(responseContent.Result);
+        var responseContent = await response.Result.Content.ReadAsStringAsync();
+        var tokenResponse = JsonSerializer.Deserialize<SoundCloudResponseModel>(responseContent);
         
         _souncCloudToken =  tokenResponse.AccessToken;
         _refreshToken = tokenResponse.RefreshToken;
