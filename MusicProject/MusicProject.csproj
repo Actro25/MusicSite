@@ -11,4 +11,8 @@
       <Folder Include="wwwroot\video\" />
     </ItemGroup>
 
+    <ItemGroup>
+      <PackageReference Include="FuzzySharp" Version="2.0.2" />
+    </ItemGroup>
+
 </Project>

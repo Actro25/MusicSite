@@ -8,12 +8,12 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
 builder.Services.AddSignalR();
+builder.Services.AddHttpClient();
 var app = builder.Build();
 
 //Add API services
 SpotifyService.Initialize(app.Configuration);
 SoundCloudService.Initialize(app.Configuration);
-JamedoMusicService.Initialize(app.Configuration);
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {

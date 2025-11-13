@@ -8,7 +8,6 @@ function displayPlatformResults(tracks, platform) {
         list.classList.add('hidden');
         return;
     }
-    console.log(tracks);
     list.innerHTML = '';
 
     Object.values(tracks).forEach(track => {
@@ -20,6 +19,7 @@ function displayPlatformResults(tracks, platform) {
         const previewTrackImage = document.createElement('img');
         const img = document.createElement('img');
         let text;
+        let artist = "";
 
         previewTrackImage.src = track.image;
         previewTrackImage.width = 50;
@@ -28,23 +28,22 @@ function displayPlatformResults(tracks, platform) {
         previewTrackImage.style.borderRadius = "15px"
         previewTrackImage.style.verticalAlign = 'middle';
         previewTrackImage.style.marginRight = '10px';
-
+        
         if (platform === 'Spotify') {
             img.src = '/img/spotify-logo-png.png';
-            const artists = track.artists && Array.isArray(track.artists)
+            artist = track.artists && Array.isArray(track.artists)
                 ? track.artists.join(", ")
                 : 'Unknown Artist';
-            text = document.createTextNode(`${track.name || 'Unknown Track'} - ${artists}`);
+            text = document.createTextNode(`${track.name || 'Unknown Track'} - ${artist}`);
         }
         else if (platform === 'SoundCloud') {
             img.src = '/img/soundcloud-logo-png.png';
-            const artist = track.artist || 'Unknown Artist';
+            artist = track.artist || 'Unknown Artist';
             text = document.createTextNode(`${track.name || 'Unknown Track'} - ${artist}`);
         } 
         else {
             text = document.createTextNode(track.name || 'Unknown Track');
         }
-
 
         img.height = 20;
         img.width = 20;
@@ -60,7 +59,7 @@ function displayPlatformResults(tracks, platform) {
                     idTrack: track.id,
                     platformTrack: platform,
                     nameTrack: track.name,
-                    artistTrack: track.artist
+                    artistTrack: artist
                 }
             }));
         };

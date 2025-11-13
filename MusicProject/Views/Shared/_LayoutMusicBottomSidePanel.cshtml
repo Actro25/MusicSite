@@ -16,7 +16,7 @@
     <div class="music-center">
         <div class="music-controls">
             <button class="prev-btn" id="play-previous-track-button"><img src="/img/mediaControlImages/icons8-rewind-50.png"></button>
-            <button class="play-btn" id="play-track-button"><img src="/img/mediaControlImages/icons8-play-50.png"></button>
+            <button class="play-btn" id="play-track-button"><img id="play-track-button-image" src="/img/mediaControlImages/icons8-play-50.png"></button>
             <button class="next-btn" id="play-next-track-button"><img src="/img/mediaControlImages/icons8-fast-forward-50.png"></button>
         </div>
 
@@ -29,7 +29,7 @@
     </div>
 
     <div class="music-volume">
-        <img class="image-control-media" src="/img/mediaControlImages/icons8-audio-50.png">
+        <img class="image-control-media" id="track-volume" src="/img/mediaControlImages/icons8-no-audio-50.png">
         <input id="volume-track-input" type="range" min="0" max="100" value="5" class="volume-bar">
     </div>
 </div>

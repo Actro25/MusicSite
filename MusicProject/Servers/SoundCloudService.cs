@@ -169,5 +169,11 @@ public class SoundCloudService
             return null;
         }
     }
+    public static string GetSoundCloudToken(string Client_id, string Client_secret) {
+        if (Client_id == client_id && Client_secret == client_secret)
+            return _souncCloudToken;
+        else
+            return "";
+    }
     public static bool IsInitialized() => _isInitialized;
 }

@@ -2,7 +2,6 @@ using System.Text.Json;
 using Microsoft.AspNetCore.SignalR;
 using MusicProject.Models;
 using MusicProject.Servers;
-
 namespace MusicProject.Hubs;
 
 public class MusicHub : Hub
@@ -86,7 +85,52 @@ public class MusicHub : Hub
     {
         if (platform == "Spotify")
         {
-            var audios = JamedoMusicService.GetJamedoMusicTrack(name,artist);
+            var audios = new StreamableTrackModel();
+            var dataMusic = await SoundCloudService.SearchTrack(name);
+
+            if (!string.IsNullOrEmpty(dataMusic))
+            {
+                var jsonDocument2 = JsonDocument.Parse(dataMusic);
+                var tracks = jsonDocument2.RootElement
+                    .EnumerateArray()
+                    .Select(title => new
+                    {
+                        Name = title.GetProperty("title").GetString(),
+                        ArtistUserName = title.GetProperty("user").GetProperty("username").GetString(),
+                        Id = title.GetProperty("id").GetRawText(),
+                        Image = (!string.IsNullOrEmpty(title.GetProperty("artwork_url").GetString())) ? title.GetProperty("artwork_url").GetString() : title.GetProperty("user").GetProperty("avatar_url").GetString(),
+                        ArtistFullName = title.GetProperty("user").GetProperty("full_name").GetString()
+                    })
+                    .ToList();
+
+                foreach (var itemTrack in tracks) {
+                    var nameTrack = (itemTrack.Name == null)?"":itemTrack.Name;
+                    var artistTrack = (itemTrack.ArtistUserName == null) ? "" : itemTrack.ArtistUserName;
+                    var artistFullNameTrack = (itemTrack.ArtistFullName == null) ? "" : itemTrack.ArtistFullName;
+
+                    name = (name == null) ? "" : name;
+                    artist = (artist == null) ? "" : artist;
+
+                    Console.WriteLine($"Name: {name} - Artist: {artist}");
+                    Console.WriteLine($"NameTrackThatFound: {nameTrack} - ArtistNameThatFound: {artistTrack} - ArtistFullNameFound: {artistFullNameTrack}");
+                    Console.WriteLine($"ScpreTracl: {FuzzySharp.Fuzz.Ratio(nameTrack, name)} - ScoreArtist: Name: {FuzzySharp.Fuzz.Ratio(artistTrack, artist)} FullName: {FuzzySharp.Fuzz.Ratio(artistFullNameTrack, artist)}");
+                    if ((FuzzySharp.Fuzz.Ratio(nameTrack, name) >= 75) && 
+                        (FuzzySharp.Fuzz.Ratio(itemTrack.ArtistUserName, artist) >= 80 || FuzzySharp.Fuzz.Ratio(artistFullNameTrack, artist) >= 80)) {
+                        Console.WriteLine("True");
+                        var dataAudio = await SoundCloudService.GetStreamableTrack(itemTrack.Id);
+                        var jsonDocument3 = JsonDocument.Parse(dataAudio);
+                        audios = new StreamableTrackModel
+                        {
+                            HttpMp3128Url = (jsonDocument3.RootElement.TryGetProperty("http_mp3_128_url", out var poop1)) ? poop1.GetString() : null,
+                            HlsMp3160Url = (jsonDocument3.RootElement.TryGetProperty("hls_mp3_128_url", out var poop2)) ? poop2.GetString() : null,
+                            HlsAcc160Url = (jsonDocument3.RootElement.TryGetProperty("hls_aac_160_url", out var poop3)) ? poop3.GetString() : null,
+                            HlsOpus64Url = (jsonDocument3.RootElement.TryGetProperty("hls_opus_64_url", out var poop4)) ? poop4.GetString() : null,
+                            PreviewMp3128Url = (jsonDocument3.RootElement.TryGetProperty("preview_mp3_128_url", out var poop5)) ? poop5.GetString() : null,
+                        };
+                    }
+                    Console.WriteLine();
+                }
+            }
 
             var dataTrack = await SpotifyService.FindOneTrack(idTrack);
             var jsonDocument = JsonDocument.Parse(dataTrack);
