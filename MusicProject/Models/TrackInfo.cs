@@ -6,4 +6,5 @@ public class TrackInfo
     public string? TrackName { get; set; }
     public List<ArtistModel>? ArtistsNames { get; set; }
     public string? TrackId { get; set; }
+    public string? TrackUrl { get; set; }
 }

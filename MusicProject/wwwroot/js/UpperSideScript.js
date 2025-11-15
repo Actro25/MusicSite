@@ -78,11 +78,13 @@ connection.on("ReceiveOneTrack", (message) => {
         const trackId = track.trackId;
         const trackName = track.trackName;
         const artists = track.artistsNames;
+        const trackUrl = track.trackUrl;
         window.dispatchEvent(new CustomEvent('RightSidePanelReceive', {detail: 
                 {
                     image: img,
                     trackName: trackName,
-                    artists: artists
+                    artists: artists,
+                    trackUrl: trackUrl
                 }}));
         window.dispatchEvent(new CustomEvent('BottomSidePanelReceive', {detail: 
                 {

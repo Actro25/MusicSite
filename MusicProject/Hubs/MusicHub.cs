@@ -111,11 +111,7 @@ public class MusicHub : Hub
                     name = (name == null) ? "" : name;
                     artist = (artist == null) ? "" : artist;
 
-                    Console.WriteLine($"Name: {name} - Artist: {artist}");
-                    Console.WriteLine($"NameTrackThatFound: {nameTrack} - ArtistNameThatFound: {artistTrack} - ArtistFullNameFound: {artistFullNameTrack}");
-                    Console.WriteLine($"ScpreTracl: {FuzzySharp.Fuzz.Ratio(nameTrack, name)} - ScoreArtist: Name: {FuzzySharp.Fuzz.Ratio(artistTrack, artist)} FullName: {FuzzySharp.Fuzz.Ratio(artistFullNameTrack, artist)}");
-                    if ((FuzzySharp.Fuzz.Ratio(nameTrack, name) >= 75) && 
-                        (FuzzySharp.Fuzz.Ratio(itemTrack.ArtistUserName, artist) >= 80 || FuzzySharp.Fuzz.Ratio(artistFullNameTrack, artist) >= 80)) {
+                    if ((FuzzySharp.Fuzz.Ratio(nameTrack, name) >= 75) && (FuzzySharp.Fuzz.Ratio(itemTrack.ArtistUserName, artist) >= 90 || FuzzySharp.Fuzz.Ratio(artistFullNameTrack, artist) >= 80)) {
                         Console.WriteLine("True");
                         var dataAudio = await SoundCloudService.GetStreamableTrack(itemTrack.Id);
                         var jsonDocument3 = JsonDocument.Parse(dataAudio);
@@ -147,9 +143,11 @@ public class MusicHub : Hub
                         {
                             NameArtist = artist.GetProperty("name").GetString(),
                             IdArtist = artist.GetProperty("id").GetString(),
-                            TypeArtist = artist.GetProperty("type").GetString()
+                            TypeArtist = artist.GetProperty("type").GetString(),
+                            UrlArtist = artist.GetProperty("external_urls").GetProperty("spotify").GetString()
                         }).ToList(),
-                TrackId = root.GetProperty("id").GetString()
+                TrackId = root.GetProperty("id").GetString(),
+                TrackUrl = root.GetProperty("external_urls").GetProperty("spotify").GetString()
             };
             await Clients.Caller.SendAsync("ReceiveOneTrack", new { track, audios });
         }
@@ -173,6 +171,7 @@ public class MusicHub : Hub
                 Img = jsonDocument2.RootElement.GetProperty("artwork_url").GetString(),
                 TrackName = jsonDocument2.RootElement.GetProperty("title").GetString(),
                 TrackId = jsonDocument2.RootElement.GetProperty("id").GetRawText(),
+                TrackUrl = jsonDocument2.RootElement.GetProperty("permalink_url").GetString(),
                 ArtistsNames = new List<ArtistModel>
                 {
                     new ArtistModel
@@ -180,7 +179,8 @@ public class MusicHub : Hub
                         NameArtist = jsonDocument2.RootElement.GetProperty("user").GetProperty("username").GetString(),
                         IdArtist = jsonDocument2.RootElement.GetProperty("user").GetProperty("id").GetRawText(),
                         TypeArtist = jsonDocument2.RootElement.GetProperty("user").GetProperty("kind").GetString(),
-                        AvatarArtist = jsonDocument2.RootElement.GetProperty("user").GetProperty("avatar_url").GetString()
+                        AvatarArtist = jsonDocument2.RootElement.GetProperty("user").GetProperty("avatar_url").GetString(),
+                        UrlArtist = jsonDocument2.RootElement.GetProperty("user").GetProperty("permalink_url").GetString()
                     }
                 }
             };

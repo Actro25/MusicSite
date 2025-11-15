@@ -19,7 +19,6 @@ namespace MusicProject.Controllers
         public async Task<IActionResult> GetHls(string url_track_music)
         {
             var url = url_track_music.Replace("%2F", "/");
-            Console.WriteLine("APICONTROLLER: " + url_track_music);
             using var client = new HttpClient();
             client.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
             client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("OAuth", _soundCloudToken);

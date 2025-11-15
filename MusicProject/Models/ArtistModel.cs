@@ -6,4 +6,5 @@ public class ArtistModel
     public string? IdArtist { get; set; }
     public string? TypeArtist { get; set; }
     public string? AvatarArtist { get; set; }
+    public string? UrlArtist { get; set; }
 }

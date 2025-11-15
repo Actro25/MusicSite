@@ -15,7 +15,6 @@
     transition: background 0.4s ease, box-shadow 0.4s ease;
     background: rgba(243, 243, 243, 0.08);
     backdrop-filter: blur(25px);
-/*    border: 1px solid rgba(117, 104, 124, 0.15);*/
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     resize: none;
@@ -41,4 +40,21 @@
 }
 .music-signer-div p{
     padding-left: 10px;
+}
+.music-signer-div a {
+    padding-right: 10px;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+    text-decoration: none;
+    color: gray;
+}
+#track-artists-div {
+    background: rgba(30, 30, 30, 0.95);
+    padding: 5px;
+    border-radius: 10px;
+    margin: 5px;
 }
