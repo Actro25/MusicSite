@@ -8,8 +8,13 @@ const spanTextAudioLenght = document.getElementById("end-lenght-track");
 const audio = document.getElementById("track-player");
 const playerButtonPlayImage = document.getElementById("play-track-button-image");
 const playerTrackVolume = document.getElementById("track-volume");
+const volumeButtonTrack = document.getElementById("track-volume-button");
+const playerButtonLoop = document.getElementById("play-loop-track-button");
 const hls = new Hls();
+let currentVolumeTrack = 5;
 let isPlay = false;
+let isVolumeOff = false;
+let isLoop = false;
 let audioSRC;
 document.addEventListener('DOMContentLoaded', function () {
     playerButtonPlay.disabled = true;
@@ -121,23 +126,57 @@ playerButtonPlay.addEventListener('click', () => {
     }
     isPlay = !isPlay;
 });
-playerInputVolumeProgres.addEventListener('change', function (event) {
-    audio.volume = event.target.value * 0.01;
+playerInputVolumeProgres.addEventListener('change', () => {
+    audio.volume = playerInputVolumeProgres.value * 0.01;
+    currentVolumeTrack = playerInputVolumeProgres.value;
     ChangeImageInputSound();
 });
-playerInputTrackProgress.addEventListener('change', function (event) {
+playerInputTrackProgress.addEventListener('change', () => {
     audio.currentTime = playerInputTrackProgress.value;
 });
 audio.addEventListener('timeupdate', () => {
     playerInputTrackProgress.value = audio.currentTime;
+
 
     let time = Math.trunc(audio.currentTime);
     let minutes = Math.trunc(time / 60);
     let seconds = time - (minutes * 60);
     let ShowTime = minutes + ":" + ((seconds<10)?"0":"") + seconds;
     spanTextProgress.innerText = ShowTime;
-});
 
+});
+volumeButtonTrack.addEventListener('click', () => {
+    if (isVolumeOff) {
+        playerInputVolumeProgres.value = currentVolumeTrack;
+        audio.volume = playerInputVolumeProgres.value * 0.01;;
+    }
+    else {
+        playerInputVolumeProgres.value = 0;
+        audio.volume = 0;
+    }
+    isVolumeOff = !isVolumeOff;
+    ChangeImageInputSound();
+});
+playerButtonLoop.addEventListener('click', () => {
+    if (!audio.loop) {
+        playerButtonLoop.style.border = '1px solid';
+        playerButtonLoop.style.borderColor = 'gray';
+    }
+    else {
+        playerButtonLoop.style.border = 'none';
+    }
+    audio.loop = !audio.loop;
+});
+audio.addEventListener("ended", () => {
+    if (audio.loop) {
+        audio.currentTime = 0;
+        audio.play();
+    }
+    if (isPlay) {
+        playerButtonPlayImage.src = "/img/mediaControlImages/icons8-play-50.png";
+        isPlay = !isPlay;
+    }
+});
 function ChangeImageInputSound() {
     if (playerInputVolumeProgres.value >= 31 && playerInputVolumeProgres.value <= 100) {
         playerTrackVolume.src = "/img/mediaControlImages/icons8-audio-50.png";

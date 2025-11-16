@@ -85,12 +85,15 @@ main {
 }
 
 
-.music-controls button img {
+.music-controls button img, .music-volume button img {
     width: 30px;
     height: 30px;
     display: block;
 }
-
+.music-volume button{
+    background: black;
+    border: none;
+}
 .music-controls button:hover {
     transform: scale(1.2);
     color: #ffb6ff;
