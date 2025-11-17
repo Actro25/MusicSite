@@ -1,5 +1,4 @@
 const input = document.getElementById('search');
-
 const spotifySearch = ['SpotifyMusic1','SpotifyMusic2','SpotifyMusic3','SpotifyMusic4'];
 const soundCloudSearch = ['SoundCloudMusic1','SoundCloudMusic2','SoundCloudMusic3'];
 const options = [...spotifySearch,...soundCloudSearch];
@@ -34,6 +33,7 @@ input.addEventListener('input', async () => {
         timeoutId = setTimeout(() => {
             if (searchValue.trim()) {
                 connection.invoke("SendSpotifyMusic", searchValue);
+                connection.invoke("GetPlaylists", searchValue, "Spotify");
             }
         }, 300);
     }
@@ -44,7 +44,8 @@ input.addEventListener('input', async () => {
         
         timeoutId = setTimeout(() => {
             if (searchValue.trim()) {
-                connection.invoke("SendSoundCloudMusic", searchValue)
+                connection.invoke("SendSoundCloudMusic", searchValue);
+                connection.invoke("GetPlaylists", searchValue, "SoundCloud");
             }
         }, 300)
     }
@@ -56,18 +57,33 @@ input.addEventListener('input', async () => {
     }
 });
 connection.on("ReceiveSpotifyMusic", (message) => {
- 
+
     if (message) {
-        displayPlatformResults(message, 'Spotify');
-        window.dispatchEvent(new CustomEvent('MainTrackReceived', {tracks : message, platformTracks: 'Spotify'}));
+        window.dispatchEvent(new CustomEvent('MainTrackReceived', {
+            detail: {
+                tracks: message,
+                platformTracks: 'Spotify'
+            }
+        }));
     }
 });
 connection.on("ReceiveSoundCloudMusic", (message) => {
     if (message) {
-        displayPlatformResults(message, 'SoundCloud');
-        window.dispatchEvent(new CustomEvent('MainTrackReceived', {tracks : message, platformTracks: 'SoundCloud'}));
+        window.dispatchEvent(new CustomEvent('MainTrackReceived', {
+            detail: {
+                tracks: message,
+                platformTracks: 'SoundCloud'
+            }
+        }));
     }
-})
+});
+connection.on("ReceivePlayList", (message) => {
+    if (message) {
+        window.dispatchEvent(new CustomEvent('MainPlayListsReceived', {
+            detail: message
+        }));
+    }
+});
 connection.on("ReceiveOneTrack", (message) => {
     if (message) {
         const audio = message.audios;

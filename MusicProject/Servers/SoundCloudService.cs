@@ -169,6 +169,29 @@ public class SoundCloudService
             return null;
         }
     }
+    public static async Task<string> GetPlayList(string query) {
+        if (!_isInitialized)
+        {
+            throw new InvalidOperationException("SoundCloudService not initialized");
+        }
+        try
+        {
+            var token = await GetValidToken();
+            HttpClient client = new HttpClient();
+            client.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
+            client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("OAuth", token);
+            var url = $"https://api.soundcloud.com/playlists?q={query}&access=&show_tracks=true&limit=5&offset=5&linked_partitioning=true";
+            var response = await client.GetAsync(url);
+            var responseContent = await response.Content.ReadAsStringAsync();
+            return responseContent;
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"❌ Помилка пошуку: {ex.Message}");
+            Console.WriteLine($"🔍 Stack trace: {ex.StackTrace}");
+            return null;
+        }
+    }
     public static string GetSoundCloudToken(string Client_id, string Client_secret) {
         if (Client_id == client_id && Client_secret == client_secret)
             return _souncCloudToken;

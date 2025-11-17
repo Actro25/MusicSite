@@ -124,7 +124,6 @@ public class MusicHub : Hub
                             PreviewMp3128Url = (jsonDocument3.RootElement.TryGetProperty("preview_mp3_128_url", out var poop5)) ? poop5.GetString() : null,
                         };
                     }
-                    Console.WriteLine();
                 }
             }
 
@@ -191,6 +190,62 @@ public class MusicHub : Hub
         }
         else {
             await Clients.Caller.SendAsync("ReceiveOneTrack", null);
+        }
+    }
+    public async Task GetPlaylists(string namePlayList, string platform) {
+        if (platform == "SoundCloud")
+        {
+            string data = await SoundCloudService.GetPlayList(namePlayList);
+            var jsonDocument = JsonDocument.Parse(data);
+            var root = jsonDocument.RootElement.GetProperty("collection");
+            var playlists = root.EnumerateArray()
+                    .Select(title => new PlayListModel
+                    {
+                        Name = title.GetProperty("title").GetString(),
+                        UrlImage = (!string.IsNullOrEmpty(title.GetProperty("artwork_url").GetString())) ?
+                        title.GetProperty("artwork_url").GetString().Replace("large", "t500x500") :
+                        title.GetProperty("user").GetProperty("avatar_url").GetString(),
+                        Id = title.GetProperty("id").GetRawText(),
+                        NextUrlPlayLists = jsonDocument.RootElement.GetProperty("next_href").GetString(),
+                        Tracks = title.GetProperty("tracks").EnumerateArray().Select(track => new TrackInfo
+                        {
+                            Img = (!string.IsNullOrEmpty(track.GetProperty("artwork_url").GetString())) ?
+                                track.GetProperty("artwork_url").GetString().Replace("large", "t500x500") :
+                                track.GetProperty("user").GetProperty("avatar_url").GetString(),
+                            TrackName = track.GetProperty("title").GetString(),
+                            TrackId = track.GetProperty("id").GetRawText(),
+                            TrackUrl = track.GetProperty("permalink_url").GetString(),
+                            ArtistsNames = new List<ArtistModel>
+                            {
+                                new ArtistModel
+                                {
+                                    NameArtist = track.GetProperty("user").GetProperty("username").GetString(),
+                                    IdArtist = track.GetProperty("user").GetProperty("id").GetRawText(),
+                                    TypeArtist = track.GetProperty("user").GetProperty("kind").GetString(),
+                                    AvatarArtist = track.GetProperty("user").GetProperty("avatar_url").GetString(),
+                                    UrlArtist = track.GetProperty("user").GetProperty("permalink_url").GetString()
+                                }
+                            }
+                        }).ToList(),
+                        Artist = new ArtistModel
+                        {
+                            NameArtist = title.GetProperty("user").GetProperty("username").GetString(),
+                            IdArtist = title.GetProperty("user").GetProperty("id").GetRawText(),
+                            TypeArtist = title.GetProperty("user").GetProperty("kind").GetString(),
+                            AvatarArtist = title.GetProperty("user").GetProperty("avatar_url").GetString(),
+                            UrlArtist = title.GetProperty("user").GetProperty("permalink_url").GetString()
+                        }
+                    })
+                    .ToList();
+
+            await Clients.Caller.SendAsync("ReceivePlayList", new { playlists, platform });
+        }
+        else if (platform == "Spotify")
+        {
+            await Clients.Caller.SendAsync("ReceivePlayList", null);
+        }
+        else {
+            await Clients.Caller.SendAsync("ReceivePlayList", null);
         }
     }
 }

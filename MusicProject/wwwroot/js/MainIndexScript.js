@@ -1,9 +1,14 @@
 const list = document.getElementById('suggestions');
-
+window.addEventListener('MainPlayListsReceived', (e) => {
+    displayPlatformResultPlayList(e.detail.playlists, e.detail.platform)
+});
 window.addEventListener('MainTrackReceived', (e) => {
-    displayPlatformResults(e.tracks, e.platformTracks)
-})
-function displayPlatformResults(tracks, platform) {
+    displayPlatformTrackResults(e.detail.tracks, e.detail.platformTracks);
+});
+function displayPlatformResultPlayList(playlists, platform) {
+    console.log(playlists);
+}
+function displayPlatformTrackResults(tracks, platform) {
     if (!tracks || typeof tracks !== 'object') {
         list.classList.add('hidden');
         return;
