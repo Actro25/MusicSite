@@ -2,6 +2,7 @@ using System.Text.Json;
 using Microsoft.AspNetCore.SignalR;
 using MusicProject.Models;
 using MusicProject.Servers;
+using MusicProject.Tools;
 namespace MusicProject.Hubs;
 
 public class MusicHub : Hub
@@ -241,38 +242,53 @@ public class MusicHub : Hub
             string data = await SpotifyService.GetPlaylist(namePlayList);
             var jsonDocument = JsonDocument.Parse(data);
             var root = jsonDocument.RootElement.GetProperty("playlists").GetProperty("items");
-            var playlists = root.EnumerateArray().Select(title => new PlayListModel {
-                Name = title.GetProperty("name").GetString(),
-                Id = title.GetProperty("id").GetRawText(),
-                UrlImage = title.GetProperty("images").EnumerateArray().FirstOrDefault(img => img.GetProperty("Width").GetInt32() == 640).GetProperty("url").GetString(),
-                NextUrlPlayLists = jsonDocument.RootElement.GetProperty("playlists").GetProperty("next").GetString(),
+            var playlists = root.EnumerateArray().Select(title => new PlayListModel
+            {
+                Name = title.SafeProperty("name")?.GetString() ?? string.Empty,
+                Id = title.SafeProperty("id")?.GetRawText() ?? string.Empty,
+                UrlImage = title.SafeProperty("images")?.EnumerateArray().FirstOrDefault().SafeProperty("url")?.GetString() ?? string.Empty,
+                NextUrlPlayLists = jsonDocument.RootElement.SafeProperty("playlists")?.SafeProperty("next")?.GetString(),
                 Tracks = new List<TrackInfo>(),
-                Artist = new List<ArtistModel> {
-                    new ArtistModel{
-                        NameArtist = title.GetProperty("owner").GetProperty("display_name").GetString(),
-                        IdArtist = title.GetProperty("owner").GetProperty("id").GetString(),
-                    }
+                Artist = new List<ArtistModel>
+            {
+                new ArtistModel
+                {
+                    NameArtist = title.SafeProperty("owner")?.SafeProperty("display_name")?.GetString() ?? string.Empty,
+                    IdArtist = title.SafeProperty("owner")?.SafeProperty("id")?.GetString() ?? string.Empty,
                 }
+            }
             }).ToList();
-            List<string> tracksUrl = root.EnumerateArray().Select(trackUrl => { return trackUrl.GetProperty("tracks").GetProperty("href").GetString(); }).ToList();
-            for (int i = 0; i < playlists.Count && i < tracksUrl.Count; i++) {
+            List<string> tracksUrl = root.EnumerateArray().Select(trackUrl =>
+            {
+                return trackUrl.SafeProperty("tracks")?.SafeProperty("href")?.GetString() ?? string.Empty;
+            }).Where(url => !string.IsNullOrEmpty(url)).ToList();
+
+            for (int i = 0; i < playlists.Count && i < tracksUrl.Count; i++)
+            {
                 var dataTracks = await SpotifyService.GetSeveralTracks(tracksUrl[i]);
                 var jsDocument = JsonDocument.Parse(dataTracks);
-                var root2 = jsDocument.RootElement.GetProperty("tracks");
-                playlists[i].Tracks = root2.EnumerateArray().Select(track => new TrackInfo{
-                    Img = root.GetProperty("album").GetProperty("images").EnumerateArray()
-                        .FirstOrDefault(img => img.GetProperty("width").GetInt32() == 640)
-                        .GetProperty("url").GetString(),
-                    TrackName = root.GetProperty("name").GetString(),
-                    ArtistsNames = root.GetProperty("artists")
-                        .EnumerateArray()
+                var root2 = jsDocument.RootElement.SafeProperty("tracks");
+
+                if (root2 == null) continue;
+
+                playlists[i].Tracks = root2.Value.EnumerateArray().Select(track => new TrackInfo
+                {
+                    Img = track.SafeProperty("album")?.SafeProperty("images")?.EnumerateArray()
+                        .FirstOrDefault(img => img.SafeProperty("width")?.GetInt32() == 640)
+                        .SafeProperty("url")?.GetString() ?? string.Empty,
+
+                    TrackName = track.SafeProperty("name")?.GetString() ?? "Unknown Track",
+
+                    ArtistsNames = track.SafeProperty("artists")?.EnumerateArray()
                         .Select(artist => new ArtistModel
                         {
-                            NameArtist = artist.GetProperty("name").GetString(),
-                            IdArtist = artist.GetProperty("id").GetString()
-                        }).ToList(),
-                    TrackId = root.GetProperty("id").GetString(),
-                    TrackUrl = root.GetProperty("external_urls").GetProperty("spotify").GetString()
+                            NameArtist = artist.SafeProperty("name")?.GetString() ?? "Unknown Artist",
+                            IdArtist = artist.SafeProperty("id")?.GetString() ?? string.Empty
+                        }).ToList() ?? new List<ArtistModel>(),
+
+                    TrackId = track.SafeProperty("id")?.GetString() ?? string.Empty,
+
+                    TrackUrl = track.SafeProperty("external_urls")?.SafeProperty("spotify")?.GetString() ?? string.Empty
                 }).ToList();
             }
             Console.WriteLine(JsonSerializer.Serialize(playlists, new JsonSerializerOptions
