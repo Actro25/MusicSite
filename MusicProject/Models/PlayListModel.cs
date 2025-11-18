@@ -7,6 +7,6 @@
         public string? UrlImage { get; set; }
         public List<TrackInfo>? Tracks { get; set; }
         public string? NextUrlPlayLists { get; set; }
-        public ArtistModel? Artist { get; set; }
+        public List<ArtistModel>? Artist { get; set; }
     }
 }

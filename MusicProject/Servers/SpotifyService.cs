@@ -1,6 +1,7 @@
+using MusicProject.Models;
+using System.Net.Http;
 using System.Text;
 using System.Text.Json;
-using MusicProject.Models;
 
 namespace MusicProject.Servers;
 
@@ -138,6 +139,70 @@ public class SpotifyService
             
                 throw new HttpRequestException(errorMessage);
             }
+            return responseContent;
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"❌ Помилка пошуку: {ex.Message}");
+            Console.WriteLine($"🔍 Stack trace: {ex.StackTrace}");
+            return null;
+        }
+    }
+    public static async Task<string> GetPlaylist(string query) {
+
+        if (!_isInitialized)
+        {
+            throw new InvalidOperationException("SpotifyService is not initialized. Call Initialize() first.");
+        }
+
+        try
+        {
+            var token = await GetValidToken();
+            using var httpClient = new HttpClient();
+            httpClient.DefaultRequestHeaders.Add("Authorization", $"Bearer {token}");
+
+            var encodedQuery = Uri.EscapeDataString(query);
+            var url = $"https://api.spotify.com/v1/search?q={encodedQuery}&type=playlist&include_external=audio";
+
+
+            var response = await httpClient.GetAsync(url);
+            var responseContent = await response.Content.ReadAsStringAsync();
+
+            if (!response.IsSuccessStatusCode)
+            {
+                var errorMessage = $"Spotify search error: {response.StatusCode}. URL: {url}";
+
+                if (!string.IsNullOrEmpty(responseContent))
+                {
+                    errorMessage += $". Response: {responseContent}";
+                }
+
+                throw new HttpRequestException(errorMessage);
+            }
+            return responseContent;
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"❌ Помилка пошуку: {ex.Message}");
+            Console.WriteLine($"🔍 Stack trace: {ex.StackTrace}");
+            return null;
+        }
+    }
+    public static async Task<string> GetSeveralTracks(string href)
+    {
+        if (!_isInitialized)
+        {
+            throw new InvalidOperationException("SoundCloudService not initialized");
+        }
+        try
+        {
+            var token = await GetValidToken();
+            HttpClient client = new HttpClient();
+            client.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
+            client.DefaultRequestHeaders.Add("Authorization", $"Bearer {token}");
+            var url = href;
+            var response = await client.GetAsync(url);
+            var responseContent = await response.Content.ReadAsStringAsync();
             return responseContent;
         }
         catch (Exception ex)
