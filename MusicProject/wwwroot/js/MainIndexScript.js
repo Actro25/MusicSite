@@ -1,4 +1,5 @@
 const list = document.getElementById('suggestions');
+const playlistsUl = document.getElementById('suggestions-playlists');
 window.addEventListener('MainPlayListsReceived', (e) => {
     displayPlatformResultPlayList(e.detail.playlists, e.detail.platform)
 });
@@ -7,6 +8,35 @@ window.addEventListener('MainTrackReceived', (e) => {
 });
 function displayPlatformResultPlayList(playlists, platform) {
     console.log(playlists);
+    playlistsUl.innerHTML = '';
+    for (const playlist of Object.values(playlists)) {
+        if (!playlist.name && !playlist.id) {
+            continue;
+        }
+        const li = document.createElement('li');
+        const previewPlaylistImage = document.createElement('img')
+        let textPlayList = document.createElement('h3');
+        let artist = document.createElement('p');
+
+        previewPlaylistImage.src = playlist.urlImage;
+        previewPlaylistImage.alt = `Track icon`;
+
+        previewPlaylistImage.classList.add('cardImgPlayList');
+
+        li.classList.add('cardPlayList');
+
+        textPlayList.innerText = playlist.name;
+        artist.innerText = playlist.artist.map(item => item.nameArtist).join(", ");
+
+        li.appendChild(previewPlaylistImage);
+        li.appendChild(textPlayList);
+        li.appendChild(artist);
+
+        playlistsUl.appendChild(li);
+    }
+
+    const isEmpty = Object.keys(playlists).length === 0;
+    playlistsUl.classList.toggle('hidden', isEmpty);
 }
 function displayPlatformTrackResults(tracks, platform) {
     if (!tracks || typeof tracks !== 'object') {

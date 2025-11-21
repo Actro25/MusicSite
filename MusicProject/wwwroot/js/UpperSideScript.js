@@ -20,6 +20,7 @@ input.addEventListener('input', async () => {
 
     if (!value) {
         list.classList.add('hidden');
+        playlistsUl.classList.add('hidden');
         return;
     }
 

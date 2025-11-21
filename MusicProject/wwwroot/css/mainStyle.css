@@ -23,3 +23,23 @@
 h2{
     padding-left: 10px;
 }
+.gridPlayList {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 20px;
+    padding: 0;
+    list-style: none;
+}
+
+.cardPlayList {
+    text-align: center;
+}
+
+.cardImgPlayList {
+    width: 75px;
+    height: 75px;
+    border-radius: 15px;
+}
+.hidden {
+    display: none !important;
+}
