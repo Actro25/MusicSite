@@ -9,6 +9,7 @@ window.addEventListener('MainTrackReceived', (e) => {
 function displayPlatformResultPlayList(playlists, platform) {
     playlistsUl.innerHTML = '';
     let quantity = 0;
+    console.log(playlists);
     for (const playlist of Object.values(playlists)) {
         if (!playlist.name && !playlist.id) {
             continue;
@@ -36,7 +37,6 @@ function displayPlatformResultPlayList(playlists, platform) {
         playlistsUl.appendChild(li);
     }
     playlistsUl.style.gridTemplateColumns = `repeat(${quantity}, 1fr)`;
-    console.log(quantity);
     const isEmpty = Object.keys(playlists).length === 0;
     playlistsUl.classList.toggle('hidden', isEmpty);
 }

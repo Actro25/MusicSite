@@ -203,6 +203,7 @@ public class SpotifyService
             var url = href;
             var response = await client.GetAsync(url);
             var responseContent = await response.Content.ReadAsStringAsync();
+
             return responseContent;
         }
         catch (Exception ex)

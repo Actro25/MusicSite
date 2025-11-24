@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.SignalR;
 using MusicProject.Models;
 using MusicProject.Servers;
 using MusicProject.Tools;
+using MusicProject.Services;
 namespace MusicProject.Hubs;
 
 public class MusicHub : Hub
@@ -242,51 +243,36 @@ public class MusicHub : Hub
             string data = await SpotifyService.GetPlaylist(namePlayList);
             var jsonDocument = JsonDocument.Parse(data);
             var root = jsonDocument.RootElement.GetProperty("playlists").GetProperty("items");
-            var playlists = root.EnumerateArray().Select(title => new PlayListModel
+            var result = root.EnumerateArray().Select(title => 
             {
-                Name = title.SafeProperty("name")?.GetString(),
-                Id = title.SafeProperty("id")?.GetRawText(),
-                UrlImage = title.SafeProperty("images")?.EnumerateArray().FirstOrDefault().SafeProperty("url")?.GetString(),
-                NextUrlPlayLists = jsonDocument.RootElement.SafeProperty("playlists")?.SafeProperty("next")?.GetString(),
-                Tracks = new List<TrackInfo>(),
-                Artist = new List<ArtistModel>
+                var href = title.SafeProperty("tracks")?.SafeProperty("href").SafeString();
+                return new
                 {
-                    new ArtistModel
+                    playlists = new PlayListModel
                     {
-                        NameArtist = title.SafeProperty("owner")?.SafeProperty("display_name")?.GetString(),
-                        IdArtist = title.SafeProperty("owner")?.SafeProperty("id")?.GetString(),
-                    }
-                }
+                        Name = title.SafeProperty("name")?.GetString(),
+                        Id = title.SafeProperty("id")?.GetRawText(),
+                        UrlImage = title.SafeProperty("images")?.EnumerateArray().FirstOrDefault().SafeProperty("url")?.GetString(),
+                        NextUrlPlayLists = jsonDocument.RootElement.SafeProperty("playlists")?.SafeProperty("next")?.GetString(),
+
+                        Artist = new List<ArtistModel>
+                        {
+                            new ArtistModel
+                            {
+                                NameArtist = title.SafeProperty("owner")?.SafeProperty("display_name")?.GetString(),
+                                IdArtist = title.SafeProperty("owner")?.SafeProperty("id")?.GetString(),
+                            }
+                        },
+                    },
+                    Tracks = SpotifyServiceRedirection.GetSeveralTracksRedirection(href)
+
+                };
             }).ToList();
-            List<string> tracksUrl = root.EnumerateArray().Select(trackUrl =>
-            {
-                return trackUrl.SafeProperty("tracks")?.SafeProperty("href").SafeString();
-            }).ToList();
-            for (int i = 0; i < tracksUrl.Count; i++)
-            {
-                if (tracksUrl[i] == null) continue;
-                var dataTrack = await SpotifyService.GetSeveralTracks(tracksUrl[i]);
-                if (dataTrack == null) continue;
-                var jsDocument = JsonDocument.Parse(dataTrack);
 
-
-                var root2 = jsDocument.RootElement.GetProperty("items");
-
-                playlists[i].Tracks = root2.EnumerateArray().Select(track => new TrackInfo
-                {
-                    Img = track.SafeProperty("track")?.SafeProperty("album")?.SafeProperty("images")?.EnumerateArray()
-                        .FirstOrDefault(img => img.SafeProperty("width")?.GetInt32() == 640)
-                        .SafeProperty("url").SafeString(),
-                    TrackName = track.SafeProperty("track")?.SafeProperty("name").SafeString(),
-                    TrackId = track.SafeProperty("track")?.SafeProperty("id").SafeString(),
-                    TrackUrl = track.SafeProperty("track")?.SafeProperty("external_urls")?.SafeProperty("spotify").SafeString(),
-                    ArtistsNames = track.SafeProperty("track")?.SafeProperty("artists")?.EnumerateArray().Select(artist => new ArtistModel
-                    {
-                        NameArtist = artist.SafeProperty("name").SafeString(),
-                        IdArtist = artist.SafeProperty("id").SafeString()
-                    }).ToList(),
-                }).ToList();
+            foreach (var item in result) {
+                item.playlists.Tracks = await item.Tracks;
             }
+            var playlists = result.Select(x => x.playlists).ToList();
 
             await Clients.Caller.SendAsync("ReceivePlayList", new { playlists, platform });
         }
