@@ -25,7 +25,7 @@ h2{
 }
 .gridPlayList {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    grid-template-rows: repeat(1, 1fr);
     gap: 20px;
     padding: 0;
     list-style: none;
@@ -36,8 +36,8 @@ h2{
 }
 
 .cardImgPlayList {
-    width: 75px;
-    height: 75px;
+    width: 100px;
+    height: 100px;
     border-radius: 15px;
 }
 .hidden {

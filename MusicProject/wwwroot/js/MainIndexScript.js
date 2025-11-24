@@ -7,12 +7,13 @@ window.addEventListener('MainTrackReceived', (e) => {
     displayPlatformTrackResults(e.detail.tracks, e.detail.platformTracks);
 });
 function displayPlatformResultPlayList(playlists, platform) {
-    console.log(playlists);
     playlistsUl.innerHTML = '';
+    let quantity = 0;
     for (const playlist of Object.values(playlists)) {
         if (!playlist.name && !playlist.id) {
             continue;
         }
+        quantity = quantity + 1;
         const li = document.createElement('li');
         const previewPlaylistImage = document.createElement('img')
         let textPlayList = document.createElement('h3');
@@ -34,7 +35,8 @@ function displayPlatformResultPlayList(playlists, platform) {
 
         playlistsUl.appendChild(li);
     }
-
+    playlistsUl.style.gridTemplateColumns = `repeat(${quantity}, 1fr)`;
+    console.log(quantity);
     const isEmpty = Object.keys(playlists).length === 0;
     playlistsUl.classList.toggle('hidden', isEmpty);
 }
