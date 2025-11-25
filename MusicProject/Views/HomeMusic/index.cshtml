@@ -8,12 +8,18 @@
     <link rel="stylesheet" href="~/css/mainStyle.css" asp-append-version="true"/>
 }
 <body>
-<a asp-controller="Home" asp-action="Index">Go Home</a>
-<h2>Songs</h2>
-<ul id="suggestions" class="hidden"></ul>
+    <div id="main-site-div">
+        <a asp-controller="Home" asp-action="Index">Go Home</a>
+        <h2>Songs</h2>
+        <ul id="suggestions" class="hidden"></ul>
 
-<h2>Playlists</h2>
- <ul id="suggestions-playlists" class="gridPlayList hidden"></ul>
+        <h2>Playlists</h2>
+        <ul id="suggestions-playlists" class="gridPlayList hidden"></ul>
+    </div>
+    <div id="playlists-music-div" class="hidden">
+        <h2>Songs</h2>
+        <ul id="suggestions-playlists-music"></ul>
+    </div>
 </body>
 @section Scripts
 {

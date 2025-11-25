@@ -1,15 +1,22 @@
 const list = document.getElementById('suggestions');
 const playlistsUl = document.getElementById('suggestions-playlists');
+const playListMusicInnerUl = document.getElementById('suggestions-playlists-music');
+const mainDiv = document.getElementById('main-site-div');
+const playListMusicDiv = document.getElementById('playlists-music-div');
+const playListMusicUl = document.getElementById('suggestions-playlists-music');
 window.addEventListener('MainPlayListsReceived', (e) => {
     displayPlatformResultPlayList(e.detail.playlists, e.detail.platform)
 });
 window.addEventListener('MainTrackReceived', (e) => {
     displayPlatformTrackResults(e.detail.tracks, e.detail.platformTracks);
 });
+window.addEventListener('ChangeShowDiv', (e) => {
+    playListMusicDiv.classList.add('hidden');
+    mainDiv.classList.remove('hidden');
+});
 function displayPlatformResultPlayList(playlists, platform) {
-    playlistsUl.innerHTML = '';
+
     let quantity = 0;
-    console.log(playlists);
     for (const playlist of Object.values(playlists)) {
         if (!playlist.name && !playlist.id) {
             continue;
@@ -33,12 +40,73 @@ function displayPlatformResultPlayList(playlists, platform) {
         li.appendChild(previewPlaylistImage);
         li.appendChild(textPlayList);
         li.appendChild(artist);
-
+        li.onclick = () => {
+            mainDiv.classList.add('hidden');
+            playListMusicDiv.classList.remove('hidden');
+            displayPlayListMusicInside(playlist, platform);
+        };
         playlistsUl.appendChild(li);
     }
     playlistsUl.style.gridTemplateColumns = `repeat(${quantity}, 1fr)`;
     const isEmpty = Object.keys(playlists).length === 0;
     playlistsUl.classList.toggle('hidden', isEmpty);
+}
+function displayPlayListMusicInside(playlist, platform) {
+    console.log(playlist.tracks);
+    playListMusicInnerUl.innerHTML = '';
+    let quantity = 1;
+    Object.values(playlist.tracks).forEach(track => {
+        if (!track || typeof track !== 'object') {
+            return;
+        }
+        const playListMusicId = document.createElement('p');
+        const li = document.createElement('li');
+        const previewTrackImage = document.createElement('img');
+        const img = document.createElement('img');
+        let text;
+        let artist = "";
+
+        playListMusicId.innerText = `${quantity}.`;
+
+        previewTrackImage.src = track.img;
+        previewTrackImage.width = 50;
+        previewTrackImage.height = 50;
+        previewTrackImage.alt = `Track icon`;
+        previewTrackImage.style.borderRadius = "15px"
+        previewTrackImage.style.verticalAlign = 'middle';
+        previewTrackImage.style.marginRight = '10px';
+
+        if (platform === 'Spotify') {
+            artist = track.artistsNames
+                .map(a => a.nameArtist)
+                .join(", ");
+            text = document.createTextNode(`${track.trackName || 'Unknown Track'} - ${artist}`);
+        }
+        else if (platform === 'SoundCloud') {
+            artist = track.artistsNames
+                .map(a => a.nameArtist)
+                .join(", ");
+            text = document.createTextNode(`${track.trackName || 'Unknown Track'} - ${artist}`);
+        }
+        else {
+            text = document.createTextNode(track.name || 'Unknown Track');
+        }
+        li.appendChild(playListMusicId);
+        li.appendChild(previewTrackImage);
+        li.appendChild(text);
+        li.onclick = () => {
+            window.dispatchEvent(new CustomEvent('InfoAboutTrackSend', {
+                detail: {
+                    idTrack: track.trackId,
+                    platformTrack: platform,
+                    nameTrack: track.trackName,
+                    artistTrack: artist
+                }
+            }));
+        };
+        playListMusicUl.appendChild(li);
+        quantity = quantity + 1;
+    });
 }
 function displayPlatformTrackResults(tracks, platform) {
     if (!tracks || typeof tracks !== 'object') {
@@ -46,7 +114,7 @@ function displayPlatformTrackResults(tracks, platform) {
         return;
     }
     list.innerHTML = '';
-
+    playlistsUl.innerHTML = '';
     Object.values(tracks).forEach(track => {
         if (!track || typeof track !== 'object') {
             return;
@@ -65,7 +133,6 @@ function displayPlatformTrackResults(tracks, platform) {
         previewTrackImage.style.borderRadius = "15px"
         previewTrackImage.style.verticalAlign = 'middle';
         previewTrackImage.style.marginRight = '10px';
-        
         if (platform === 'Spotify') {
             img.src = '/img/spotify-logo-png.png';
             artist = track.artists && Array.isArray(track.artists)
@@ -81,6 +148,7 @@ function displayPlatformTrackResults(tracks, platform) {
         else {
             text = document.createTextNode(track.name || 'Unknown Track');
         }
+
 
         img.height = 20;
         img.width = 20;

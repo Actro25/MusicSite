@@ -20,7 +20,27 @@
 #suggestions li:hover {
     background: rgba(255,255,255,0.1);
 }
-h2{
+#suggestions-playlists-music {
+    position: relative;
+    width: 100%;
+    background: rgba(30, 30, 30, 0.95);
+    color: #fff;
+    list-style: none;
+    border-radius: 0 0 10px 10px;
+    padding: 0;
+    height: auto;
+    overflow-y: auto;
+}
+#suggestions-playlists-music li {
+    padding: 12px 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+#suggestions-playlists-music li:hover {
+    background: rgba(255,255,255,0.1);
+}
+h2 {
     padding-left: 10px;
 }
 .gridPlayList {
