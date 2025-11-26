@@ -16,14 +16,6 @@ body {
     min-height: 100vh;
 }
 
-main {
-    flex: 1;
-    display: flex;
-    flex-direction: row;
-    box-sizing: border-box;
-}
-
-
 .music-player {
     bottom: 0;
     left: 0;
@@ -33,9 +25,8 @@ main {
     justify-content: space-between;
     z-index: 1000;
     height: 10vh;
-
+    min-height: 10vh;
     background: black
-
 }
 
 .music-info {

@@ -4,7 +4,7 @@ header{
     justify-content: center;
     width: 100%;
     height: 7vh;
-
+    min-height: 7vh;
     background: black;
 
     overflow: visible;

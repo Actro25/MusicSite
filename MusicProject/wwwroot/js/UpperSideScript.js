@@ -15,12 +15,6 @@ window.addEventListener('InfoAboutTrackSend', (e) => {
     connection.invoke("GetOneTrack", e.detail.idTrack, e.detail.platformTrack, e.detail.nameTrack, e.detail.artistTrack);
 });
 input.addEventListener('input', async () => {
-    //window.dispatchEvent(new CustomEvent('MainTrackReceived', {
-    //    detail: {
-    //        tracks: message,
-    //        platformTracks: 'SoundCloud'
-    //    }
-    //}));
     window.dispatchEvent(new CustomEvent('ChangeShowDiv'));
     const value = input.value.toLowerCase();
     list.innerHTML = '';

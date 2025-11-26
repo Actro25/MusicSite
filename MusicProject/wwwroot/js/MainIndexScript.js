@@ -16,12 +16,10 @@ window.addEventListener('ChangeShowDiv', (e) => {
 });
 function displayPlatformResultPlayList(playlists, platform) {
 
-    let quantity = 0;
     for (const playlist of Object.values(playlists)) {
         if (!playlist.name && !playlist.id) {
             continue;
         }
-        quantity = quantity + 1;
         const li = document.createElement('li');
         const previewPlaylistImage = document.createElement('img')
         let textPlayList = document.createElement('h3');
@@ -47,14 +45,14 @@ function displayPlatformResultPlayList(playlists, platform) {
         };
         playlistsUl.appendChild(li);
     }
-    playlistsUl.style.gridTemplateColumns = `repeat(${quantity}, 1fr)`;
     const isEmpty = Object.keys(playlists).length === 0;
     playlistsUl.classList.toggle('hidden', isEmpty);
 }
 function displayPlayListMusicInside(playlist, platform) {
-    console.log(playlist.tracks);
+    console.log(playlist);
     playListMusicInnerUl.innerHTML = '';
     let quantity = 1;
+    
     Object.values(playlist.tracks).forEach(track => {
         if (!track || typeof track !== 'object') {
             return;
