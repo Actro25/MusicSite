@@ -124,3 +124,15 @@ h2 {
 ::-webkit-scrollbar-thumb:hover {
     background: gray;
 }
+.infoAboutPlaylistMainDiv {
+    padding: 10px;
+    padding-bottom: 20px;
+    background: linear-gradient(0deg,rgba(17, 17, 17, 1) 0%, rgba(128, 128, 128, 1) 100%);
+    display: flex;
+    flex-direction: row;
+}
+.infoAboutPlaylistTextDiv{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+}

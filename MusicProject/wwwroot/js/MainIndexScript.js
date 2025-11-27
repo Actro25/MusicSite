@@ -15,7 +15,6 @@ window.addEventListener('ChangeShowDiv', (e) => {
     mainDiv.classList.remove('hidden');
 });
 function displayPlatformResultPlayList(playlists, platform) {
-
     for (const playlist of Object.values(playlists)) {
         if (!playlist.name && !playlist.id) {
             continue;
@@ -49,10 +48,24 @@ function displayPlatformResultPlayList(playlists, platform) {
     playlistsUl.classList.toggle('hidden', isEmpty);
 }
 function displayPlayListMusicInside(playlist, platform) {
-    console.log(playlist);
     playListMusicInnerUl.innerHTML = '';
     let quantity = 1;
-    
+
+    const playListImage = document.getElementById('playlist-image');
+    playListImage.src = playlist.urlImage;
+    playListImage.width = 200;
+    playListImage.height = 200;
+    playListImage.alt = `Track icon`;
+    playListImage.style.verticalAlign = 'middle';
+    playListImage.style.borderRadius = "5px"
+
+    const playListName = document.getElementById('playlist-name');
+    playListName.innerText = playlist.name;
+
+    const playListArtist = document.getElementById('playlist-artist');
+    playListArtist.innerText = playlist.artist
+        .map(a => a.nameArtist)
+        .join(", ");
     Object.values(playlist.tracks).forEach(track => {
         if (!track || typeof track !== 'object') {
             return;
