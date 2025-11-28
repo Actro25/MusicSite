@@ -136,3 +136,32 @@ h2 {
     display: flex;
     flex-direction: column;
 }
+.controll-panel-playlist {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.normal-image {
+    background: white;
+    border: none;
+    border: 1px solid;
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+}
+#play-button-playlist {
+    margin-left: 10px;
+    background: white;
+    border: 1px solid;
+    border-radius: 15px;
+    width: 75px;
+    height: 75px;
+}
+.button-control-playlist {
+    background: none;
+    border: none;
+}
+.button-control-playlist:hover{
+    transform: scale(1.2);
+    color: #ffb6ff;
+}
