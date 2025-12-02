@@ -54,3 +54,18 @@ header{
 .search-input input:focus + .search-icon {
     stroke: #787878;
 }
+#home-button img {
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    background: none;
+}
+#home-button {
+    margin-right: 10px;
+    border-radius: 10px;
+    border: none;
+}
+#home-button:hover {
+    transform: scale(1.2);
+    color: #ffb6ff;
+}

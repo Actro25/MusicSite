@@ -1,4 +1,7 @@
 const input = document.getElementById('search');
+const homeButton = document.getElementById('home-button');
+const suggestionWindow = document.getElementById('main-site-div');
+const playlistWindow = document.getElementById('playlists-music-div');
 const spotifySearch = ['SpotifyMusic1','SpotifyMusic2','SpotifyMusic3','SpotifyMusic4'];
 const soundCloudSearch = ['SoundCloudMusic1','SoundCloudMusic2','SoundCloudMusic3'];
 const options = [...spotifySearch,...soundCloudSearch];
@@ -13,6 +16,9 @@ connection.start()
     .catch(err => console.error("❌ SignalR connection error:", err));
 window.addEventListener('InfoAboutTrackSend', (e) => {
     connection.invoke("GetOneTrack", e.detail.idTrack, e.detail.platformTrack, e.detail.nameTrack, e.detail.artistTrack);
+});
+homeButton.addEventListener('click', () => {
+    window.dispatchEvent(new CustomEvent('HideSugWinAndPlayWin'));
 });
 input.addEventListener('input', async () => {
     window.dispatchEvent(new CustomEvent('ChangeShowDiv'));

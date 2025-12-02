@@ -2,6 +2,7 @@ const list = document.getElementById('suggestions');
 const playlistsUl = document.getElementById('suggestions-playlists');
 const playListMusicInnerUl = document.getElementById('suggestions-playlists-music');
 const mainDiv = document.getElementById('main-site-div');
+const mainSiteWindow = document.getElementById('main-window-site-div');
 const playListMusicDiv = document.getElementById('playlists-music-div');
 const playListMusicUl = document.getElementById('suggestions-playlists-music');
 window.addEventListener('MainPlayListsReceived', (e) => {
@@ -13,6 +14,12 @@ window.addEventListener('MainTrackReceived', (e) => {
 window.addEventListener('ChangeShowDiv', (e) => {
     playListMusicDiv.classList.add('hidden');
     mainDiv.classList.remove('hidden');
+    mainSiteWindow.classList.add('hidden');
+});
+window.addEventListener('HideSugWinAndPlayWin', (e) => {
+    mainDiv.classList.add('hidden');
+    playListMusicDiv.classList.add('hidden');
+    mainSiteWindow.classList.remove('hidden');
 });
 function displayPlatformResultPlayList(playlists, platform) {
     for (const playlist of Object.values(playlists)) {

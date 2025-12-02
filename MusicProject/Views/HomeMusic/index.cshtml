@@ -8,7 +8,10 @@
     <link rel="stylesheet" href="~/css/mainStyle.css" asp-append-version="true"/>
 }
 <body>
-    <div id="main-site-div">
+    <div id="main-window-site-div">
+        <h1>MainWindow</h1>
+    </div>
+    <div id="main-site-div" class="hidden">
         <a asp-controller="Home" asp-action="Index">Go Home</a>
         <h2>Songs</h2>
         <ul id="suggestions" class="hidden"></ul>
