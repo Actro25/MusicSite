@@ -10,12 +10,16 @@ const playerButtonPlayImage = document.getElementById("play-track-button-image")
 const playerTrackVolume = document.getElementById("track-volume");
 const volumeButtonTrack = document.getElementById("track-volume-button");
 const playerButtonLoop = document.getElementById("play-loop-track-button");
+let playlistTracksBottom;
+let platformPlayListBottom;
 const hls = new Hls();
 let currentVolumeTrack = 5;
 let isPlay = false;
 let isVolumeOff = false;
 let isLoop = false;
+let isPlayListMusicBottom = false;
 let audioSRC;
+let currentIdMusicBottom = 0;
 document.addEventListener('DOMContentLoaded', function () {
     playerButtonPlay.disabled = true;
     playerInputTrackProgress.disabled = true;
@@ -28,6 +32,12 @@ document.addEventListener('DOMContentLoaded', function () {
     playerInputVolumeProgres.style.opacity = '0.5';
     playerButtonNextTrack.style.opacity = '0.5';
     playerButtonPreviousTrack.style.opacity = '0.5';
+});
+window.addEventListener('BottomPlayListMusics', (e) => {
+    playlistTracksBottom = e.detail.playlistTracks;
+    platformPlayListBottom = e.detail.platformPlayList;
+    isPlayListMusicBottom = e.detail.isPlayListMusic;
+    currentIdMusicBottom = e.detail.currentIdMusic;
 });
 window.addEventListener('BottomSidePanelReceive', (e) => {
     if (e.detail.audios.hlsAcc160Url !== null) { audioSRC = e.detail.audios.hlsAcc160Url; }
@@ -49,8 +59,6 @@ window.addEventListener('BottomSidePanelReceive', (e) => {
         playerButtonNextTrack.style.opacity = '0.5';
         playerButtonPreviousTrack.style.opacity = '0.5';
     }
-
-
 
     if (audioSRC.endsWith('hls')) {
         hls.loadSource("/api/ApiProxy/stream/"+encodeURIComponent(audioSRC));
@@ -148,7 +156,7 @@ audio.addEventListener('timeupdate', () => {
 volumeButtonTrack.addEventListener('click', () => {
     if (isVolumeOff) {
         playerInputVolumeProgres.value = currentVolumeTrack;
-        audio.volume = playerInputVolumeProgres.value * 0.01;;
+        audio.volume = playerInputVolumeProgres.value * 0.01;
     }
     else {
         playerInputVolumeProgres.value = 0;
@@ -167,8 +175,44 @@ playerButtonLoop.addEventListener('click', () => {
     }
     audio.loop = !audio.loop;
 });
+function SendMusicToUse() {
+    //Problem with lenght function read.
+    let artist = "";
+    if (platformPlayListBottom === 'Spotify') {
+        artist = playlistTracksBottom[currentIdMusicBottom].artistsNames
+            .map(a => a.nameArtist)
+            .join(", ");
+    }
+    else if (platformPlayListBottom === 'SoundCloud') {
+        artist = playlistTracksBottom[currentIdMusicBottom].artistsNames
+            .map(a => a.nameArtist)
+            .join(", ");
+    }
+    window.dispatchEvent(new CustomEvent('InfoAboutTrackSend', {
+        detail: {
+            idTrack: playlistTracksBottom[currentIdMusicBottom].trackId,
+            platformTrack: platformPlayListBottom,
+            nameTrack: playlistTracksBottom[currentIdMusicBottom].trackName,
+            artistTrack: artist
+        }
+    }));
+}
 audio.addEventListener("ended", () => {
-    if (audio.loop) {
+    if (playlistTracksBottom.length <= currentIdMusicBottom && audio.loop) {
+        currentIdMusicBottom = 0;
+        SendMusicToUse();
+    }
+    else {
+        playerButtonPlayImage.src = "/img/mediaControlImages/icons8-play-50.png";
+        isPlay = !isPlay;
+        return;
+    }
+
+    if (isPlayListMusicBottom) {
+        currentIdMusicBottom++;
+        SendMusicToUse();
+    }
+    else if (audio.loop) {
         audio.currentTime = 0;
         audio.play();
     }

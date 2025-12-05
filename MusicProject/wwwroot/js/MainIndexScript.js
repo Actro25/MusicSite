@@ -5,6 +5,9 @@ const mainDiv = document.getElementById('main-site-div');
 const mainSiteWindow = document.getElementById('main-window-site-div');
 const playListMusicDiv = document.getElementById('playlists-music-div');
 const playListMusicUl = document.getElementById('suggestions-playlists-music');
+const playListMusicButton = document.getElementById('play-button-playlist');
+let playlistTracks;
+let platformPlayList;
 window.addEventListener('MainPlayListsReceived', (e) => {
     displayPlatformResultPlayList(e.detail.playlists, e.detail.platform)
 });
@@ -20,6 +23,38 @@ window.addEventListener('HideSugWinAndPlayWin', (e) => {
     mainDiv.classList.add('hidden');
     playListMusicDiv.classList.add('hidden');
     mainSiteWindow.classList.remove('hidden');
+});
+playListMusicButton.addEventListener('click', () => {
+    if (playlistTracks !== null) {
+        let artist = "";
+        if (platformPlayList === 'Spotify') {
+            artist = playlistTracks[0].artistsNames
+                .map(a => a.nameArtist)
+                .join(", ");
+        }
+        else if (platformPlayList === 'SoundCloud') {
+            artist = playlistTracks[0].artistsNames
+                .map(a => a.nameArtist)
+                .join(", ");
+        }
+        isPlayListMusic = true;
+        window.dispatchEvent(new CustomEvent('BottomPlayListMusics', {
+            detail: {
+                playlistTracks = playlistTracks,
+                platformPlayList = platformPlayList,
+                isPlayListMusic = true,
+                currentIdMusic = 0
+            }
+        }));
+        window.dispatchEvent(new CustomEvent('InfoAboutTrackSend', {
+            detail: {
+                idTrack: playlistTracks[0].trackId,
+                platformTrack: platformPlayList,
+                nameTrack: playlistTracks[0].trackName,
+                artistTrack: artist
+            }
+        }));
+    }
 });
 function displayPlatformResultPlayList(playlists, platform) {
     for (const playlist of Object.values(playlists)) {
@@ -55,6 +90,7 @@ function displayPlatformResultPlayList(playlists, platform) {
     playlistsUl.classList.toggle('hidden', isEmpty);
 }
 function displayPlayListMusicInside(playlist, platform) {
+    platformPlayList = platform;
     playListMusicInnerUl.innerHTML = '';
     let quantity = 1;
 
@@ -73,6 +109,7 @@ function displayPlayListMusicInside(playlist, platform) {
     playListArtist.innerText = playlist.artist
         .map(a => a.nameArtist)
         .join(", ");
+    playlistTracks = playlist.tracks;
     Object.values(playlist.tracks).forEach(track => {
         if (!track || typeof track !== 'object') {
             return;
@@ -113,6 +150,14 @@ function displayPlayListMusicInside(playlist, platform) {
         li.appendChild(previewTrackImage);
         li.appendChild(text);
         li.onclick = () => {
+            window.dispatchEvent(new CustomEvent('BottomPlayListMusics', {
+                detail: {
+                    playlistTracks = playlistTracks,
+                    platformPlayList = platformPlayList,
+                    isPlayListMusic = true,
+                    currentIdMusic = (quantity - 1)
+                }
+            }));
             window.dispatchEvent(new CustomEvent('InfoAboutTrackSend', {
                 detail: {
                     idTrack: track.trackId,
