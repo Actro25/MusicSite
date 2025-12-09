@@ -18,6 +18,8 @@ window.addEventListener('ChangeShowDiv', (e) => {
     playListMusicDiv.classList.add('hidden');
     mainDiv.classList.remove('hidden');
     mainSiteWindow.classList.add('hidden');
+
+    list.innerHTML = '';
 });
 window.addEventListener('HideSugWinAndPlayWin', (e) => {
     mainDiv.classList.add('hidden');
@@ -40,10 +42,10 @@ playListMusicButton.addEventListener('click', () => {
         isPlayListMusic = true;
         window.dispatchEvent(new CustomEvent('BottomPlayListMusics', {
             detail: {
-                playlistTracks = playlistTracks,
-                platformPlayList = platformPlayList,
-                isPlayListMusic = true,
-                currentIdMusic = 0
+                playlistTracks: playlistTracks,
+                platformPlayList: platformPlayList,
+                isPlayListMusic: true,
+                currentIdMusic: 0
             }
         }));
         window.dispatchEvent(new CustomEvent('InfoAboutTrackSend', {
@@ -152,10 +154,10 @@ function displayPlayListMusicInside(playlist, platform) {
         li.onclick = () => {
             window.dispatchEvent(new CustomEvent('BottomPlayListMusics', {
                 detail: {
-                    playlistTracks = playlistTracks,
-                    platformPlayList = platformPlayList,
-                    isPlayListMusic = true,
-                    currentIdMusic = (quantity - 1)
+                    playlistTracks: playlistTracks,
+                    platformPlayList: platformPlayList,
+                    isPlayListMusic: true,
+                    currentIdMusic: (quantity - 1)
                 }
             }));
             window.dispatchEvent(new CustomEvent('InfoAboutTrackSend', {

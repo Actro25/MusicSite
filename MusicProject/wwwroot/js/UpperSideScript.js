@@ -23,7 +23,6 @@ homeButton.addEventListener('click', () => {
 input.addEventListener('input', async () => {
     window.dispatchEvent(new CustomEvent('ChangeShowDiv'));
     const value = input.value.toLowerCase();
-    list.innerHTML = '';
 
     if (!value) {
         list.classList.add('hidden');

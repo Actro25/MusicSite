@@ -122,6 +122,10 @@ window.addEventListener('BottomSidePanelReceive', (e) => {
 
     const pText = document.getElementById("artist-bottom-panel");
     pText.innerText = e.detail.artists[0].nameArtist;
+
+    audio.play();
+    playerButtonPlayImage.src = "/img/mediaControlImages/icons8-pause-50.png";
+    isPlay = true;
 });
 playerButtonPlay.addEventListener('click', () => {
     if (isPlay) {
@@ -176,7 +180,7 @@ playerButtonLoop.addEventListener('click', () => {
     audio.loop = !audio.loop;
 });
 function SendMusicToUse() {
-    //Problem with lenght function read.
+    
     let artist = "";
     if (platformPlayListBottom === 'Spotify') {
         artist = playlistTracksBottom[currentIdMusicBottom].artistsNames
@@ -198,8 +202,21 @@ function SendMusicToUse() {
     }));
 }
 audio.addEventListener("ended", () => {
-    if (playlistTracksBottom.length <= currentIdMusicBottom && audio.loop) {
+    if (playlistTracksBottom.length <= currentIdMusicBottom) {
         currentIdMusicBottom = 0;
+        console.log('PlMusic');
+        SendMusicToUse();
+        return;
+    }
+    if (audio.loop) {
+        audio.currentTime = 0;
+        audio.play();
+        console.log('loop');
+    }
+    else if (isPlayListMusicBottom) {
+        
+        currentIdMusicBottom++;
+        console.log('PlMusic');
         SendMusicToUse();
     }
     else {
@@ -208,14 +225,7 @@ audio.addEventListener("ended", () => {
         return;
     }
 
-    if (isPlayListMusicBottom) {
-        currentIdMusicBottom++;
-        SendMusicToUse();
-    }
-    else if (audio.loop) {
-        audio.currentTime = 0;
-        audio.play();
-    }
+
     if (isPlay) {
         playerButtonPlayImage.src = "/img/mediaControlImages/icons8-play-50.png";
         isPlay = !isPlay;
